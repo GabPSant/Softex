@@ -1,0 +1,56 @@
+- Utilizando a descrição de narração
+
+1º
+    1. Eu almoço
+    2. Visto minhas roupas
+    3. Sento no sofa
+    4. Espero até o horário ser 13h30
+    5. Me levanto do sofa
+    6. Caminho até a porta 
+    7. Destranco e abro a porta
+    8. Saio de casa
+    9. Fecho e destranco a porta
+    10. Chamo o elevador
+    11. Espero o elevador
+    12. Pego o elevador
+    13. Saiu do elevador
+    14. Vou até o carro
+    15. Abro a porta do carro
+    16. Entro no carro
+    17. Fecho a porta do carro
+    18. Ligo o carro
+    19. Começo a dirigir o carro
+    20. Saiu do estacionamento com o carro
+    21. Continuo dirigindo o carro até chegar na Softex
+    22. Saiu do carro
+    23. Tranco o carro
+    24. Entro no prédio da Softex
+
+2º
+    1. Escolho a disciplina
+    2. Pego uns livros sobre a disciplina
+    3. Escolho um vídeo sobre a disciplina
+    4. Arranjo alguns exercicios sobre a disciplina
+    5. Fico 2 horas estudando sobre a disciplina
+    6. Fico 1 hora fazendo atividades sobre a disciplina.
+
+3º
+    1. Eu acordo
+    2. Tomo um banho
+    3. Visto minhas roupas
+    4. Tomo café da manhã
+    5. Vou para a faculdade
+    6. Fico estudando na faculdade até tarde
+    7. Saiu da faculdade
+    8. Pego um onibus para casa
+    9. Chego em casa
+    10. Vou almoçar
+    11. Deito no sofa
+    12. Descanso por 30 minutos
+    13. Escolho algum assunto para estudar
+    14. Fico estudando por 2 a 3 horas
+    15. Vou jantar
+    16. Escolho uma série para assistir ou um livro para ler
+    17. Fico me divertindo com minha escolhar até 23h30
+    18. Me deito na minha cama
+    19. Vou dormir

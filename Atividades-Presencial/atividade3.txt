@@ -1,0 +1,20 @@
+Teórica:
+
+1. Defina o que é uma variável na programação
+    R: Representa o espaço de memoria usado para armazenar uma informação especifica, sendo que essa
+    informação pode ser alterada posteriormente no código.
+
+2. Escreva com as suas palavras a diferença entre as declarações const, let e var e como elas podem
+ser aplicadas na prática
+    R:
+    --> const: representa uma variável cuja informação armazenada não pode ser alterada posteriormente
+    de forma alguma
+    --> let: representa uma variável cuja informação armazenada pode ser alterada posteriormente, mas é 
+    restrita a um escopo específico (se for criada em uma função, só sera vista/usada nessa função).
+    --> var: representa uma variável cuja informação armazenada pode ser alterada posteriormente e pode
+    ser vista/usada em qualquer escopo.
+
+3. Explique a diferença entre as variáveis do tipo objeto e lista
+    R:
+    --> objeto: essa variável pode armazenar outras variáveis com diversos valores
+    --> lista: essa variável pode armazenar vários valores no formato de lista.

@@ -66,3 +66,9 @@
 ##### **--> Operadores Lógicos**
 
 * Operadores matemáticos básicos (+, -, *, /, %, ==, !=, >, <)
+
+### 2º Aula
+
+* Prática de algoritmo - utilizando os tipos de descrição (narrativa, fluxograma, pseudocódigo)
+
+

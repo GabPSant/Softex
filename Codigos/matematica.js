@@ -33,11 +33,9 @@ function questionamento(){
   var valor1, valor2, operacao;
   readline.question("Qual sera o primeiro valor?\n", valor =>{
     valor1 = valor;
-    readline.close
   })
   readline.question("Qual sera o segundo valor?\n", valor =>{
     valor2 = valor;
-    readline.close
   })
   /*
   readline.question("Qual sera a operação?\nR: ", operacao =>{
@@ -46,4 +44,4 @@ function questionamento(){
   */
 }
 
-questionamento()
+questionamento();
