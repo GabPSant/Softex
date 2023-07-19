@@ -1,10 +1,3 @@
-const { read } = require('fs');
-
-const readline = require('readline').createInterface({
-  input: process.stdin,
-  output: process.stdout
-})
-
 // Função para criar as operações matematicas
 function operacoes(numero1, numero2, operacao){
   switch(operacao){
@@ -30,18 +23,17 @@ function operacoes(numero1, numero2, operacao){
 *
 */
 function questionamento(){
-  var valor1, valor2, operacao;
-  readline.question("Qual sera o primeiro valor?\n", valor =>{
-    valor1 = valor;
-  })
-  readline.question("Qual sera o segundo valor?\n", valor =>{
-    valor2 = valor;
-  })
-  /*
-  readline.question("Qual sera a operação?\nR: ", operacao =>{
-
-  })
-  */
+  console.log("Operação matematica simples\nQual sera o primeiro valor?\nR:");
+  let numero1 = prompt("Qual sera o primeiro valor?\nR:");
+  let numero2 = prompt("Qual sera o segundo valor?\nR:");
+  let operacao = "";
+  while(true){
+    operacao = prompt("Qual sera a operação do cálculo? (temos +, -, /, *)\nR:");
+    if(!(operacao.match(/[+-!*]/))){
+      console.log("Essa operação não existe ou não está validada, tente novamente");
+    }
+  }
+  console.log(operacoes(numero1,numero2,operacao))
 }
 
 questionamento();

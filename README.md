@@ -59,7 +59,7 @@
 > const - variáveis de valores constantes, não podem ter seus valores alterados (devem ser inicializados no começo)  
 > let - são variáveis que podem ter seus valores alterados **quantas vezes quiser**.  Só pode ser vista dentro de um escopo (se estiver no escopo global, pode ser vista globalmente. Se estiver em um local, só sera vista no local)  
 > var - são variáveis que podem ter seus valores alterados **quantas vezes quiser**.  Podem ser vista em qualquer escopo(não recomendado o uso pois pode causar confusão no sistema).  
-> let (nome da variável) = [...] - serve manter vários valores em uma mesma variável.
+> let (nome da variável) = [...] - serve para manter vários valores em uma mesma variável.
 
 * typeof("tipo de", serve para apresentar o tipo de uma variável)[Exemplo: console.log(typeof nome)]
 
@@ -71,4 +71,7 @@
 
 * Prática de algoritmo - utilizando os tipos de descrição (narrativa, fluxograma, pseudocódigo)
 
+### 3º Aula 
 
+* Prática com Javascript
+- Site que ensina Back-end ([Boot.dev](https://boot.dev/)), Python e Go (encontrei durante os estudos, o site está em inglês).

@@ -94,45 +94,27 @@ console.log("indefinido = " + typeof(indefinido))
 
 //Questões para Operadores Lógicos
 // Questão 1
-function igualdade(x,y){
-    if(x == y){ return true}
-    return false
-}
+const igualdade = (x,y) => x==y? true: false
 console.log("\nOperadores Lógicos\n igualdade: " + igualdade(5,5))
 
 // Questão 2
-function diferenca(x,y){
-    if(x != y){ return true}
-    return false
-}
+const diferenca = (x,y) => x!=y? true:false
 console.log("diferença: " + diferenca(5,5))
 
-// Questão 3
-function maior(x,y){
-    if(x>y){ return true}
-    return false
-}
+// Questão 3 - testando lambda nos comparativos de valores
+const maior = (x,y) => x>y? true:false
 console.log("maior que: " + maior(4,7))
 
 // Questão 4
-function menor(x,y){
-    if(x<y){ return true}
-    return false
-}
+const menor = (x,y) => x<y?true:false
 console.log("menor que: " + menor(4,7))
 
 // Questão 5
-function maiorIgual(x,y){
-    if(x>=y){ return true}
-    return false
-}
+const maiorIgual = (x,y) => x>=y?true: false
 console.log("maior ou igual que: " + maiorIgual(9,6))
 
 // Questão 6
-function menorIgual(x,y){
-    if(x<=y){ return true}
-    return false
-}
+const menorIgual = (x,y) => x<=y? true:false
 console.log("menor ou igual que: " + menorIgual(9,6))
 
 // Questão 7
@@ -154,11 +136,7 @@ function OR(x,y){
 console.log("condição OR: " + OR(true,false))
 
 // Questão 9
-function NOT(x){
-    if(typeof(x) == "boolean"){
-        return !x
-    }
-}
+const NOT = x => {if(typeof(x) == "boolean"){return !x} else{ return "não é booleano"}}
 console.log("condição NOT: " + NOT(true))
 
 // Questão 10
@@ -191,9 +169,6 @@ function textoVazio(x){
 }
 console.log("String vazia: " + textoVazio("não está vázio"))
 
-// Questão 14
-function eBoolean(x){
-    if(typeof(x) == "boolean"){ return true}
-    return false
-}
+// Questão 14 - Testando lambdas em javascript
+const eBoolean = x => typeof(x) == "boolean"? true:false
 console.log("É um valor booleano: " + eBoolean(false))
