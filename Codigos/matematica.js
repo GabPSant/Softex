@@ -32,6 +32,7 @@ function questionamento(){
     if(!(operacao.match(/[+-!*]/))){
       console.log("Essa operação não existe ou não está validada, tente novamente");
     }
+    else{break;}
   }
   console.log(operacoes(numero1,numero2,operacao))
 }
