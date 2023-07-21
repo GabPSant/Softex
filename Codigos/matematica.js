@@ -23,18 +23,18 @@ function operacoes(numero1, numero2, operacao){
 *
 */
 function questionamento(){
-  console.log("Operação matematica simples\nQual sera o primeiro valor?\nR:");
+  alert("Operação matematica simples");
   let numero1 = prompt("Qual sera o primeiro valor?\nR:");
   let numero2 = prompt("Qual sera o segundo valor?\nR:");
   let operacao = "";
   while(true){
     operacao = prompt("Qual sera a operação do cálculo? (temos +, -, /, *)\nR:");
-    if(!(operacao.match(/[+-!*]/))){
-      console.log("Essa operação não existe ou não está validada, tente novamente");
+  if(!(operacao == "+"|| operacao == "-" || operacao == "*" || operacao == "/")){
+      alert("Essa operação não existe ou não está validada, tente novamente");
     }
     else{break;}
   }
-  console.log(operacoes(numero1,numero2,operacao))
+  alert(operacoes(numero1,numero2,operacao))
 }
 
 questionamento();
