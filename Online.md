@@ -28,3 +28,15 @@
 > 3. a **saída do resultado** do processamento, que mostra se o resultado foi eficaz ou não.
 
 #### *Obs.* É importante lembrar que o algoritmo não é o resultado final, mas sim todo o processamento para chegar ao resultado
+
+## Estruturas Condicionais
+
+* Representam um fluxo de escolhas escritas em linhas de código. 
+Quando um usuário precisa tomar uma decisão, podemos utilizar as estruturas condicionais para decidir qual linha de comando deve ser executada a partir da escolha feita por ele, diferente da estrutura sequencial.
+
+* São divididas em:
+
+> 1. simples (if)
+> 2. composta (if - else)
+> 3. encadeada (if - else if - else)
+> 4. multipla escolha (switch)
