@@ -1,0 +1,87 @@
+Elabore um algoritmo que representa um cadastro. Ele deve ler os seguintes dados fornecidos pelo usuário:
+
+- Nome
+- Endereço
+- Cidade
+- CPF
+- RG
+- Idade
+- Nome do pai
+- Nome da mãe
+- Peso
+- Renda bruta
+
+Resposta:
+    Pseudocódigo
+        var
+            nome: caractere
+            endereco: caractere
+            cidade: caractere
+            cpf: inteiro
+            rg: inteiro
+            idade: inteiro
+            pai: caractere
+            mae: caractere
+            peso: real
+            rendaBruta: real
+        
+        inicio
+            escreva("Digite seu nome: );
+            leia(nome);
+            escreva("Digite seu endereço: ");
+            leia(endereco);
+            escreva("Digite sua cidade: ");
+            leia(cidade);
+            escreva("Digite seu CPF: ");
+            leia(cpf);
+            escreva("Digite seu RG: ");
+            leia(rg);
+            escreva("Digite sua idade: ");
+            leia(idade);
+            escreva("Digite o nome do seu pai: ");
+            leia(pai);
+            escreva("Digite o nome da sua mãe: ");
+            leia(mae);
+            escreva("Digite o seu peso: ");
+            leia(peso);
+            escreva("Digite a sua Renda bruta: ");
+            leia(rendaBruta);
+            escreva("Nome: ", nome);
+            escreva("Endereço: ", endereco);
+            escreva("Cidade: ", cidade);
+            escreva("CPF: ", cpf);
+            escreva("RG: ", rg);
+            escreva("Idade: ", idade);
+            escreva("Nome do pai: ", pai);
+            escreva("Nome da mãe: ", mae);
+            escreva("Peso: ", peso);
+            escreva("Renda bruta: ", rendaBruta);
+  
+    JavaScript
+        const nome = prompt("Qual o seu nome?");
+        const endereco = prompt("Qual o seu endereço?");
+        const cidade = prompt("Qual a sua cidade?");
+        const cpf = prompt("Qual o seu CPF?");
+        const rg = prompt("Qual o seu RG?");
+        const idade = prompt("Qual a sua idade?");
+        const pai = prompt("Qual o nome do seu pai?");
+        const mae = prompt("Qual o nome da sua mãe");
+        const peso = prompt("Qual o seu peso?");
+        const rendaBruta = prompt("Qual a sua Renda bruta?");
+
+        const pessoa = {
+            nome: nome,
+            endereco: endereco,
+            cidade: cidade,
+            CPF: parseInt(cpf),
+            RG: parseInt(rg),
+            idade: parseInt(idade),
+            pai: pai,
+            mae: mae,
+            peso: parseFloat(peso),
+            Renda: parseFloat(rendaBruta)
+        }
+
+        console.log(pessoa)
+        
+        Obs. O código em JavaScript funciona em um console, se for tentar usar o VScode crie uma pagina html.
