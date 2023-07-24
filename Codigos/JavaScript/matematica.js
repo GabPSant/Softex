@@ -19,8 +19,9 @@ function operacoes(numero1, numero2, operacao){
   }
 }
 
-/*A ideia é criar um loop na parte no input de operação, ainda tenho que fazer
-*
+/*A ideia é criar um loop na parte no input de operação
+* tentei fazer com regex, mas não deu muito resultado, vou melhor mais tarde
+* tentar criar uma página com as operações, misturando JS,HTML e CSS.
 */
 function questionamento(){
   alert("Operação matematica simples");

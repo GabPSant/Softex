@@ -75,3 +75,24 @@
 
 * Prática com Javascript
 - Site que ensina Back-end ([Boot.dev](https://boot.dev/)), Python e Go (encontrei durante os estudos, o site está em inglês).
+
+### 4º Aula
+
+#### Entrada e Manipulação de dados
+
+##### 1. Entrada de Dados
+
+* O objetivo do JavaScript é deixar o site dinâmico (uso do comando prompt, para mandar uma mensagem para o console)
+
+##### 2. Conversão de Dados (Cast)
+
+* Formas de altetar:
+
+> Number("variável") - converte a variável para o tipo Number (número)
+> String("variável") - converte a variável para o tipo String (caractere)
+
+##### 3. Manipulação de Dados
+
+* Concatenação de Dados [Ex: (variável1 + variável2)] {é possivel fazer com diferentes tipos de dados}
+* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").  Ex:  let macaco = "coisa de macaco" 
+console.log(`${macaco} usar crase ao inves de aspas duplas`)
