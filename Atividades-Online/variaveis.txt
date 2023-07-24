@@ -1,0 +1,27 @@
+1. A proposta das variáveis
+    R: Serão criadas 5 variáveis, uma para cada dado.
+
+2. Elaborada a declaração das variáveis
+    R: 
+        Nomes das variáveis:
+            1 - nome (será usada para armazenar a informação do Nome) [tipo: Caractere]
+            2 - cpf (será usada para armazenar a informação do CPF) [tipo: Inteiro]
+            3 - rg (será usada para armazenar a informação do RG) [tipo: Inteiro]
+            4 - altura (será usada para armazenar a informação da Altura) [tipo: Real]
+            5 - endereco (será usada para armazenar a informação do Endereço) [tipo: Caractere]
+
+3. Utilizado o comando de atribuição.
+    R:
+        Pseudocódigo
+            nome <- "José Almeida da Silva"
+            cpf <- 12345678900
+            rg <- 9517530
+            altura <- 1,78
+            endereco <- "Rua A, 380 – Centro – Recife/PE"
+
+        JavaScript
+            let nome = "José Almeida da Silva"
+            let cpf = 12345678900
+            let rg = 9517530
+            let altura = 1,78
+            let endereco = "Rua A, 380 – Centro – Recife/PE"
