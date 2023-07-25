@@ -25,7 +25,6 @@ console.log(`${(texto1 + texto2)}`)
 const numero3 = 48
 console.log("[variação] " + texto1 + " " + texto2 + " " + numero3)
 
-
 // Questão 5
 const nome = prompt("Digite o seu nome")
 alert(`Bem vindo ${nome}`)
@@ -72,5 +71,36 @@ alert(`Estilo Japonês: ${sobrenome} ${nome}`)
 // Questão 15
 const frase = prompt("Digite qualquer coisa, sério")
 alert(`O tamanho da sua frase é ${frase.length}`)
-*/
+
 // Questão 16
+const numero = prompt("Digite um valor inteiro")
+alert((parseInt(numero)%2 == 0)? `${Number(numero)} é par`:`${Number(numero)} é impar`)
+
+// Questão 17
+const numero = prompt("Digite um numero qualquer")
+alert((parseFloat(numero) > 0)? `${numero} é positivo`:`${numero} é negativo`)
+
+// Questão 18 
+const numero1 = prompt("Digite um valor qualquer")
+const numero2 = prompt("Digite outro valor qualquer")
+alert((parseFloat(numero1) > parseFloat(numero2))? `${numero1} é o maior`:`${numero2} é o maior`)
+
+// Questão 19
+const altura = prompt("Digite a sua altura")
+const peso = prompt("Digite o seu peso")
+alert(`Seu IMC é ${(parseFloat(peso)/Math.pow(parseFloat(altura),2)).toFixed(2)}`)
+
+// Questão 20
+const nome = prompt("Digite o seu nome")
+alert(`Seu nome tem ${(nome.length>5)?"mais que 5 letras":"menos que 5 letras"}`)
+
+// Questão 21
+const estadoCivil = prompt("Digite seu estado cívil")
+alert(`Você é ${estadoCivil}`)
+
+// Questão 22
+alert("Processo para calcular a área de um retangulo")
+const base = prompt("Digite o valor da base")
+const altura = prompt("Digite o valor da altura")
+alert(`A área do retangulo é ${(parseFloat(base)*parseFloat(altura)).toFixed(2)} (${base} x ${altura})`)
+*/

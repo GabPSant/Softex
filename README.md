@@ -61,7 +61,7 @@
 > var - são variáveis que podem ter seus valores alterados **quantas vezes quiser**.  Podem ser vista em qualquer escopo(não recomendado o uso pois pode causar confusão no sistema).  
 > let (nome da variável) = [...] - serve para manter vários valores em uma mesma variável.
 
-* typeof("tipo de", serve para apresentar o tipo de uma variável)[Exemplo: console.log(typeof nome)]
+* typeof("tipo de", serve para apresentar o tipo de uma variável)(Exemplo: console.log(typeof nome))
 
 ##### **--> Operadores Lógicos**
 
@@ -74,7 +74,7 @@
 ### 3º Aula 
 
 * Prática com Javascript
-- Site que ensina Back-end ([Boot.dev](https://boot.dev/)), Python e Go (encontrei durante os estudos, o site está em inglês).
+* Site que ensina Back-end ([Boot.dev](https://boot.dev/)), Python e Go (encontrei durante os estudos, o site está em inglês).
 
 ### 4º Aula
 
@@ -94,5 +94,7 @@
 ##### 3. Manipulação de Dados
 
 * Concatenação de Dados [Ex: (variável1 + variável2)] {é possivel fazer com diferentes tipos de dados}
-* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").  Ex:  let macaco = "coisa de macaco" 
+* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").Ex: let macaco = "coisa de macaco" 
 console.log(`${macaco} usar crase ao inves de aspas duplas`)
+* Math.random() - retorna um valor entre 0 e 1 (use multiplos para aumentar a variação)
+* Math.round() - retorna o valor inteiro arredondado de um valor decimal
