@@ -17,6 +17,7 @@ function calculo(numero1,numero2,operacao){
             return `Essa operação não é valida`
     }
 }
+// Faz o questionario na página e recebe os valores
 function questionario(){
     alert("Operação matemática")
     const numero1 = Number(prompt("Digite o primeiro valor da operação"));
@@ -25,3 +26,4 @@ function questionario(){
     alert(calculo(numero1,numero2,operacao));
 }
 questionario();
+// Obs. Funciona em um console web, não no node
