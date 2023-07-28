@@ -71,7 +71,7 @@
 
 * Prática de algoritmo - utilizando os tipos de descrição (narrativa, fluxograma, pseudocódigo)
 
-### 3º Aula 
+### 3º Aula
 
 * Prática com Javascript
 * Site que ensina Back-end ([Boot.dev](https://boot.dev/)), Python e Go (encontrei durante os estudos, o site está em inglês).
@@ -94,7 +94,7 @@
 ##### 3. Manipulação de Dados
 
 * Concatenação de Dados [Ex: (variável1 + variável2)] {é possivel fazer com diferentes tipos de dados}
-* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").Ex: let macaco = "coisa de macaco" 
+* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").Ex: let macaco = "coisa de macaco"
 console.log(`${macaco} usar crase ao inves de aspas duplas`)
 * Math.random() - retorna um valor entre 0 e 1 (use multiplos para aumentar a variação)
 * Math.round() - retorna o valor inteiro arredondado de um valor decimal
