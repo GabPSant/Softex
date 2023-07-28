@@ -45,7 +45,7 @@ function votacao(){
             try{
                 resposta = parseInt(resposta);
                 if(!(resposta ==candidatos.candidato_X || resposta == candidatos.candidato_Y || resposta ==candidatos.candidato_Z || resposta == candidatos.branco)){
-                    throw Error(alert("Essa opção não existe"));
+                    throw Error(alert("Essa opção não existe, tente novamente"));
                 }
                 break;
             } catch(error){}
@@ -75,7 +75,7 @@ function votacao(){
             \n1 - Sim\n2 - Não`);
             try{
             resposta = parseInt(resposta)
-            if(!(parseInt(resposta)>0 && parseInt(resposta)<3)){throw Error(alert("Essa opção não é valida"))}
+            if(!(parseInt(resposta)>0 && parseInt(resposta)<3)){throw Error(alert("Essa opção não é valida, tente novamente"))}
             break;
             } catch(error){}
         }
