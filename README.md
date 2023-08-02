@@ -1,6 +1,6 @@
 # Softex
 
-## 1º M
+## 1º Disciplina (lógica de programação e JavaScript)
 
 ### 1º Aula
 
@@ -94,7 +94,32 @@
 ##### 3. Manipulação de Dados
 
 * Concatenação de Dados [Ex: (variável1 + variável2)] {é possivel fazer com diferentes tipos de dados}
-* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").Ex: let macaco = "coisa de macaco"
-console.log(`${macaco} usar crase ao inves de aspas duplas`)
+* para poder usar printf em JavaScript se deve usar duas crases (``) ao inves de aspas ("").  Ex: let macaco = "coisa de macaco"
+console.log(``${macaco} usar crase ao inves de aspas duplas``)
 * Math.random() - retorna um valor entre 0 e 1 (use multiplos para aumentar a variação)
 * Math.round() - retorna o valor inteiro arredondado de um valor decimal
+
+### 5º Aula
+
+#### Condição e controle de fluxo
+
+##### 1. Condicionais simples
+
+* Condicional unica (if e else): define o fluxo de dados atraves de uma condicional booleana. Tem um caminho caso a posibilidade seja verdadeira e outro se for falsa.
+* Condicional encadeada (if, else if e else): define o fluxo de dados através de uma ou mais condições booleanas. Tem diversos caminhos, dependendo do proposito específico.
+
+> Obs. Combinação de condicionais (&& e ||): permite juntar condições diferentes em um mesmo condicional.
+> && (E): representa que ambas as condições devem ser verdadeiras para a condicional ser true.
+> || (OU): representa que pelo menos uma das condições é verdadeira, a condicional será verddadeira.
+
+##### 2. Condicionais predefinidas
+
+* Condicional interruptor (switch/case): permite criar condicionais pré-definidas (cases) em um interruptor (switch) conectado a um valor (condicional.)
+
+> Obs. default: representa um 'case' especial que só vai rodar caso todos os outros cases não forem usados.
+> break: serve para quebrar o fluxo de dados, importante no switch para que as outras condições não ocorram quando se busca uma em específico.
+
+##### 3. Condicionais de erro
+
+* try/catch (tentar/pegar): vai testar parte do código, se funcionar continua rodando, se não funcionar o sistema avisa que deu um erro no sistema.
+* Obs. se uma string for altera usando o construtor 'Number' ou 'parseInt' o resultado é NaN (vazio)
