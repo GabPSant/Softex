@@ -68,3 +68,5 @@ Quando um usuário precisa tomar uma decisão, podemos utilizar as estruturas co
 
 * Manipulação de arrays (iteração com loops)  
 Loop forEach - é uma função nativa dos arrays em JavaScript que permite executar uma função para cada elemento do array. Esse loop é uma forma mais simplificada de percorrer os elementos, especialmente quando você não precisa de controle direto sobre o índice.
+
+* Matriz bidimensional: array que contem arrays (array == matriz unidimensional)
