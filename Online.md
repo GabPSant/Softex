@@ -31,7 +31,7 @@
 
 ## Estruturas Condicionais
 
-* Representam um fluxo de escolhas escritas em linhas de código. 
+* Representam um fluxo de escolhas escritas em linhas de código.
 Quando um usuário precisa tomar uma decisão, podemos utilizar as estruturas condicionais para decidir qual linha de comando deve ser executada a partir da escolha feita por ele, diferente da estrutura sequencial.
 
 * São divididas em:
@@ -40,3 +40,31 @@ Quando um usuário precisa tomar uma decisão, podemos utilizar as estruturas co
 > 2. composta (if - else)
 > 3. encadeada (if - else if - else)
 > 4. multipla escolha (switch)
+
+* Obs. Pagina para melhorar a utilização do git [("Use Git like a senior engineer")](https://levelup.gitconnected.com/use-git-like-a-senior-engineer-ef6d741c898e)
+
+## Array
+
+* Tipos de Arrays (importantes)
+
+> Array com tamanho fixo (Ex: let tamanhoFixo = Array(5);)  
+> Array usando from (Ex: let arrayPorFrom = Array.from('JavaScript');) - Separa cada letra do string  
+
+* Spread(...): permite unir strings ou arrays (Ex: let numeros = [1,2,3];  let maisNumeros = [...numeros,4,5,6];)
+* Manipulação de arrays (Inserção)
+
+> push(): adiciona um ou mais elementos ao final do array  
+> unshift(): adiciona um ou mais elementos no início do array  
+> splice(): adiciona ou altera o elemento em uma posição especifica  
+> Ex1: array.splice(2,0,3) {Adiciona o valor 3 na posição 2 do array (aumenta o tamanho do array)}  
+> Ex2: array.splice(2,1,3) {Substitui o valor na posição 2 do array para 3 (mantem o tamanho do array)}
+
+* Manipulação de arrays (Remoção)
+
+> pop(): remove e retorna o último elemento do array  
+> shift(): remove e retorna o primeiro elemento do array  
+> splice(): pode ser usado para remover um elemento em uma posição especifica  
+> Ex: array.splice(2,1) {Remove o elemento da posição 2 do array}
+
+* Manipulação de arrays (iteração com loops)  
+Loop forEach - é uma função nativa dos arrays em JavaScript que permite executar uma função para cada elemento do array. Esse loop é uma forma mais simplificada de percorrer os elementos, especialmente quando você não precisa de controle direto sobre o índice.

@@ -1,6 +1,6 @@
 # Softex
 
-## 1º Mês
+## 1º M
 
 ### 1º Aula
 
