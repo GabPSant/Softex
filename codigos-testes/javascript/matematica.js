@@ -24,18 +24,26 @@ function operacoes(numero1, numero2, operacao){
 * tentar criar uma página com as operações, misturando JS,HTML e CSS.
 */
 function questionamento(){
+  let numero1, numero2;
   alert("Operação matematica simples");
-  let numero1 = prompt("Qual sera o primeiro valor?\nR:");
-  let numero2 = prompt("Qual sera o segundo valor?\nR:");
+  while(true){
+    numero1 = prompt("Qual sera o primeiro valor?\nR:");
+    numero2 = prompt("Qual sera o segundo valor?\nR:");
+    try{
+      if((Number.isNaN(Number(numero1))|| numero1 == "")|| (Number.isNaN(Number(numero2)) || numero2 == "")){throw Error("Erro!");}
+      break;
+    }
+    catch(error){alert("Pelo menos um dos valores recebidos não é um numero, tente novamente");}
+  }
   let operacao = "";
   while(true){
     operacao = prompt("Qual sera a operação do cálculo? (temos +, -, /, *)\nR:");
-  if(!(operacao == "+"|| operacao == "-" || operacao == "*" || operacao == "/")){
+  if(!(operacao.match(/[(+|*|/)]/g) || operacao == '-')){
       alert("Essa operação não existe ou não está validada, tente novamente");
     }
     else{break;}
   }
-  alert(operacoes(numero1,numero2,operacao))
+  alert(operacoes(Number(numero1),Number(numero2),operacao))
 }
 
 questionamento();

@@ -11,7 +11,7 @@ function questao1(inteiro){//Diz se o valor digitado é positivo, negativo ou ne
 }
 //questao1(inteiro);
 
-// Questão 2 - funciona usando node
+// Questão 2 - funciona com o node
 function maiorDeIdade(idade){// Diz se alguem é menor ou maior de idade
     if(idade<0){
         console.log("Você não tem idade negativa");
@@ -23,7 +23,7 @@ function maiorDeIdade(idade){// Diz se alguem é menor ou maior de idade
 }
 // maiorDeIdade(-7);
 
-// Questão 3 - é necessário usar no console web
+// Questão 3 - é necessário usar o console do navegador
 function questao3(){// Avalia qual entre dois números é maior
     const inteiro1 = Number(prompt("Digite o primeiro inteiro"));
     const inteiro2 = Number(prompt("Digite o segundo inteiro"));
@@ -38,7 +38,7 @@ function questao3(){// Avalia qual entre dois números é maior
 }
 // questao3();
 
-// Questão 4 - é necessário usar no console web
+// Questão 4 - é necessário usar o console do navegador
 function questao4(){// Retorna se um número é par ou impar
     const numero = parseInt(prompt("Digite um numero"));
     if(Number.isNaN(numero)){//testa se o valor não é um numero
@@ -48,7 +48,7 @@ function questao4(){// Retorna se um número é par ou impar
 }
 // questao4();
 
-// Questão 5 - é necessário fazer no console web
+// Questão 5 - é necessário usar o console do navegador
 let getMedia = (x,y,z) => (x+y+z)/3 // calculo para a media de 3 valores
 function questao5(){
     // Diz se um aluno está aprovado, em relação a media de 3 notas
@@ -69,7 +69,7 @@ function questao5(){
 }
 // questao5();
 
-// Questão 6 - funciona usando node
+// Questão 6 - funciona com o node
 function questao6(pessoa1, pessoa2){
     // Avalia qual nome de duas pessoas é maior, tem mais letras
     if(String(pessoa1).length == String(pessoa2).length){
@@ -82,7 +82,7 @@ function questao6(pessoa1, pessoa2){
 }
 // questao6("Miguel","Rafael");
 
-// Questão 7 - (testar) é necessário fazer no console web
+// Questão 7 - é necessário usar o console do navegador
 function questao7(){
     // Avalia se um caracter é vogal
     let caracter;
