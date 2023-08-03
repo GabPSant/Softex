@@ -1,98 +1,88 @@
-// Questão 15 - é necessário usar o console do navegador
-function diaDaSemana(){
+// Questão 11 - funciona com o node
+function aumentoSalarial(salario){
+    try{
+        if(String(salario).length == 0 || Number.isNaN(Number(salario))){ throw Error;}
+    }
+    catch(error){
+        console.log("O valor usado não é valido");
+        return 1;
+    }
+    console.log(`Salário: ${Number(salario).toFixed(2)}`);
+    if(Number(salario) > 1500){ console.log(`Salário com aumento: ${(Number(salario)*1.1).toFixed(2)} (aumentou em 10%)`);}
+    else{ console.log(`Salário com aumento: ${(Number(salario)*1.15).toFixed(2)} (aumentou em 15%)`);}
+}
+//aumentoSalarial(1600);
+
+// Questão 12 - é necessário usar o console do navegador
+function questao12(){// avalia se o valor recebido pelo usuário é divisivel por 3 e por 5;
+    let numero;
+    while(true){
+        numero = Number(prompt("Digite um número"));
+        try{
+            if(Number.isNaN(numero)){throw Error("Erro!")}
+            break;
+        }
+        catch(error){alert("Esse valor não é válido, tente novamente")}
+    }
+    if(numero%3 == 0 && numero%5 == 0){
+        alert(`${numero}, é divísivel por 3 e por 5`);
+    }
+    else if(numero%3 == 0){
+        alert(`${numero}, é divísivel por 3`);
+    }
+    else if(numero%5 == 0){
+        alert(`${numero}, é divísivel por 5`);
+    }
+    else{ alert(`${numero}, não é divísivel por 3 ou por 5`);}
+}
+//questao12();
+
+// Questão 13 - é necessário usar o console do navegador
+function diaSemana(){
+    const dia = prompt("Digite um dia da semana por extenso (Ex: segunda-feira, quarta-feira, domingo etc).")
+    switch(dia.toLowerCase){
+        case "segunda-feira":
+        case "terça-feira":
+        case "quarta-feira":
+        case "quinta-feira":
+        case "sexta-feira":
+            alert(`${dia} é um dia util`);
+            break;
+        case "sabado":
+        case "domingo":
+            alert(`${dia} é um fim de semana`);
+            break;
+        default:
+            alert("a frase recebida não é válida");
+    }
+}
+//diaSemana();
+
+// Questão 14 - é necessário usar o console do navegador
+function questao14(){
     let resposta;
     
-    while(!(resposta >0 && resposta<8)){
-        resposta = Number(prompt("Digite um numero entre 1 e 7 (cada número representa um dia da semana)"))
+    while(!(resposta >0 && resposta<6)){
+        resposta = Number(prompt("Digite um numero entre 1 e 5 (sendo '1' muito ruim e '5' muito bom)"))
         switch(resposta){
             case 1:
-                alert("Domingo");
+                alert("Muito insuficiênte (você odiou o produto, sentimos muito!)");
                 break;
             case 2:
-                alert("Segunda-feira");
+                alert("Insuficiênte (você não gostou do produto)");
                 break;
             case 3:
-                alert("Terça-feira)");
+                alert("Regular (a qualidade foi adequada)");
                 break;
             case 4:
-                alert("Quarta-feira");
+            alert("Bom (você gostou do produto)");
                 break;
             case 5:
-                alert("Quinta-feira");
-                break;
-            case 6:
-                alert("Sexta-feira");
-                break;
-            case 7:
-                alert("Sábado");
+                alert("Muito bom (você adorou o produto, muito obrigado!)");
                 break;
             default:
                 alert("Essa resposta não é valida, tente novamente")
         }
     }
 }
-//diaDaSemana();
-
-// Questão 16 - é necessário usar o console do navegador
-function arredondar(){
-    let decimal;
-    while(true){
-        decimal = Number(prompt("Digite um valor real"));
-        try{
-            if(Number.isNaN(decimal) || Number.isInteger(decimal)){throw Error;}
-            break;
-        }
-        catch(error){alert("Esse valor não é aceitável");}
-    }
-    alert(`Ao arrendondar ${decimal.toFixed(3)}, recebemos ${Math.round(decimal).toFixed(0)}`);
-}
-//arredondar();
-
-// Questão 17 - funciona com o node
-function verificarIdade(idade){
-    idade = Number(idade);
-    if(Number.isNaN(idade) || !Number.isInteger(idade) || idade<0){
-        console.log("Esse valor não é valido\n");
-    }
-    else{
-        if(idade>=0 && idade<2){
-            console.log("Você é um bebê\n");
-        }
-        else if(idade>=2 && idade<13){
-            console.log("Você é uma criança\n");
-        }
-        else if(idade>=13 && idade<18){
-            console.log("Você é um adolecente\n");
-        }
-        else{
-            console.log("Você é um adulto\n")
-        }
-    }
-}
-//verificarIdade(18)
-
-// Questão 18 - (testar) é necessário usar o console do navegador
-function estadoCivil(){
-    let estado;
-    
-    while(!(estado.match(/[(solteiro)|(casado)|(divorciado)|(viuvo)]/g))){
-        estado = prompt("Digite seu estado cívil (solteiro, casado, divorciado ou viuvo)");
-        switch(estado.toLowerCase){
-            case "solteiro":
-                alert("Você está solteiro (Ok)");
-                break;
-            case "casado":
-                alert("Você está casado (espero que esteja feliz)");
-                break;
-            case "divorciado":
-                alert("Você está divorciado (dependo de como foi o casamento, receba meus pesámes ou parabéns");
-                break;
-            case "viuvo":
-                alert("Você esta viúvo (meus pesámes por sua perda");
-                break;
-            default:
-                alert("Essa resposta não é valida");
-        }
-    }
-}
-estadoCivil();
+//questao14();

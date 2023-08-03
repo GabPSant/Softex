@@ -3,19 +3,15 @@ function operacoes(numero1, numero2, operacao){
   switch(operacao){
     case '+':
       return numero1+" + "+numero2+" = " + (numero1 + numero2);
-      break;
     
     case '-':
     return numero1+" - "+numero2+" = " + (numero1 - numero2);
-    break;
 
     case '*':
     return numero1+" * "+numero2+" = "+ (numero1*numero2);
-    break;
-
+    
     case '/':
     return numero1+"/"+numero2+" = " + (numero1/numero2);
-    break;
   }
 }
 
