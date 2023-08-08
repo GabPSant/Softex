@@ -140,4 +140,4 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - break: interrompe totalmente o processo de repetição.
 - continue: pula uma repetição do processo de repetição.
-- É possível fazer iterações de listas ([código explicando](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/testeFor.js))
+- É possível fazer iterações de listas ([código explicando o conceito](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/testeFor.js))
