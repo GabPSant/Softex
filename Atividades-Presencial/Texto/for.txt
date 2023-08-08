@@ -1,16 +1,19 @@
 1º Questão
 --> Descreva para que serve o comando "for".
-R: Serve para repetir um bloco de código, evitando repetição de linhas, um certo 
-número de vezes dependendo de uma condição.
+R: Serve para repetir um bloco de código, um certo número de vezes dependendo de uma condição (evita repetição de linhas desneces-
+sárias).
+
 
 2º Questão
 --> Como o comando "for" define o início de uma repetição?
 R: Definisse uma variável iterador que define o valor inicial para o for.
 
+
 3º Questão
 --> Como o comando "for" determina o fim da execução?
 R: Definisse uma condição que, enquanto verdadeira, o for continuar com a repetição até 
 ela ser falsa (essa condição geralmente tem relação com a variável iterador).
+
 
 4º Questão
 --> Como ocorre a alteração do valor em cada repetição dentro da estrutura de repetição "for"?

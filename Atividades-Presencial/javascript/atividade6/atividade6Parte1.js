@@ -1,4 +1,4 @@
-// Questão 5
+// Questão 5 - pode usar o node
 function questao5() {
     for (let i = 0; i < 10; i++) {
         console.log("Testando uma frase!");
@@ -6,7 +6,7 @@ function questao5() {
 }
 //questao5();
 
-// Questão 6
+// Questão 6 - pode usar o node
 function questao6() {
     for (let i = 0; i < 10; i++) {
         console.log(i);
@@ -14,7 +14,7 @@ function questao6() {
 }
 //questao6();
 
-// Questão 7
+// Questão 7 - pode usar o node
 function questao7() {
     for (i = 0; i < 10; i++) {
         if (i == 5) {
@@ -25,7 +25,7 @@ function questao7() {
 }
 //questao7();
 
-// Questão 8
+// Questão 8 - pode usar o node
 function questao8() {
     for (i = 0; i < 10; i++) {
         if (i == 5) {
@@ -36,7 +36,7 @@ function questao8() {
 }
 //questao8();
 
-// Questão 9
+// Questão 9 - pode usar o node
 function questao9() {
     const nomes = ['João', 'Paulo', 'Pedro', 'Gustavo', 'Maria'];
 
@@ -46,7 +46,7 @@ function questao9() {
 }
 //questao9();
 
-// Questão 10
+// Questão 10 - pode usar o node
 function numerosCrescentes() {
     for (i = 1; i <= 10; i++) {
         console.log(i);
@@ -54,7 +54,7 @@ function numerosCrescentes() {
 }
 //numerosCrescentes();
 
-// Questão 11
+// Questão 11 - pode usar o node
 function numerosDecrescentes() {
     for (i = 10; i > 0; i--) {
         console.log(i);
@@ -62,7 +62,7 @@ function numerosDecrescentes() {
 }
 //numerosDecrescentes();
 
-// Questão 12
+// Questão 12 - pode usar o node
 function somaResultante() {
     let resultante = 0;
     for (i = 1; i <= 100; i++) {
@@ -72,7 +72,7 @@ function somaResultante() {
 }
 //somaResultante();
 
-// Questão 13
+// Questão 13 - pode usar o node
 function valoresPares() {
     for (i = 1; i <= 50; i++) {
         if (i % 2 == 0) { console.log(i); }
@@ -80,7 +80,7 @@ function valoresPares() {
 }
 //valoresPares();
 
-// Questão 14
+// Questão 14 - pode usar o node
 function produtoResultante() {
     let resultante = 1;
     for (i = 1; i <= 5; i++) {
@@ -90,7 +90,7 @@ function produtoResultante() {
 }
 //produtoResultante();
 
-// Questão 15
+// Questão 15 - pode usar o node
 function tabuadaSete() {
     console.log("Tabuada do Sete:")
     for (i = 0; i <= 10; i++) {

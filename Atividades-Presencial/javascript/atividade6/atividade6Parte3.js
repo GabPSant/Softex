@@ -1,4 +1,4 @@
-// Questão 22
+// Questão 22 - é necessário usar o console do navegador
 //Conta a quantidade de divisores
 function contador_de_divisores(inteiro){
     let divisoresQuantidade = 2;
@@ -40,7 +40,7 @@ function encontrarDivisores(){
 }
 // encontrarDivisores();
 
-// Questão 23
+// Questão 23 - é necessário usar o console do navegador
 let getMedia = (soma, divisor) => Number(soma / divisor).toFixed(3);
 
 function mediaAltura(divisor = 5){
@@ -63,7 +63,7 @@ function mediaAltura(divisor = 5){
 }
 //mediaAltura();
 
-// Questão 24
+// Questão 24 - funciona com o node
 function fizz_buzz_FizzBuzz(){
     for(i = 1; i<=100; i++){
         if(i%3 == 0 && i%5 == 0){
@@ -79,7 +79,7 @@ function fizz_buzz_FizzBuzz(){
 }
 //fizz_buzz_FizzBuzz();
 
-// Questão 25
+// Questão 25 - é necessário usar o console do navegador
 function soma_dos_digitos_pares(){
     let numero, soma = 0;
     while(true){
@@ -99,7 +99,7 @@ function soma_dos_digitos_pares(){
 }
 // soma_dos_digitos_pares();
 
-//Questão 26
+//Questão 26 - funciona com o node 
 function reversorDeInteiros(inteiro = 123){
     array = String(inteiro).split('');
     console.log(array);
@@ -111,4 +111,4 @@ function reversorDeInteiros(inteiro = 123){
     }
     console.log(Number(inteiro));
 }
-reversorDeInteiros(414);
+// reversorDeInteiros(414);

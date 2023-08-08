@@ -1,4 +1,4 @@
-// Questão 16
+// Questão 16 - é necessário usar o console do navegador
 let getMedia = (soma, divisor) => Number(soma / divisor).toFixed(3);
 
 function media(divisor = 5) {
@@ -21,7 +21,7 @@ function media(divisor = 5) {
 }
 //media();
 
-// Questão 17
+// Questão 17 - funciona com o node
 function multiploDeTres() {
     for (i = 1; i <= 50; i++) {
         if (i % 3 == 0) { console.log(i); }
@@ -29,7 +29,7 @@ function multiploDeTres() {
 }
 //multiploDeTres();
 
-// Questão 18
+// Questão 18 - é necessário usar o console do navegador
 function maior_e_menor() {
     let resposta, maior, menor;
     const valores = [];
@@ -57,17 +57,17 @@ function maior_e_menor() {
     console.log(valores);
     alert(`Maior valor: ${maior}\nMenor valor: ${menor}`);
 }
-//maior_e_menor();
+// maior_e_menor();
 
-// Questão 19
+// Questão 19 - funciona com o node
 function numerosImpares() {
     for (i = 1; i <= 100; i++) {
         if (i % 2 != 0) { console.log(i); }
     }
 }
-numerosImpares();
+// numerosImpares();
 
-// Questão 20
+// Questão 20 - é necessário usar o console do navegador
 function notasAlunos() {
     let resposta;
     const alunos = [], aprovados = [], reprovados = [];
@@ -90,7 +90,7 @@ function notasAlunos() {
 }
 // notasAlunos();
 
-// Questão 21
+// Questão 21 - é necessário usar o console do navegador
 function soma_dos_digitos(){
     let numero, soma = 0;
     while(true){
@@ -108,4 +108,4 @@ function soma_dos_digitos(){
     numeros.forEach(x => {soma += x});
     alert(`Soma dos digitos de ${numero} é igual a ${soma}`);
 }
-soma_dos_digitos();
+// soma_dos_digitos();
