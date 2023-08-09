@@ -70,3 +70,32 @@ Quando um usuário precisa tomar uma decisão, podemos utilizar as estruturas co
 Loop forEach - é uma função nativa dos arrays em JavaScript que permite executar uma função para cada elemento do array. Esse loop é uma forma mais simplificada de percorrer os elementos, especialmente quando você não precisa de controle direto sobre o índice.
 
 * Matriz bidimensional: array que contem arrays (array == matriz unidimensional)
+
+## Algoritmo e Estrutura de Dados
+
+### 1. Filas
+
+* Objetivo: é uma estrutura de dados linear que segue o princípio do "primeiro a entrar, primeiro a sair" (FIFO: First-In-First-Out).
+
+* Características:
+
+> Enfileirar (enqueue) - adicionar um elemento no final da fila [implementasse com push()]
+> Desenfileirar (denqueue) - remover um elemento do início da fila [implementasse com shift()]
+> Frente (front) - consultar o primeiro elemento da fila
+> Fundo (rear) - consultar o último elemento da fila
+> Tamanho - a quantidade de elementos na fila [implementasse com length(), só precisa de length()]
+
+### 2. Listas
+
+* Objetivo: permitem **adicionar**, **remover** e **acessar** elementos por meio de seus índices. Elas são muito versáteis e podem ser usadas para várias tarefas de armazenamento e organização de dados.
+
+* Operações básicas:
+
+> Inserção (insertion) - adiciona um novo elemento em uma posição específica ou no final dela. [implementasse com splice()]
+> Remoção (deletion) - remove um elemento específico da lista. [implementasse com splice() e indexOf()]
+> Busca (search) - procura um elemento específico da lista e retorna a sua posição ou referência. [implementasse com indexOf()]
+> Atualização (update) - modifica o valor de um elemento existente na lista. [implementasse com length()]
+> Tamanho (size) - conta o número de elementos na lista. [implementasse com length(), só precisa de length()]
+> Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos. [implementasse com length(), só precisa de length()]
+
+### 3. Pilhas
