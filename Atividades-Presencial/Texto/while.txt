@@ -1,0 +1,22 @@
+1º Questão
+--> Enumere as diferenças entre os comandos "for" e "while".
+R: 
+    for:
+        - Usado quando se sabe o valor límite para parar a repetição
+        - A variável iterador é definida junto com a estrutura do for.
+        - A condição deve ser específica (ex: i<10 ou i>5) ou vai causar erro.
+        - Permite iteração para listas, avaliando cada espaço de forma ordenada.
+    
+    while:
+        - Usado quando não se sabe ou não é necessário um valor limite para parar a repetição
+        - O contador é opcional (ex: while(true))
+        - Repete infinitamente até a condição ser considerada falsa
+        - Não permite iteração sobre listas
+
+
+2º Questão
+--> Descreva em quais circunstâncias os comandos "for" e "while" devem ser empregados.
+
+R: O for deve ser usado quando é necessário usar uma repetição já definida ou para iterar
+sobre uma lista. Enquanto, o while é usado para repetir um bloco de código continuamente até
+certa condição, não definida, seja considerada errada.

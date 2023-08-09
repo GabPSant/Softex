@@ -77,35 +77,35 @@ function notasAlunos() {
         while (true) {
             resposta = Number(prompt(`Digite a nota do aluno ${i + 1} (entre 0 e 10)`));
             try {
-                if (Number.isNaN(resposta) || resposta < 0 || resposta>10) { throw Error; }
+                if (Number.isNaN(resposta) || resposta < 0 || resposta > 10) { throw Error; }
                 break;
             }
             catch (error) { alert("Esse valor não é aceito, digite um número positivo!"); }
         }
         alunos[i] = resposta;
     }
-    alunos.forEach(i => {(i>=7)?aprovados.push(i):reprovados.push(i);});
-    console.log(aprovados, "\n", reprovados);
+    alunos.forEach(i => { (i >= 7) ? aprovados.push(i) : reprovados.push(i); });
+    console.log(aprovados, reprovados);
     alert(`Alunos aprovados: ${aprovados.length} alunos\nAlunos reprovados: ${reprovados.length} alunos`);
 }
 // notasAlunos();
 
 // Questão 21 - é necessário usar o console do navegador
-function soma_dos_digitos(){
+function soma_dos_digitos() {
     let numero, soma = 0;
-    while(true){
+    while (true) {
         numero = prompt("Digite um número inteiro qualquer");
-        try{
-            if(numero.match(/[(a-z)|(A-Z)]/g) || !Number.isInteger(Number(numero))){ throw Error}
+        try {
+            if (numero.match(/[(a-z)|(A-Z)]/g) || !Number.isInteger(Number(numero))) { throw Error }
             break;
         }
-        catch(error){
+        catch (error) {
             alert("Deve ser um número inteiro, tente novamente");
         }
     }
     const numeros = numero.split('').map(Number); //Separa a string em um array de inteiros
     console.log(numeros);
-    numeros.forEach(x => {soma += x});
+    numeros.forEach(x => { soma += x });
     alert(`Soma dos digitos de ${numero} é igual a ${soma}`);
 }
 // soma_dos_digitos();

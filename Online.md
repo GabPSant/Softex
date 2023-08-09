@@ -73,9 +73,9 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 ## Algoritmo e Estrutura de Dados
 
-### 1. Filas
+### 1. Filas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/fila.js)
 
-* Objetivo: é uma estrutura de dados linear que segue o princípio do "primeiro a entrar, primeiro a sair" (FIFO: First-In-First-Out).
+* Função: é uma estrutura de dados linear que segue o princípio do "primeiro a entrar, primeiro a sair" (FIFO: First-In-First-Out).
 
 * Características:
 
@@ -85,9 +85,9 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 > Fundo (rear) - consultar o último elemento da fila
 > Tamanho - a quantidade de elementos na fila [implementasse com length(), só precisa de length()]
 
-### 2. Listas
+### 2. Listas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/lista.js)
 
-* Objetivo: permitem **adicionar**, **remover** e **acessar** elementos por meio de seus índices. Elas são muito versáteis e podem ser usadas para várias tarefas de armazenamento e organização de dados.
+* Função: permitem **adicionar**, **remover** e **acessar** elementos por meio de seus índices. Elas são muito versáteis e podem ser usadas para várias tarefas de armazenamento e organização de dados.
 
 * Operações básicas:
 
@@ -98,4 +98,14 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 > Tamanho (size) - conta o número de elementos na lista. [implementasse com length(), só precisa de length()]
 > Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos. [implementasse com length(), só precisa de length()]
 
-### 3. Pilhas
+### 3. Pilhas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/pilha.js)
+
+- Função: são fundamentais em programação para realizar gerenciamento de chamadas de funções, desfazer ações ou rastrear estados temporários. Se assemelham a um empilhado de objetos, onde o último item adicionado é o primeiro a ser removido. Essa ordem de operação é conhecida como Last-In-First-Out (LIFO).
+
+- Operações básicas:
+
+> Empilhar (push) -
+> Desempilhar (pop) - 
+> Topo (top) - 
+> Tamanho (size) -
+> Verificar se está vázia (isEmpty) - 

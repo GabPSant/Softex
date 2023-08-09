@@ -126,7 +126,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 6º Aula
 
-#### Estruturas de repetição
+#### Estruturas de repetição (Parte 1)
 
 - Representa um bloco que deve ser repetido um certo número de vezes até certa condição seja alcançada (serve para evitar reescrita de código).
 
@@ -141,3 +141,27 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - break: interrompe totalmente o processo de repetição.
 - continue: pula uma repetição do processo de repetição.
 - É possível fazer iterações de listas ([código explicando o conceito](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/testeFor.js))
+
+### 7º Aula
+
+#### Estruturas de repetição (Parte 2)
+
+##### While
+
+- Ex: **while**(i<x){... i++}
+
+> i - representa uma variável mutável (iterador)
+> i<x - representa uma condição que continua a repetição, enquanto verdadeira
+> i++ - atualização da variável iteradora
+
+- Importância:
+  
+> Usado quando o número de iterações não é conhecida
+> Não precisa definir um contador na estrutura
+> Repete infinitamente enquanto a condição não é atendida
+> Não itera sobre listas (não é ideal, preferrível usar o *for*)
+
+##### Do... While
+
+- Ex: **do**{...}**while**(i<x) 
+- É como o while, mas ele primeiro executa o comando (do) e depois avalia a condição (while). Tem início pré-definido.
