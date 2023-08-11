@@ -71,7 +71,7 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 * Matriz bidimensional: array que contem arrays (array == matriz unidimensional)
 
-## Algoritmo e Estrutura de Dados
+## Algoritmo e Estrutura de Dados [(Pasta com códigos exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados)
 
 ### 1. Filas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/fila.js)
 
@@ -79,11 +79,11 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 * Características:
 
-> Enfileirar (enqueue) - adicionar um elemento no final da fila [implementasse com push()]
-> Desenfileirar (denqueue) - remover um elemento do início da fila [implementasse com shift()]
-> Frente (front) - consultar o primeiro elemento da fila
-> Fundo (rear) - consultar o último elemento da fila
-> Tamanho - a quantidade de elementos na fila [implementasse com length(), só precisa de length()]
+> Enfileirar (enqueue) - adicionar um elemento no final da fila  
+> Desenfileirar (denqueue) - remover um elemento do início da fila  
+> Frente (front) - consultar o primeiro elemento da fila  
+> Fundo (rear) - consultar o último elemento da fila  
+> Tamanho (size) - a quantidade de elementos na fila
 
 ### 2. Listas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/lista.js)
 
@@ -91,21 +91,23 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 * Operações básicas:
 
-> Inserção (insertion) - adiciona um novo elemento em uma posição específica ou no final dela. [implementasse com splice()]
-> Remoção (deletion) - remove um elemento específico da lista. [implementasse com splice() e indexOf()]
-> Busca (search) - procura um elemento específico da lista e retorna a sua posição ou referência. [implementasse com indexOf()]
-> Atualização (update) - modifica o valor de um elemento existente na lista. [implementasse com length()]
-> Tamanho (size) - conta o número de elementos na lista. [implementasse com length(), só precisa de length()]
-> Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos. [implementasse com length(), só precisa de length()]
+> Inserção (insertion) - adiciona um novo elemento em uma posição específica ou no final dela.  
+> Remoção (deletion) - remove um elemento específico da lista.  
+> Busca (search) - procura um elemento específico da lista e retorna a sua posição ou referência.  
+> Atualização (update) - modifica o valor de um elemento existente na lista.  
+> Tamanho (size) - conta o número de elementos na lista.  
+> Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos.
 
 ### 3. Pilhas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/pilha.js)
 
-- Função: são fundamentais em programação para realizar gerenciamento de chamadas de funções, desfazer ações ou rastrear estados temporários. Se assemelham a um empilhado de objetos, onde o último item adicionado é o primeiro a ser removido. Essa ordem de operação é conhecida como Last-In-First-Out (LIFO).
+* Função: são fundamentais em programação para realizar gerenciamento de chamadas de funções, desfazer ações ou rastrear estados temporários. Se assemelham a um empilhado de objetos, onde o último item adicionado é o primeiro a ser removido. Essa ordem de operação é conhecida como Last-In-First-Out (LIFO).
 
-- Operações básicas:
+* Operações básicas:
 
-> Empilhar (push) -
-> Desempilhar (pop) - 
-> Topo (top) - 
-> Tamanho (size) -
-> Verificar se está vázia (isEmpty) - 
+> Empilhar (push) - recebe um parâmetro, que é o elemento que você deseja adicionar à pilha.  
+> Desempilhar (pop) - não recebe parâmetro, pois ela vai desempilhar o elemento do topo da pilha.  
+> Topo (top) - função não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo  
+> Tamanho (size) - não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo.  
+> Verificar se está vázia (isEmpty) - não recebe parâmetro, pois ela apenas verifica se a pilha está vazia.
+
+### **Obs**. Com Node.js em versão 14 ou superior é possivel usar a extensão 'mjs' (module javascript) para exportar e importar arquivos javascript (importante lembrar que tanto o arquivo que importa quanto o que exporta deve ter essa extensão)
