@@ -83,12 +83,12 @@ function notasAlunos() {
     console.log(aprovados, reprovados);
     alert(`Alunos aprovados: ${aprovados.length} alunos\nAlunos reprovados: ${reprovados.length} alunos`);
 }
-notasAlunos();
+//notasAlunos();
 
-// Questão 17 - terminar/testar
+// Questão 17
 function numeros_antes_do_impar() {
-    let numeros = [], resposta;
-    alert("Avaliação de valores (retorna o menor e maior valores digitados)");
+    let numeros = [], resposta, pares =[];
+    alert("Avaliação de valores (vai retornar todos os números pares que vieram antes do primeiro impar)");
     while (true) {
         resposta = Number(prompt("Digite um número inteiro.\nSe quiser terminar o programa digite 0"));
         try {
@@ -97,9 +97,14 @@ function numeros_antes_do_impar() {
         }
         catch (error) { alert("Esse valor não é válido, digite um número inteiro") }
         if (!Number.isNaN(resposta) && Number.isInteger(resposta)) numeros.push(resposta);
-
     }
     if (numeros.length == 0) alert("Não teve nenhum número digitado");
     else {
+        for(const numero of numeros){
+            if(numero%2 !== 0) break;
+            pares.push(numero);
+        }
+        alert(`Lista de valores: ${numeros}\nValores antes do primeiro impar: ${pares}`);
     }
 }
+//numeros_antes_do_impar();
