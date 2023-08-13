@@ -13,6 +13,7 @@ export class ListaLigada{
     addFirst(elemento){// Inserção de elemento no início
         const novoElemento = new Node(elemento);
         novoElemento.proximo = this.cabeca;
+        this.cabeca = novoElemento;
     }
 
     addLast(elemento){// Inserção de elemento no fim
@@ -24,6 +25,29 @@ export class ListaLigada{
                 atual = atual.proximo;
             }
             atual.proximo = novoElemento;
+        }
+    }
+
+    addAt(elemento, posicao){// inserção de elemento em uma posição específica
+        if(posicao<0 || posicao>=this.size()) console.log("Não tem essa posição na lista");
+        else{
+            const novoElemento = new Node(elemento)
+            let atual, anterior;
+
+            if(posicao === 0){
+                novoElemento.proximo = this.cabeca;
+                this.cabeca = novoNode;
+            }
+            else{
+                atual = this.cabeca;
+                
+                for(i = 0; i<posicao; i++){
+                    anterior = atual;
+                    atual = atual.proximo;
+                }
+                novoElemento.proximo = atual;
+                anterior.proximo = novoElemento;
+            }
         }
     }
 
@@ -52,6 +76,26 @@ export class ListaLigada{
         return atual.elemento;
     }
 
+    removeFrom(posicao){// Remove o elemento em uma posição específica
+        if(posicao<0 || posicao>=this.size()) console.log("Não tem essa posição na lista");
+        else{
+            let atual, anterior;
+            atual = this.cabeca;
+            anterior = atual
+
+            if(posicao === 0) this.cabeca = atual.proximo;
+            else{
+                for(i = 0; i<posicao; i++){
+                    anterior = atual
+                    atual = atual.proximo;
+                }
+
+                anterior.proximo = atual.proximo;
+            }
+            return atual.elemento;
+        }
+    }
+
     search(elemento){// Busca um elemento específico na lista e retorna sua posição
         let atual = this.cabeca;
         while(atual !== null){
@@ -70,6 +114,8 @@ export class ListaLigada{
         }
         return contador;
     }
+    
+    isEmpty = () => {return this.size() === 0}// Avalia se a lista está vázia
 
     printList(){// Retorna a lista encadeada
         let atual = this.cabeca;
@@ -80,3 +126,10 @@ export class ListaLigada{
         }
     }
 }
+
+const lista = new ListaLigada();
+lista.addFirst({nome: "Maria", idade: 73});
+lista.addFirst({nome: "Cristiane", idade: 43});
+lista.addFirst({nome: "Rodrigo", idade: 25});
+lista.addFirst({nome: "Mario", idade: 2});
+console.log(lista);

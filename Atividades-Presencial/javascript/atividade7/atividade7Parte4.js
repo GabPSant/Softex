@@ -74,4 +74,4 @@ function pares_e_contador_impar(){
         alert(`Números pares digitados: ${pares}\nQuantidade de números impares: ${contadorImpares}`);
     }
 }
-pares_e_contador_impar();
+//pares_e_contador_impar();

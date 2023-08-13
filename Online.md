@@ -71,9 +71,9 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 * Matriz bidimensional: array que contem arrays (array == matriz unidimensional)
 
-## Algoritmo e Estrutura de Dados [(Pasta com códigos exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados)
+## [Algoritmo e Estrutura de Dados](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados)
 
-### 1. Filas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/fila.mjs)
+### 1. [Filas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/fila.mjs)
 
 * Função: é uma estrutura de dados linear que segue o princípio do "primeiro a entrar, primeiro a sair" (FIFO: First-In-First-Out).
 
@@ -85,7 +85,7 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 > Fundo (rear) - consultar o último elemento da fila  
 > Tamanho (size) - a quantidade de elementos na fila
 
-### 2. Listas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/lista.mjs)
+### 2. [Listas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/lista.mjs)
 
 * Função: permitem **adicionar**, **remover** e **acessar** elementos por meio de seus índices. Elas são muito versáteis e podem ser usadas para várias tarefas de armazenamento e organização de dados.
 
@@ -98,7 +98,7 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 > Tamanho (size) - conta o número de elementos na lista.  
 > Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos.
 
-### 3. Pilhas [(código exemplo)](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/pilha.mjs)
+### 3. [Pilhas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/pilha.mjs)
 
 * Função: são fundamentais em programação para realizar gerenciamento de chamadas de funções, desfazer ações ou rastrear estados temporários. Se assemelham a um empilhado de objetos, onde o último item adicionado é o primeiro a ser removido. Essa ordem de operação é conhecida como Last-In-First-Out (LIFO).
 
@@ -112,7 +112,7 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 
 #### **Obs**. Com Node.js em versão 14 ou superior é possivel usar a extensão 'mjs' (module javascript) para exportar e importar arquivos javascript (importante lembrar que tanto o arquivo que importa quanto o que exporta deve ter essa extensão)
 
-## Estruturas de Dados Dinamicas
+## [Estruturas de Dados Dinamicas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados_dinamicos)
 
 ### Arvores
 
@@ -174,3 +174,36 @@ Loop forEach - é uma função nativa dos arrays em JavaScript que permite execu
 > removeFirst: Esse método sempre remove o primeiro elemento de uma lista ligada, o qual sempre será o primeiro e, por isso, sempre será a cabeça da lista ligada. Dessa forma, a nova cabeça será o próximo nó da cabeça que será removida.  
 > removeLast: Esse método sempre remove o último elemento de uma lista ligada. Para isso, deve-se sempre começar da cabeça da lista, verificando se o próximo é vazio. Se o próximo de um nó for vazio, esse é o nó que será removido.
 > search: Verifica se o elemento do nó é igual ao que está sendo pesquisado. Se sim, retorna o nó encontrado. Caso contrário, vai para o próximo do nó e continua pesquisando. Se chegar ao fim da lista e ainda não ter encontrado o nó, o valor retornado é nulo.
+
+## [Algoritmos de Busca](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/algoritmos_de_busca)
+
+* Essas ferramentas nos permitem localizar elementos em listas, vetores ou estruturas de dados de forma rápida e inteligente.
+* São técnicas fundamentais na ciência da computação e têm aplicação em diversas áreas, como pesquisa em bancos de dados e resolução de problemas em inteligência artificial.
+* Eles permitem que você encontre um elemento específico em uma estrutura de dados, como lista, array ou árvore, de forma eficiente.
+* Existem diferentes tipos de algoritmos de busca, sendo os principais a **busca linear** e a **busca binária**. Ambos possuem as suas particularidades e são os mais adequados para determinados cenários.
+
+### Busca linear ou sequencial
+
+* É o método mais simples de busca, no qual os elementos são percorridos sequencialmente até que o valor procurado seja encontrado ou a busca termine. Ele é útil quando a coleção de dados não está ordenada ou quando não se sabe a posição exata do elemento procurado. No pior caso, a busca linear tem uma complexidade de tempo *O(n)*, sendo "n" o número de elementos na coleção.
+* Essa abordagem é útil quando os elementos estão desordenados ou quando a lista é **pequena o suficiente** para ser percorrida facilmente.
+* Conceitos:
+
+> 1. *Coleção de dados*: Essa estrutura contém os elementos que serão pesquisados. Pode ser um array, uma lista ou qualquer outra que possibilita o acesso sequencial aos elementos.  
+> 2. *Elemento de busca*: É o valor que desejamos encontrar na coleção de dados.  
+> 3. *Percorrer a coleção*: Significa analisar cada elemento da coleção até que o buscado seja encontrado.  
+> 4. *Complexidade de tempo*: No pior caso, a busca linear precisa percorrer todos os elementos da coleção. Portanto, a sua complexidade de tempo é O(n), sendo "n" o número de elementos na coleção.
+
+* Obs. Não muito eficiênte para grandes conjuntos de dados.
+
+### Busca binária
+
+* É o método mais eficiente para aplicar em coleções ordenadas. A sua estratégia consiste em dividir, repetidamente, a coleção ao meio, descartando metade dos elementos a cada passo até que o valor seja encontrado.
+* A busca binária tem uma complexidade de tempo O(log n), que é consideravelmente mais rápida do que a busca linear, especialmente em coleções grandes.
+* A busca binária é uma estratégia inteligente, pois **reduz significativamente** o espaço de busca a cada tentativa.
+* Conceitos:
+
+> 1. *Coleção ordenada de dados*: A busca binária exige que a coleção de dados esteja ordenada, seja em ordem crescente ou decrescente. Caso contrário, não será possível aplicar a estratégia de descarte da metade da coleção.
+> 2. *Divisão recursiva*: O algoritmo divide, repetidamente, a coleção ao meio, comparando o valor buscado com o do meio da coleção. Dependendo da comparação, o algoritmo prossegue com a busca na metade esquerda ou direita da coleção.
+> 3. *Complexidade de tempo*: A complexidade de tempo da busca binária é O(log n), sendo "n" o número de elementos na coleção. Isso significa que a busca binária é muito mais rápida em coleções grandes do que a busca linear O(n), tornando-a uma opção muito eficiente.
+
+* Obs. Só funciona em coleções ordenadas, muito eficiente para grandes conjuntos de dados.
