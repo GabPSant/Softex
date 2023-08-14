@@ -1,4 +1,4 @@
-# Softex
+# [Softex](https://softex.br/)
 
 ## 1º Disciplina (lógica de programação e JavaScript)
 
@@ -155,13 +155,20 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 > i++ - atualização da variável iteradora
 
 - Importância:
-  
+
 > Usado quando o número de iterações não é conhecida
 > Não precisa definir um contador na estrutura
 > Repete infinitamente enquanto a condição não é atendida
-> Não itera sobre listas (não é ideal, preferrível usar o *for*)
+> Não itera sobre listas (não é ideal, preferrível usar o _for_)
 
 ##### Do... While
 
-- Ex: **do**{...}**while**(i<x) 
+- Ex: **do**{...}**while**(i<x)
 - É como o while, mas ele primeiro executa o comando (do) e depois avalia a condição (while). Tem início pré-definido.
+
+### 8º Aula
+
+#### Funções
+
+- São usadas para **agrupar blocos de código** e **evitar a repetição deles**.
+- Uma função pode **recebe parametros de entrada** e **emite uma saída**
