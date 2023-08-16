@@ -1,6 +1,6 @@
 # [Softex](https://softex.br/)
 
-## 1º Disciplina (lógica de programação e JavaScript)
+## 1º Módulo (lógica de programação e JavaScript)
 
 ### 1º Aula
 
@@ -172,3 +172,43 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - São usadas para **agrupar blocos de código** e **evitar a repetição deles**.
 - Uma função pode **recebe parametros de entrada** e **emite uma saída**
+
+## 2º Módulo (HTML/CSS)
+
+### 9º Aula
+
+- revisão geral e fim do 1º módulo;
+
+#### HTML (HyperText Markup Language)
+
+##### Tags
+
+- Função: são usadas para **envolver elementos** e definir sua função
+- html -> tag que contem todo o arquivo/estrutura html
+- head -> contem a metadata do seu arquivo
+
+> Obs. (meta charset = "UTF-8) contem o arquivo de dados do HTML
+
+###### 1. Tags de texto
+
+- Títulos e subtítulos (h1 a h6): permite criar títulos (h1) e subtítulos (h2 a h6) na página
+- Parágrafo (p): permite criar textos parágrafos padrão (cada um quebra a linha)
+- Outros tipos:
+
+> strong -> negrito  
+> em -> texto em itálico  
+> span -> tag génerica de texto  
+> br -> quebra de linha (precisa de uma para quebrar)
+
+###### 2. Tágs de lista
+
+- Listas ordenadas (ol -> ordeneted list): cria listas ordenadas
+- Listas aninhadas (ul -> unordeneted list): cria listas não ordenadas
+
+> Obs. li (list item) -> defini o elemento especifico da lista
+
+###### 3. Links e navegação
+
+- links básicos:
+  > a (anchor/âncora) -> tag que contem o link
+  > href = "link url ou arquivo local" -> defini o destino do link
