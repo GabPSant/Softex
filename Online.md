@@ -214,3 +214,94 @@
 
 - Linguagem de Marcação de [Hipertexto](https://tableless.com.br/sobre-hipertextos/), em português, é um conjunto de sinais e códigos aplicados a um texto, que contribui para definir exibições na tela e estruturas de dados em um sistema.
 - Serve para o navegador interpretar os elementos de uma página. É ela que dá a estrutura da página, ou seja, dá significado e organiza as informações de uma página na web. Sem a HTML, o navegador não conseguiria exibir textos, elementos ou carregar imagens.
+- Surgiu a partir da necessidade de criar, editar e compartilhar hipertextos pela internet.
+
+#### Tags/Hipertexto
+
+- DOM (Document Object Model ou Módelo de Objeto de Documentos): é um modelo de documento carregado pelo navegador. Este documento é representado através de uma árvore de nós, onde cada um destes nós representa uma parte do documento (por ex. um elemento, texto ou comentário).
+- Função: as tags são estruturas de linguagem de marcação. Elas contêm instruções que servem para informar a estrutura do site ao navegador e construir elementos da HTML. Quando são utilizadas corretamente, elas contribuem bastante para o [SEO](https://rockcontent.com/br/blog/o-que-e-seo/) de um site.
+
+##### Atributos
+
+1. **class**: Atribui uma classe CSS para uma tag. Isso faz com que a CSS e a linguagem Javascript selecionem e acessem elementos específicos do código HTML;
+2. **id**: Atribui um id CSS para uma tag. Seu objetivo é identificar o elemento quando utilizar scripts ou estilizar com CSS;
+3. **href**: Referenciar um URL externo, seja um link ou um arquivo;
+4. **src**: Atribui um URL para um conteúdo. Por exemplo, uma imagem ou um arquivo;
+5. **type**: Atribui o tipo do elemento;
+6. **value**: Atribui o valor padrão de um elemento.
+
+##### Classificação/Tipos de tags
+
+- É possível categorizar as tags em dois tipos: o block-level (nível de bloco) e o inline (em linha). O primeiro ocupa todo o espaço do seu elemento pai e o segundo ocupa apenas o espaço do seu conteúdo.
+
+- Tags básicas (servem para definir a estrutura fundamental da página):
+
+> DOCTYPE - Responsável pela versão HTML usada na página e a tag HTML.  
+> HTML - estrutura a página web  
+
+- Tags metadados (responsáveis para guardar informações da página como estilos, scripts e dados. Ajuda na renderização da página pelo navegador):
+
+> head  
+> link  
+> meta  
+> style  
+> title
+
+- Tags de separação de contéudo (responsáveis pela organização lógica da página):
+
+> address - Contêm as informações de contato do autor
+> h1 a h6 - Definem o tamanho do título
+> article
+> aside
+> footer
+> header
+
+- Tags de texto (responsáveis por todos os tipos de texto que serão impressos na página):
+
+> blockcote
+> p
+> hr
+> div
+> ol
+> ul
+> li
+> pri
+
+- Tags para semântica textual inline (utilizada para definir a estrutura, linha ou significado de qualquer outro tipo de texto):
+
+> a
+> b
+> br
+> q
+> strong
+
+- Tags de multimídia (Manipulam imagens e vídeos):
+
+> img
+> iframe
+> picture
+> source
+
+- Tags de tabelas (são usadas, hoje em dia, na criação de templates de e-mail):
+
+> table
+> tbody
+> td
+> tr
+
+- Tags de formulário (usadas para criar formatação e input):
+
+> form
+> input
+> label
+> button
+> fieldset
+> legend
+> option
+> textarea
+
+- Tags de Script (permitem a ligação direta da linguagem JavaScript para objetos dinâmicos):
+
+> canvas
+> noscript
+> script
