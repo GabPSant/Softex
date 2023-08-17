@@ -39,11 +39,7 @@ const objeto = { nome: "João", voz: "Grossa", idade: 423 };
 
 // Questão 18
 function calcularPrecoProduto(valorCusto, margemLucro, valorFrete) {
-  if (
-    typeof valorCusto !== "number" ||
-    typeof margemLucro !== "number" ||
-    typeof valorFrete !== "number"
-  ) {
+  if (typeof(valorCusto) !== "number" ||typeof(margemLucro) !== "number" ||typeof(valorFrete) !== "number") {
     return "Pelo menos um dos valores não é aceitavel";
   }
   return valorCusto + (valorCusto * margemLucro) / 100 + valorFrete;
@@ -61,13 +57,8 @@ function maiorPalavra(frase) {
   }
   return maiorPalavra;
 }
-/*
-console.log(
-  maiorPalavra(
-    "O mundo é um livro, e quem fica sentado em casa lê somente uma página."
-  )
-);
-*/
+//console.log(maiorPalavra("O mundo é um livro, e quem fica sentado em casa lê somente uma página."));
+
 
 // Questão 20
 const listaPalavras = ["Hello", "World", "in", "a", "frame"];
@@ -88,3 +79,32 @@ function caixaPalavras(listaPalavras) {
 //caixaPalavras(listaPalavras);
 
 // Questão 21
+const palavras = ["palavras","Palavras","pequenas","Grandes","MEDIAS","dois","um","mais"];
+
+function stringsCincoOuMais(arrayStrings){
+  let stringsMais5 = [];
+  for(const string of arrayStrings){
+    if(string.length >= 5) stringsMais5.push(string);
+  }
+  return stringsMais5;
+}
+//console.log(stringsCincoOuMais(palavras));
+
+// Questão 22
+let livros = [], i = 1;
+for(index = 1; index<=100; index++){
+  livros.push({
+    titulo: `Livro ${index}`,
+    autor: `Autor ${i}`,
+    ano: 1922 + index
+  });
+  if(index%10 === 0) i++;
+}
+function livrosDeCertoAutor(livros, autor){
+  let livrosAutor = [];
+  for(const livro of livros){
+    if(livro.autor === autor) livrosAutor.push(livro);
+  }
+  return livrosAutor;
+}
+//console.log(livrosDeCertoAutor(livros,"Autor 3"));
