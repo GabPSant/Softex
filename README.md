@@ -1,6 +1,21 @@
 # [Softex](https://softex.br/)
 
-## 1º Módulo (lógica de programação e JavaScript)
+## Indíce
+
+- [1º Matéria (lógica de programação e JavaScript)](#1º-matéria)
+  - [1º Aula (Conceitos básicos - Parte 1)](#1º-aula)
+  - [2º Aula (Conceitos básicos - Parte 2)](#2º-aula)
+  - [3º Aula (Conceitos básicos - Parte 3)](#3º-aula)
+  - [4º Aula (Entrada e manipulação de dados)](#4º-aula)
+  - [5º Aula (Condicionais e controle de fluxo)](#5º-aula)
+  - [6º Aula (Estruturas de repetição - Parte 1)](#6º-aula)
+  - [7º Aula (Estruturas de repetição - Parte 2)](#7º-aula)
+  - [8º Aula (Funções)](#8º-aula)
+- [2º Matéria (HTML/CSS)](#2º-matéria-htmlcss)
+  - [9º Aula (HTML - Parte 1)](#9º-aula)
+  - [10º Aula (HTML - Parte 2)](#10º-aula)
+
+## 1º Matéria (lógica de programação e JavaScript)
 
 ### 1º Aula
 
@@ -32,7 +47,7 @@
 > 2. Pela plataforma [CodePen](https://codepen.io/)
 > 3. Pelo Visual Studio Code (VS Code)
 
-##### **--> Tipos de dados e variáveis**
+##### **Tipos de dados e variáveis**
 
 - Criando Arquivos base
 
@@ -43,7 +58,7 @@
 
 > 1. String (valores com texto)
 > 2. Integer (números sem vírgula)
-> 3. Float (númweros com vírgula)
+> 3. Float (números com vírgula)
 > 4. Boolean (valores binários [1,0 / sim ou não])
 > 5. Objeto (conjunto de valores)
 
@@ -63,7 +78,7 @@
 
 - typeof("tipo de", serve para apresentar o tipo de uma variável)(Exemplo: console.log(typeof nome))
 
-##### **--> Operadores Lógicos**
+##### **Operadores Lógicos**
 
 - Operadores matemáticos básicos (+, -, \*, /, %, ==, !=, >, <)
 
@@ -101,7 +116,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 5º Aula
 
-#### Condição e controle de fluxo
+#### Condicionais e controle de fluxo
 
 ##### 1. Condicionais simples
 
@@ -173,13 +188,13 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - São usadas para **agrupar blocos de código** e **evitar a repetição deles**.
 - Uma função pode **recebe parametros de entrada** e **emite uma saída**
 
-## 2º Módulo (HTML/CSS)
+## 2º Matéria (HTML/CSS)
 
 ### 9º Aula
 
 - revisão geral e fim do 1º módulo;
 
-#### HTML (HyperText Markup Language)
+#### HTML (HyperText Markup Language) - Parte 1
 
 ##### Tags
 
@@ -212,3 +227,76 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - links básicos:
   > a (anchor/âncora) -> tag que contem o link
   > href = "link url ou arquivo local" -> defini o destino do link
+
+### 10º aula
+
+#### HTML (HyperText Markup Language) - Parte 2
+
+##### Tags
+
+###### 4. Imagens e mídia
+
+- Imagem (img):
+  > src -> para buscar um arquivo de imagem  
+  > alt -> descrição alternativa da imagem
+
+- Vídeo (video):
+  > src -> para buscar um arquivo de vídeo  
+  > controls -> adiciona controles de repetição do vídeo
+
+- Áudio (audio):
+  > src -> para buscar um arquivo de áudio  
+  > controls -> adiciona controles de reprodução de áudio
+
+###### 5. Tabelas
+
+- table: tag de *contêiner* principal para a tabela
+- tr: define uma *linha* na tabela
+- th: é usado para *cabeçalhos* de coluna
+- td: define as *células* dos dados
+<br></br>
+- thead : define o cabeçalho da tabela (isso ajuda a diferenciar visualmente o cabeçalho do restante da tabela)
+- tbody : define o corpo da tabela
+- tfoot : define o rodapé da tabela (é comumente usado para <ins>informações adicionais</ins> sobre a tabela)
+
+###### 6. Formulários
+- form: usado para criar formulários em HTML
+- Tipos de entrada
+  > input:  
+  > --> Texto  
+  > --> Senha  
+  > --> Múltipla escolha  
+  > --> Caixa de seleção  
+
+  > select: uso do comando option (serve para definir opções para o usuário)
+
+- button: envio do formulário
+- Rótulos (label)
+  > label - é usado para <ins>associar</ins> um rótulo a um elemento de formulário.  
+  > for - é usado em label **para corresponder ao atributo** id **do elemento de formulário**
+
+- Agrupamentos de elementos de formulário
+  > fieldset - define o bloco de agrupamento  
+  > legend - fornece uma legenda descritiva para o grupo
+
+###### 7. Estruturação avançada
+
+- tag div: usada para criar uma divisão lógica ou seção de contéudo (é uma tag genérica que pode seu usada para <ins>agrupar elementos</ins> e <ins>aplicar estilos</ins> ou comportamentos a eles)
+- Seções
+  > Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios. 
+
+  > Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.  
+
+  > Conteúdo principal (main): é usada para **envolver o conteúdo principal** de um documento. Geralmente, **só deve háver um main** por página, e ele deve conter o contéudo central do documento.  
+
+  > Seções (section): é usada para **divider o conteúdo de uma página** em seções temáticas distintas. Ela é usada para **agrupar e estruturar semanticamente** o contéudo relacionado.  
+
+  > Composição (article): é usada para **representar uma composição autônome** e independendte dentro de uma página. Ela é adequada para contéudo que pode  ser distribuído e **reutilizado** de forma independente , como **postagens de blog**, **notícias**, etc.
+
+  > Conteúdo relacionado (aside): é usada para **representar conteúdo relacionado** ou suplementar que está separado do conteúdo principal. Ela pode conter informações adicionais, como **barras laterais**, **anúncios**, **contéudo relacionado**, entre outros.
+
+  > Rodapé (footer): é usada para **representar o rodapé de um documento** ou seção. Geralmente, é usada para incluir **informações de direitos autorais**, **links para páginas relacionais**, **informações de contato**, entre outros.
+
+- Visão geral:
+  - Essas tags fornecem **uma melhor semântica e estruturação** do conteúdo.  
+  - **Não são obrigátorias**, e o seu emprego deve ser feito **de acordo com a finalidade e estrutura do seu site**.

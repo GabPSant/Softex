@@ -1,0 +1,89 @@
+Conhecendo o HTML e sua estrutura básica
+
+1º Questão: O que é o HTML e qual é o seu papel na construção de páginas web? Descreva brevemente a
+estrutura básica de um documento HTML.
+R - O HTML, sigla para HyperText Markup Language (Linguagem de Marcação de HiperTexto), é uma linguagem de marcação
+usada para definir e organizar a estruutra de páginas web. A estrutura básica de um arquivo HTML teria o !DOCTYPE
+(que define o tipo de arquivo para HTML), head (que contem todos os dados relacionados a links e metadata do arquivo)
+e body (que contem o conteudo da página web).
+
+2º Questão: Como o HTML se relaciona com outras tecnologias da web, como o CSS e o JavaScript? Como essas
+três tecnologias trabalham em conjunto para criar páginas web interativas e estilizadas?
+R - Ele contem comandos e funções que ajudam na implementação dos arquivos CSS e JavaScript ao estruturar a página
+web. Se usa o HTML para estruturar e organizar as informações das páginas web, o CSS para deixa-lás mais estilizadas
+e o JavaScript para criar uma interação com os usuários e desenvolver uma página mais dinâmica.
+
+
+Identificando tags HTML básicas
+
+1º Questão: Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê exemplos de situações em
+que você as usaria ao construir uma página web.
+R:
+--> <h1> - <h6>
+    Ex - 
+--> <p>
+    Ex - 
+--> <a>
+    Ex - 
+
+2º Questão: Além das tags mencionadas, qual é a importância das tags de listagem, como <ul> e <ol>, no
+contexto da estruturação de conteúdo em uma página? Dê exemplos de quando você escolheria
+uma sobre a outra.
+R - 
+
+
+Vinculando páginas, arquivos e âncoras
+
+1º Questão: Como a tag <a> é utilizada para criar links em HTML? Explique como você pode vincular para outras
+páginas, para arquivos locais e criar âncoras dentro de uma página.
+R - 
+
+2º Questão: Além do atributo href, quais outros atributos importantes a tag <a> pode ter? Como o atributo
+target pode ser usado para controlar como o link é aberto pelo navegador?
+R - 
+
+
+Incorporando imagens e mídias
+
+1º Questão: Descreva a diferença entre os atributos src e alt em relação à tag <img>. Por que é importante
+fornecer um atributo alt adequado para imagens?
+R - 
+
+2º Questão: Além de imagens, quais outros tipos de mídia podem ser incorporados em uma página HTML?
+Como você pode garantir que a mídia incorporada seja responsiva e se ajuste bem em diferentes
+dispositivos?
+R - 
+
+
+Criando tabelas básicas
+
+1º Questão: Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags
+<th> e <td>, e quando você as usaria.
+R - 
+
+2º Questão: Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em
+favor de outras formas de apresentação de dados. Por quê? E quais são os cenários em que as
+tabelas são apropriadas?
+R - 
+
+
+Criando formulários
+
+1º Questão: Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos
+diferentes de campos de entrada (<input>) que podem ser usados em um formulário.
+R - 
+
+2º Questão: Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para
+melhorar a usabilidade e a experiência do usuário?
+R - 
+
+
+Técnicas avançadas de estruturação com elementos HTML5 semânticos
+
+1º Questão: O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma
+página? Cite três exemplos de elementos semânticos e explique quando você os usaria.
+R - 
+
+2º Questão: Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por
+que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
+R - 
