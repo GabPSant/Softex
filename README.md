@@ -2,7 +2,7 @@
 
 ## Indíce
 
-- [1º Matéria (lógica de programação e JavaScript)](#1º-matéria)
+- [1º Matéria (lógica de programação e JavaScript)](#1º-matéria-lógica-de-programação-e-javascript)
   - [1º Aula (Conceitos básicos - Parte 1)](#1º-aula)
   - [2º Aula (Conceitos básicos - Parte 2)](#2º-aula)
   - [3º Aula (Conceitos básicos - Parte 3)](#3º-aula)
@@ -250,16 +250,16 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ###### 5. Tabelas
 
-- table: tag de *contêiner* principal para a tabela
-- tr: define uma *linha* na tabela
-- th: é usado para *cabeçalhos* de coluna
-- td: define as *células* dos dados
-<br></br>
+- table: tag de **contêiner** principal para a tabela
+- tr: define uma **linha** na tabela
+- th: é usado para **cabeçalhos** de coluna
+- td: define as **células** dos dados
 - thead : define o cabeçalho da tabela (isso ajuda a diferenciar visualmente o cabeçalho do restante da tabela)
 - tbody : define o corpo da tabela
 - tfoot : define o rodapé da tabela (é comumente usado para <ins>informações adicionais</ins> sobre a tabela)
 
 ###### 6. Formulários
+
 - form: usado para criar formulários em HTML
 - Tipos de entrada
   > input:  
@@ -267,35 +267,28 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   > --> Senha  
   > --> Múltipla escolha  
   > --> Caixa de seleção  
-
   > select: uso do comando option (serve para definir opções para o usuário)
 
 - button: envio do formulário
 - Rótulos (label)
-  > label - é usado para <ins>associar</ins> um rótulo a um elemento de formulário.  
-  > for - é usado em label **para corresponder ao atributo** id **do elemento de formulário**
+  - label - é usado para <ins>associar</ins> um rótulo a um elemento de formulário.  
+  - for - é usado em label **para corresponder ao atributo** id **do elemento de formulário**
 
 - Agrupamentos de elementos de formulário
-  > fieldset - define o bloco de agrupamento  
-  > legend - fornece uma legenda descritiva para o grupo
+  - fieldset - define o bloco de agrupamento  
+  - legend - fornece uma legenda descritiva para o grupo
 
 ###### 7. Estruturação avançada
 
 - tag div: usada para criar uma divisão lógica ou seção de contéudo (é uma tag genérica que pode seu usada para <ins>agrupar elementos</ins> e <ins>aplicar estilos</ins> ou comportamentos a eles)
 - Seções
-  > Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios. 
-
-  > Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.  
-
-  > Conteúdo principal (main): é usada para **envolver o conteúdo principal** de um documento. Geralmente, **só deve háver um main** por página, e ele deve conter o contéudo central do documento.  
-
-  > Seções (section): é usada para **divider o conteúdo de uma página** em seções temáticas distintas. Ela é usada para **agrupar e estruturar semanticamente** o contéudo relacionado.  
-
-  > Composição (article): é usada para **representar uma composição autônome** e independendte dentro de uma página. Ela é adequada para contéudo que pode  ser distribuído e **reutilizado** de forma independente , como **postagens de blog**, **notícias**, etc.
-
-  > Conteúdo relacionado (aside): é usada para **representar conteúdo relacionado** ou suplementar que está separado do conteúdo principal. Ela pode conter informações adicionais, como **barras laterais**, **anúncios**, **contéudo relacionado**, entre outros.
-
-  > Rodapé (footer): é usada para **representar o rodapé de um documento** ou seção. Geralmente, é usada para incluir **informações de direitos autorais**, **links para páginas relacionais**, **informações de contato**, entre outros.
+  - Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios.  
+  - Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.  
+  - Conteúdo principal (main): é usada para **envolver o conteúdo principal** de um documento. Geralmente, **só deve háver um main** por página, e ele deve conter o contéudo central do documento.  
+  - Seções (section): é usada para **divider o conteúdo de uma página** em seções temáticas distintas. Ela é usada para **agrupar e estruturar semanticamente** o contéudo relacionado.  
+  - Composição (article): é usada para **representar uma composição autônome** e independendte dentro de uma página. Ela é adequada para contéudo que pode  ser distribuído e **reutilizado** de forma independente , como **postagens de blog**, **notícias**, etc.
+  - Conteúdo relacionado (aside): é usada para **representar conteúdo relacionado** ou suplementar que está separado do conteúdo principal. Ela pode conter informações adicionais, como **barras laterais**, **anúncios**, **contéudo relacionado**, entre outros.
+  - Rodapé (footer): é usada para **representar o rodapé de um documento** ou seção. Geralmente, é usada para incluir **informações de direitos autorais**, **links para páginas relacionais**, **informações de contato**, entre outros.
 
 - Visão geral:
   - Essas tags fornecem **uma melhor semântica e estruturação** do conteúdo.  
