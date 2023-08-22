@@ -241,67 +241,67 @@
 
 - Tags metadados (responsáveis para guardar informações da página como estilos, scripts e dados. Ajuda na renderização da página pelo navegador):
 
-> head  
-> link  
-> meta  
-> style  
-> title
+> head -  
+> link -  
+> meta -  
+> style -  
+> title -
 
 - Tags de separação de contéudo (responsáveis pela organização lógica da página):
 
 > address - Contêm as informações de contato do autor
 > h1 a h6 - Definem o tamanho do título
-> article
-> aside
-> footer
-> header
+> article -
+> aside -
+> footer -
+> header -
 
 - Tags de texto (responsáveis por todos os tipos de texto que serão impressos na página):
 
-> blockcote
-> p
-> hr
-> div
-> ol
-> ul
-> li
-> pri
+> blockcote -
+> p -
+> hr -
+> div -
+> ol -
+> ul -
+> li -
+> pri -
 
 - Tags para semântica textual inline (utilizada para definir a estrutura, linha ou significado de qualquer outro tipo de texto):
 
-> a
-> b
-> br
-> q
-> strong
+> a -  
+> b  
+> br -  
+> q -  
+> strong -
 
 - Tags de multimídia (Manipulam imagens e vídeos):
 
-> img
-> iframe
-> picture
-> source
+> img -
+> iframe -
+> picture -
+> source -
 
 - Tags de tabelas (são usadas, hoje em dia, na criação de templates de e-mail):
 
-> table
-> tbody
-> td
-> tr
+> table -
+> tbody -
+> td -
+> tr -
 
 - Tags de formulário (usadas para criar formatação e input):
 
-> form
-> input
-> label
-> button
-> fieldset
-> legend
-> option
-> textarea
+> form -
+> input -
+> label -
+> button -
+> fieldset -
+> legend -
+> option -
+> textarea -
 
 - Tags de Script (permitem a ligação direta da linguagem JavaScript para objetos dinâmicos):
 
-> canvas
-> noscript
-> script
+> canvas -
+> noscript -
+> script -
