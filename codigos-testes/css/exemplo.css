@@ -1,0 +1,55 @@
+#caixa{
+    width: 400px; /*Defini o comprimento do elemento*/
+    height: 100px; /*Defini a altura do elemento*/
+    justify-content: center;
+    background-color: red;
+    padding: 20px; /*Defini um espaço entre o conteudo e a borda*/
+    border: 2px solid black; /*Usada para definir a borda*/
+    margin: 20px; /* Defini a margem do elemento*/
+}
+p{
+    align-self: center;
+    color: rgba(13, 230, 121, 0.888); /*RGB (red-green-blue), serve para definir a cor em relação a uma escala*/
+}
+
+.container{ /*Explicações do Flexbox*/
+    flex-direction: row;
+    /*
+        row: linha padrão (sentido da esquerda para à direita)
+        row-reverse: linha reversa (sentido da direita para à esquerda)
+        column: coluna padrão (sentido de cima para baixo)
+        column-reverse: coluna reversa (sentido de baixo para cima)
+    */
+    flex-wrap: nowrap;
+    /*
+        nowrap: força a ficar na mesma linha (padrão/default)
+        wrap: defini que ficam em linhas diferentes (sentido de cima para baixo)
+        wrap-reverse: defini que ficam em linhas diferentes (sentido de baixo para cima)
+    */
+    justify-content: flex-start;
+    /*
+        flex-start: alinha os itens no lado esquerdo do conteiner
+        flex-end: alinha os itens no lado direito do conteiner
+        center: alinha os itens no centro do conteiner
+        space-between: define espaços iguais entre os elementos
+        space-around: define espaços iguais ao redor dos elementos
+        space-evenly: define espaços
+    */
+    align-items: stretch;
+    /*
+        stretch: os itens são alargados para conter todo o conteiner
+        flex-start: aparecem no topo do conteiner
+        flex-end: aparecem no fundo do conteiner
+        center: aparecem no centro do conteiner
+        baseline:
+    */
+    align-content: flex-start;
+    /*
+        flex-start:
+        flex-end:
+        center:
+        space-between:
+        space-around:
+        stretch:
+    */
+}

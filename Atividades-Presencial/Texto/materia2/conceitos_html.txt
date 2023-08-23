@@ -19,9 +19,9 @@ Identificando tags HTML básicas
 1º Questão: Cite três tags HTML básicas e explique o propósito de cada uma delas. Dê exemplos de situações em
 que você as usaria ao construir uma página web.
 R:
---> <h1> - <h6>
+--> <h1> - <h6> (tags de cabeçalho, são usadas)
     Ex - 
---> <p>
+--> <p> (tag de parágrafo)
     Ex - 
 --> <a>
     Ex - 

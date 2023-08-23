@@ -14,6 +14,7 @@
 - [2º Matéria (HTML/CSS)](#2º-matéria-htmlcss)
   - [9º Aula (HTML - Parte 1)](#9º-aula)
   - [10º Aula (HTML - Parte 2)](#10º-aula)
+  - [11º Aula (Introdução ao CSS)](#11º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -293,3 +294,37 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - Visão geral:
   - Essas tags fornecem **uma melhor semântica e estruturação** do conteúdo.  
   - **Não são obrigátorias**, e o seu emprego deve ser feito **de acordo com a finalidade e estrutura do seu site**.
+
+### 11º Aula
+
+#### CSS (Cascading Style Sheets) [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/scss/exemplo.html)
+
+- Conceitos básicos
+  - É uma **linguagem de estilo** utilizada para definir a **apresentação e o design de páginas web**
+  - É a ferramenta essencial para **controlar o layout**, as **cores**, as **fontes** e outros aspectos visuais de um site.
+- Por que usar CSS
+  - Serve para separar a **estrutura (HTML)** do estilo CSS permite maior **flexibilidade** e **manutenção do código**
+- Estilos externos
+  - Uso da tag 'link' em arquivos HTML para definir a sua conexão com arquivos CSS separado.
+- Seletores de tipo
+  - Aplicam estiloas a **elementos** (ex: h1, p, a etc) com base em seu **tipo HTML**
+- Seletores de classe (use '.' para identificar)
+  - Aplicam estiloas a **elementos** (ex: class = "areas") com base em uma **classe atribuida**
+- Seletores de classe (use '#' para identificar)
+  - Aplicam estiloas a **elementos** (ex: id = "principal") com base em uma **ID exclusivo**
+- Exemplos de propriedades
+  - color --> define a cor do texto
+  - font-size --> define o tamanho da fonte
+  - margin --> define a margem da fonte
+- Box Model
+  - É um conceito fundamental no CSS que descreve como os elementos HTML são **renderizados** e ocupam espaço na página.
+  - O modelo é composto por quatro partes principais: **conteúdo**, **padding**, **border** e **margin**.
+- FlexBox
+  - É um recurso do CSS que permite **criar layouts flexíveis e responsivos** em páginas web.
+  - Propriedades do FlexBox
+    > display: flex --> define um conteiner flexivel  
+    > flex-direction --> define o eixo principal, definindo a direção dos itens  
+    > flex-wrap --> define se os itens ficam na mesma linha ou em várias
+    > justify-content --> define o alinhamento dos itens ao longo do eixo principal
+    > align-items --> define o alinhamento vertical dos itens dentro do contêiner
+    > align-content --> define o alinhamento dos itens quando há espaço extra no eixo cruzado
