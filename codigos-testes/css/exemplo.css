@@ -1,15 +1,19 @@
+:root{
+    --cor-vermelha: red;
+}
+
 #caixa{
     width: 400px; /*Defini o comprimento do elemento*/
     height: 100px; /*Defini a altura do elemento*/
     justify-content: center;
-    background-color: red;
+    background-color: black;
     padding: 20px; /*Defini um espaço entre o conteudo e a borda*/
-    border: 2px solid black; /*Usada para definir a borda*/
+    border: 2px solid var(--cor-vermelha); /*Usada para definir a borda*/
     margin: 20px; /* Defini a margem do elemento*/
 }
 p{
     align-self: center;
-    color: rgba(13, 230, 121, 0.888); /*RGB (red-green-blue), serve para definir a cor em relação a uma escala*/
+    color: var(--cor-vermelha); /*RGB (red-green-blue), serve para definir a cor em relação a uma escala*/
 }
 
 .container{ /*Explicações do Flexbox*/
@@ -26,20 +30,21 @@ p{
         wrap: defini que ficam em linhas diferentes (sentido de cima para baixo)
         wrap-reverse: defini que ficam em linhas diferentes (sentido de baixo para cima)
     */
-    justify-content: flex-start;
+    justify-content: flex-start; /*altera o eixo x (horizontal)*/
     /*
-        flex-start: alinha os itens no lado esquerdo do conteiner
-        flex-end: alinha os itens no lado direito do conteiner
+        flex-start/start: alinha os itens no lado esquerdo do conteiner
+        flex-end/end: alinha os itens no lado direito do conteiner
         center: alinha os itens no centro do conteiner
-        space-between: define espaços iguais entre os elementos
-        space-around: define espaços iguais ao redor dos elementos
-        space-evenly: define espaços
+        space-between: define espaços iguais entre os elementos, sem criar espaço extra no container (vão até a ponta).
+        space-around: define espaços iguais entre os elementos, cria espaço extra no container (cada espaço é igual).
+        space-evenly: define espaços iguais entre os elementos, cria espaço extra no container (o espaço entre os elementos
+        e o container são iguais).
     */
-    align-items: stretch;
+    align-items: stretch; /*altera o eixo y (vertical)*/
     /*
         stretch: os itens são alargados para conter todo o conteiner
-        flex-start: aparecem no topo do conteiner
-        flex-end: aparecem no fundo do conteiner
+        flex-start/start: aparecem no topo do conteiner
+        flex-end/end: aparecem no fundo do conteiner
         center: aparecem no centro do conteiner
         baseline:
     */

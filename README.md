@@ -248,12 +248,12 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 ##### 5. Tabelas
 
 - table: tag de **contêiner** principal para a tabela
-- tr: define uma **linha** na tabela
-- th: é usado para **cabeçalhos** de coluna
-- td: define as **células** dos dados
-- thead : define o cabeçalho da tabela (isso ajuda a diferenciar visualmente o cabeçalho do restante da tabela)
-- tbody : define o corpo da tabela
-- tfoot : define o rodapé da tabela (é comumente usado para <ins>informações adicionais</ins> sobre a tabela)
+  - tr: define uma **linha** na tabela
+  - th: é usado para **cabeçalhos** de coluna
+  - td: define as **células** dos dados
+  - thead : define o cabeçalho da tabela (isso ajuda a diferenciar visualmente o cabeçalho do restante da tabela)
+  - tbody : define o corpo da tabela
+  - tfoot : define o rodapé da tabela (é comumente usado para **informações adicionais** sobre a tabela)
 
 ##### 6. Formulários
 
@@ -268,7 +268,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - button: envio do formulário
 - Rótulos (label)
-  - label - é usado para <ins>associar</ins> um rótulo a um elemento de formulário.  
+  - label - é usado para **associar** um rótulo a um elemento de formulário.  
   - for - é usado em label **para corresponder ao atributo** id **do elemento de formulário**
 
 - Agrupamentos de elementos de formulário
@@ -277,7 +277,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ##### 7. Estruturação avançada
 
-- tag div: usada para criar uma divisão lógica ou seção de contéudo (é uma tag genérica que pode seu usada para <ins>agrupar elementos</ins> e <ins>aplicar estilos</ins> ou comportamentos a eles)
+- tag div: usada para criar uma divisão lógica ou seção de contéudo (é uma tag genérica que pode seu usada para **agrupar elementos** e **aplicar estilos** ou comportamentos a eles)
 - Seções
   - Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios.  
   - Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.  
@@ -293,7 +293,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 11º Aula
 
-#### CSS (Cascading Style Sheets) [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/scss/exemplo.html)
+#### CSS (Cascading Style Sheets) [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
 
 - Conceitos básicos
   - É uma **linguagem de estilo** utilizada para definir a **apresentação e o design de páginas web**

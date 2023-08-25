@@ -22,18 +22,20 @@ Identificando tags HTML básicas
 que você as usaria ao construir uma página web.
 
 R:
---> <h1> - <h6> (tags de cabeçalho, são usadas)
-    Ex - 
---> <p> (tag de parágrafo)
-    Ex - 
---> <a> ()
-    Ex - 
+--> <h1> - <h6> (tags de cabeçalho, são usadas para definir 6 níveis de título de seção)
+    Ex - Usar para definir as diferentes seções de um assunto, começando com h1 para introduzir e os outros para seccionar o assunto.
+--> <p> (tag de parágrafo, são usadas para criar linhas de texto padrão no página)
+    Ex - Usar para escrever sobre assuntos diversos em detalhe.
+--> <a> (tag de âncora, são usadas para criar ligações com links URL ou arquivos contidos na aplicação)
+    Ex - Usar para conectar outras páginas, definir links para fontes de pesquisa.
 
 2º Questão: Além das tags mencionadas, qual é a importância das tags de listagem, como <ul> e <ol>, no
 contexto da estruturação de conteúdo em uma página? Dê exemplos de quando você escolheria
 uma sobre a outra.
 
-R - 
+R - São importantes quando é necessário organizar um conjunto de informações de forma organizada. Se fosse para escolher uma sobre
+    a outra, eu escolheria <ul> caso só precisasse organizar os assuntos sem me importar muito com a ordem, mas caso a ordem fosse
+    relevante (Ex: caso estivesse explicando um passo-a-passo) eu usaria <ol>.
 
 
 Vinculando páginas, arquivos e âncoras
@@ -41,12 +43,15 @@ Vinculando páginas, arquivos e âncoras
 1º Questão: Como a tag <a> é utilizada para criar links em HTML? Explique como você pode vincular para outras
 páginas, para arquivos locais e criar âncoras dentro de uma página.
 
-R - 
+R - Dentro da tag <a> é definido com o atributo 'href' que cria uma hiperligação entre a âncora e o link, arquivo local ou página
+    que o programador desejar por na página web.
 
 2º Questão: Além do atributo href, quais outros atributos importantes a tag <a> pode ter? Como o atributo
 target pode ser usado para controlar como o link é aberto pelo navegador?
 
-R - 
+R - O atributo 'rel' facilita o navegador de interpretar qual o tipo de link conectado a âncora, 'target' permite definir se a ân-
+    -cora vai abrir o link na mesma aba (_self) ou em outra aba (_blank) e download faz com que o usuário baixe o link no computa-
+    -dor ao inves de abri-ló no navegador.
 
 
 Incorporando imagens e mídias
@@ -54,13 +59,16 @@ Incorporando imagens e mídias
 1º Questão: Descreva a diferença entre os atributos src e alt em relação à tag <img>. Por que é importante
 fornecer um atributo alt adequado para imagens?
 
-R - 
+R - 'src' permite procurar o link URL ou arquivo imagem local e colocalo na tela, 'alt' defini em forma de texto qual o conteúdo
+    da imagem. A importância do elemento 'alt' vendo do fato de facilitar o entendimento do conteudo e propósito da imagem para o
+    programador enquanto faz a aplicação.
 
 2º Questão: Além de imagens, quais outros tipos de mídia podem ser incorporados em uma página HTML?
 Como você pode garantir que a mídia incorporada seja responsiva e se ajuste bem em diferentes
 dispositivos?
 
-R - 
+R - É possível adicionar audio e video com as tags <audio> e <video>. Em ambas as tags é possivel usar o elemento 'controls' para
+    controlar o volume de dados, a pausa/continuação da reprodução, etc.
 
 
 Criando tabelas básicas
@@ -68,13 +76,17 @@ Criando tabelas básicas
 1º Questão: Quais são as principais tags usadas para criar tabelas em HTML? Explique a diferença entre as tags
 <th> e <td>, e quando você as usaria.
 
-R - 
+R - Para criar uma tabela se usa a tag <table> e para definir partes especificas da tabela se usa as tags <tr> (para criar uma 
+    linha), <th> (define o cabeçalho de coluna), <td> (define uma célula de dados na tabela). Eu usaria <th> quando fosse necessá-
+    -rio definir qual o assunto/objetivo de certa coluna de dados e usaria <td> quando precisa colocar uma informação/dado na coluna.
 
 2º Questão: Embora tabelas sejam usadas para exibir dados tabulares, às vezes é recomendado evitá-las em
 favor de outras formas de apresentação de dados. Por quê? E quais são os cenários em que as
 tabelas são apropriadas?
 
-R - 
+R - O motivo de tabelas não serem recomendadas é por conta de serem inflexíveis (não se acostumam bem com outros layouts de tela),
+    são lentas para carregar na tela e não são aceitas na versão HTML 4. um dos cenários mais apropriados para usar tabelas seria
+    quando a melhor forma de demonstrar certa informação seja em formato de planilha.
 
 
 Criando formulários
@@ -82,12 +94,15 @@ Criando formulários
 1º Questão: Como a tag <form> é utilizada para criar formulários em HTML? Cite pelo menos três tipos
 diferentes de campos de entrada (<input>) que podem ser usados em um formulário.
 
-R - 
+R - A tag <form> permite criar uma região interativa para o usuário poder passar informação para a página (geralmente usando a tag
+    <input> dentro da tag <form>). Para a tag <input> é possivel usar os tipos (types) "text" (para textos), "password" (para senha)
+    e "checkbox" (para escolher entre certos elementos).
 
 2º Questão: Além dos campos de entrada, quais outros elementos podem ser incluídos em um formulário para
 melhorar a usabilidade e a experiência do usuário?
 
-R - 
+R - 'rel' para definir os tipos de dados usados, 'target' para registrar a resposta em uma região específicada, 'action' para defi-
+    -nir como a informação sera tratada, etc.
 
 
 Técnicas avançadas de estruturação com elementos HTML5 semânticos
@@ -95,9 +110,20 @@ Técnicas avançadas de estruturação com elementos HTML5 semânticos
 1º Questão: O que são elementos HTML5 semânticos e por que são importantes na estruturação de uma
 página? Cite três exemplos de elementos semânticos e explique quando você os usaria.
 
-R - 
+R - São tags usadas para definir o que cada informação e conteúdo existentes na página servem de forma organizada, são muito impor-
+    -tantes para facilitar a compreensão do navegador e dos programadores para entender a página e seu elementos.
+    Exemplos:
+        -- main: Usada para conter todo o conteúdo principal da página (eu usária para manter todo o contéudo importante dentro da
+        mesma região). 
+        -- footer: Usada como rodapé da página ou de certa seção da página (eu usária caso precisasse organizar os links e informa-
+        -ções de contato no final de uma página).
+        -- nav:  Usada para organizar links de navegação da página (eu usária quando precisasse criar um indíce da página, no caso
+        dela ser muito grande).
 
 2º Questão: Além da semântica, como os elementos HTML5 podem afetar a acessibilidade das páginas web? Por
 que é fundamental considerar a acessibilidade ao escolher elementos de estruturação?
 
-R - 
+R - Ao usar essas tags nós criamos uma página mais organizar para o usuário que vai permitir um maior entendimento sobre o conteúdo
+    da página e, por si só, permite uma maior acessibilidade. É importante considerar a acessibilidade pois, ao criar uma página 
+    web, é de maior relevância o entendimento do usuário acerca do conteúdo contido na página pois assim ele pode ter maior faci-
+    -lidade em compreender seu conteúdo.
