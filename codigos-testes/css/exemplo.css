@@ -30,7 +30,7 @@ p{
         wrap: defini que ficam em linhas diferentes (sentido de cima para baixo)
         wrap-reverse: defini que ficam em linhas diferentes (sentido de baixo para cima)
     */
-    justify-content: flex-start; /*altera o eixo x (horizontal)*/
+    justify-content: flex-start; /*alinha os elementos em relação ao x (horizontal)*/
     /*
         flex-start/start: alinha os itens no lado esquerdo do conteiner
         flex-end/end: alinha os itens no lado direito do conteiner
@@ -40,21 +40,29 @@ p{
         space-evenly: define espaços iguais entre os elementos, cria espaço extra no container (o espaço entre os elementos
         e o container são iguais).
     */
-    align-items: stretch; /*altera o eixo y (vertical)*/
+    align-items: stretch; /*alinha os elementos em relação ao eixo y (vertical)*/
     /*
         stretch: os itens são alargados para conter todo o conteiner
         flex-start/start: aparecem no topo do conteiner
         flex-end/end: aparecem no fundo do conteiner
         center: aparecem no centro do conteiner
-        baseline:
+        baseline: (?)
     */
-    align-content: flex-start;
+    align-content: flex-start; /*alinha os elementos em relação a ambos os eixos */
     /*
-        flex-start:
-        flex-end:
-        center:
-        space-between:
-        space-around:
-        stretch:
+        flex-start/start: alinha os elementos no início do container
+        flex-end/end: alinha os elementos no fim do container
+        center: alinha os elementos no centro do container
+        space-between: define espaços iguais entre os elementos, sem criar espaço extra no container (vão até a ponta).
+        space-around: define espaços iguais entre os elementos, cria espaço extra no container (cada espaço é igual).
+        stretch: alonga os elementos para conter mais espaço no container
+    */
+    order: 0; /*É usado para definir alterar a posição de um item em relação a sua posição (considere a posição atual como 0)*/
+
+    /*
+        1. align-self é como align-items só que para somente um item específico.
+        2. flex-flow é como uma junção dos elementos flex-direction e flex-wrap (tem os mesmos comandos, use um de cada).
+            -- o primeiro deve ser um comando de flex-direction
+            -- o segundo deve ser um comando de flex-wrap
     */
 }

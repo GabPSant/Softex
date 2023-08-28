@@ -233,75 +233,55 @@
 ##### Classificação/Tipos de tags
 
 - É possível categorizar as tags em dois tipos: o block-level (nível de bloco) e o inline (em linha). O primeiro ocupa todo o espaço do seu elemento pai e o segundo ocupa apenas o espaço do seu conteúdo.
-
 - Tags básicas (servem para definir a estrutura fundamental da página):
-
-> DOCTYPE - Responsável pela versão HTML usada na página e a tag HTML.  
-> HTML - estrutura a página web  
-
-- Tags metadados (responsáveis para guardar informações da página como estilos, scripts e dados. Ajuda na renderização da página pelo navegador):
-
-> head -  
-> link -  
-> meta -  
-> style -  
-> title -
-
+  - DOCTYPE - Responsável pela versão HTML usada na página e a tag HTML.  
+  - HTML - estrutura a página web  
+- Tags metadados (responsáveis para guardar informações da página como estilos, scripts e dados. Ajuda na renderização da página pelo navegador)
+  - head ->  contem os dados metas
+    > link: representa o link que sera usado no arquivo html  
+    > meta: representa informações que não podem ser lidas em outras formatos  
+    > style: representa informações de estilo usadas no arquivo html  
+    > title: contem o título da página
 - Tags de separação de contéudo (responsáveis pela organização lógica da página):
-
-> address - Contêm as informações de contato do autor
-> h1 a h6 - Definem o tamanho do título
-> article -
-> aside -
-> footer -
-> header -
-
+  - address -> Contêm as informações de contato do autor
+  - h1 a h6 -> Definem o tamanho do título
+  - article -> representa uma região independente que pode conter certo conteúdo
+  - aside -> representa a região lateral da página (tem uma relação paralela com o conteúdo príncipal/main)
+  - footer -> representa o ródape da página, geralmente contêm as informações do autor, direitos autorais ou links relacionados
+  - header -> representa o cabeçalho, contêm a introdução da página e contêm apoio para navegar pela página
 - Tags de texto (responsáveis por todos os tipos de texto que serão impressos na página):
-
-> blockcote -
-> p -
-> hr -
-> div -
-> ol -
-> ul -
-> li -
-> pri -
-
+  - p -> elemento paragrafo, é usado para criar linhas de texto
+  - hr -> é usado para separar os paragrafos do html
+  - div -> é um container genérico, pode ser usado para agrupar items para estilizar a página
+  - ol -> ordeneted list (lista ordenada), serve para criar listas ordenadas
+  - ul -> unordeneted list (lista não ordenada), serve para criar listas não ordenadas
+  - li -> list item (item de lista), é necessário para definir um item da lista
 - Tags para semântica textual inline (utilizada para definir a estrutura, linha ou significado de qualquer outro tipo de texto):
-
-> a -  
-> b  
-> br -  
-> q -  
-> strong -
-
+  - a -> elemento âncora, é usado para criar uma hiperligação entre páginas web, arquivos, endereçõs de e-mail etc.
+  - b -> Usado para separar certos elementos semânticos do texto. (não são de grande importância semântica, só tem uma semântica diferente do texto no qual estão contidos).
+  - br -> Serve para quebrar a linha dos textos.
+  - q -> é usado para citações ([explicação](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/q))
+  - strong -> coloca o texto em negrito (usado para textos com muita importância).
 - Tags de multimídia (Manipulam imagens e vídeos):
-
-> img -
-> iframe -
-> picture -
-> source -
-
+  - img -> representa a inserção de imagem no documento
+  - iframe -> é uma tag que permite a exibição de um elemento dentro de outro elemento ([explicação](https://www.hostinger.com.br/tutoriais/o-que-e-iframe))
+  - picture -> contem as tags 'img' e 'source' ([explicação](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/picture))
+  - source -> é usado para contem as fontes/hiperlinks de imagens, audios e vídeos
 - Tags de tabelas (são usadas, hoje em dia, na criação de templates de e-mail):
-
-> table -
-> tbody -
-> td -
-> tr -
-
+  - table -> cria a tabela no html (contém todas as outras tags)
+  - tbody -> define o corpo da tabela
+  - td -> define as celulas da tabela
+  - tr -> define uma linha na tabela
 - Tags de formulário (usadas para criar formatação e input):
-
-> form -
-> input -
-> label -
-> button -
-> fieldset -
-> legend -
-> option -
-> textarea -
-
+  - form -> usada para criar formulários (contém todas as outras tags)
+  - input -> tag usada para definir imput do usuário
+  - label -> tag usada para definir uma legenda para um item em uma interface de usuário
+  - button -> representa um botão clicável
+  - fieldset -> agrupa os elementos do formulário de forma organizada
+  - legend -> representa um rótulo para o conteúdo do 'fieldset'
+  - option -> representa uma opção dentro do campo 'select', 'datalist' ou 'optground'
+  - textarea -> conseguir receber input do usuário em formato livre, como um comentário ou formulário de retorno
 - Tags de Script (permitem a ligação direta da linguagem JavaScript para objetos dinâmicos):
-
-> canvas -
-> noscript -
-> script -
+  - canvas -> pode ser usado para criar gráficos usando scripts ([explicação](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas))
+  - noscript -> quando é necessário usar um script não suportado pelo navegador da página
+  - script -> serve para executar código dentro do html.
