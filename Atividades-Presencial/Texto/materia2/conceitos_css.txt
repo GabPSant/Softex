@@ -1,0 +1,117 @@
+Compreendendo o CSS e seu papel no desenvolvimento web
+
+1º Questão: O que é o CSS e qual é o seu papel no desenvolvimento web? Como o CSS ajuda a separar a
+apresentação visual do conteúdo estrutural em uma página web?
+
+R: CSS é uma linguagem de estilo cujo objetivo é dar estilo aos elementos das páginas HTML. Ele ajuda na apresentação virtual ao definir o posicionamento dos elementos, coloração dos diferentes containers e padronizar as seções iguais dentro das páginas web.
+
+2º Questão: Além do HTML, quais outras tecnologias frequentemente trabalham em conjunto com o CSS para
+melhorar a experiência do usuário em um site? Como essa integração afeta a usabilidade e a
+estilização das páginas?
+
+R:
+
+
+Identificando a estrutura de uma regra CSS
+
+1º Questão: Descreva os três componentes principais de uma regra CSS: seletor, propriedades e valores. Dê um
+exemplo de uma regra CSS completa.
+
+R: 
+
+2º Questão: Como as regras CSS são interpretadas pelos navegadores? Como o navegador determina qual estilo
+aplicar a um elemento específico com base nas regras CSS?
+
+R:
+
+
+Aplicando estilos básicos usando seletores
+
+1º Questão: Explique a diferença entre seletores de tipo, classe e ID no CSS. Quando você usaria um seletor de classe em vez de um seletor de ID?
+
+R: 
+
+2º Questão: Além dos seletores básicos, como os seletores de pseudo-elementos podem ser usados para
+estilizar partes específicas de um elemento HTML? Dê exemplos.
+
+R:
+
+
+Controlando tamanho e posicionamento com box model
+
+1º Questão: O que é o modelo de caixa (box model) no CSS? Descreva as partes principais do modelo de caixa e
+como as propriedades de margem, borda e preenchimento (margin, border e padding) afetam o
+tamanho de um elemento.
+
+R: 
+
+2º Questão: Como você pode usar o modelo de caixa para controlar o espaçamento entre elementos em uma
+página? Dê exemplos de situações em que ajustar as margens, bordas e preenchimentos seria útil.
+
+R:
+
+
+Compreendendo o modelo de layout Flexbox
+
+1º Questão: Explique o que é o modelo de layout Flexbox. Quais são os principais conceitos por trás desse
+modelo e como ele facilita a criação de layouts responsivos?
+
+R: 
+
+2º Questão: Compare o modelo de layout Flexbox com o modelo de layout baseado em grades (Grid Layout). Em
+quais situações você escolheria usar um modelo sobre o outro?
+
+R:
+
+
+Utilizando propriedades de fonte para estilizar textos
+
+1º Questão: Cite pelo menos três propriedades CSS que podem ser usadas para estilizar textos. Como você pode
+aplicar essas propriedades para melhorar a legibilidade e a estética do texto em uma página web?
+
+R: 
+
+2º Questão: Além das propriedades de fonte, como as propriedades de espaçamento (como line-height e
+letter-spacing) podem afetar a aparência do texto em uma página?
+
+R:
+
+
+Aplicando cores a elementos
+
+1º Questão: Descreva as propriedades color e background-color no CSS. Como você pode usar essas
+propriedades para definir as cores do texto e do fundo de um elemento?
+
+R: 
+
+2º Questão: Além das cores sólidas, como o CSS permite a aplicação de gradientes de cores em elementos?
+Quais são as vantagens de usar gradientes em comparação com cores sólidas?
+
+R:
+
+
+Identificando pseudoclasses comuns
+
+1º Questão: O que são pseudoclasses no CSS e por que elas são usadas? Dê exemplos de pseudoclasses comuns,
+como :hover, :active, :visited e :focus, e explique quando elas são aplicadas.
+
+R: 
+
+2º Questão: Além das pseudoclasses mencionadas, cite outras pseudoclasses que podem ser usadas para criar
+interações e estilos específicos em elementos HTML. Como as pseudoclasses contribuem para a
+experiência do usuário?
+
+R:
+
+
+Criando layouts responsivos
+
+1º Questão: O que é um layout responsivo e por que é importante considerar a responsividade ao desenvolver um site? Como as consultas de mídia (media queries) são usadas para criar layouts que se adaptam a diferentes dispositivos?
+
+R: 
+
+2º Questão: Além das consultas de mídia, quais outras abordagens podem ser usadas para melhorar a
+responsividade de um site? Como o design fluido e os sistemas de grid podem contribuir para uma
+experiência consistente em diversos dispositivos?
+
+R:

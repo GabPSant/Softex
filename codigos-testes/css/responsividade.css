@@ -1,0 +1,23 @@
+body{
+    background-color: #58D68D ;
+}
+
+h1 {
+    font-size: 54px;
+    color: chocolate;
+    font-family: 'Dancing Script', cursive;
+}
+
+.box{
+    width: 150px;
+    height: 100px;
+    background-color: red;
+}
+
+.box:hover{
+    background-color: purple;
+}
+
+.box:active{
+    background-color: blue;
+}

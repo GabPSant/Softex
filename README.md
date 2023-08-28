@@ -1,5 +1,7 @@
 # [Softex](https://softex.br/)
 
+- Curso de Aceleração Front-end da Softex (nesse repositório tem todos os códigos, atividades e projetos feitos por mim durante o curso)
+
 ## Indíce
 
 - [1º Matéria (lógica de programação e JavaScript)](#1º-matéria-lógica-de-programação-e-javascript)
@@ -14,7 +16,8 @@
 - [2º Matéria (HTML/CSS)](#2º-matéria-htmlcss)
   - [9º Aula (HTML - Parte 1)](#9º-aula)
   - [10º Aula (HTML - Parte 2)](#10º-aula)
-  - [11º Aula (Introdução ao CSS)](#11º-aula)
+  - [11º Aula (CSS - Parte 1)](#11º-aula)
+  - [12º Aula (CSS - Parte 2)](#12º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -293,7 +296,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 11º Aula
 
-#### CSS (Cascading Style Sheets) [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
+#### CSS (Cascading Style Sheets) - Parte 1 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
 
 - Conceitos básicos
   - É uma **linguagem de estilo** utilizada para definir a **apresentação e o design de páginas web**
@@ -324,3 +327,36 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     > justify-content --> define o alinhamento dos itens ao longo do eixo principal
     > align-items --> define o alinhamento vertical dos itens dentro do contêiner
     > align-content --> define o alinhamento dos itens quando há espaço extra no eixo cruzado
+
+### 12º Aula
+
+#### CSS (Cascading Style Sheets) - Parte 2 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
+
+- Tipografia
+  - color: define a cor do texto
+  - font-family: define a família de fontes a ser usada no texto
+  - font-size: define o tamanho do texto
+  - font-weight: define a espessura do texto
+  - font-style: define o estilo do texto
+  - text-decoration: define a decoração do texto
+  - text-transform: define a transformação do texto
+- Cores e Fundos
+  - background-color: é usado para definir cores no background da tela, sendo possível definir a cor por nome (Ex:), hexadecimal (Ex: ) e rgb (Ex: )
+  - opacity: define a opacidade de um elemento (varia de 0.0 a 1.0)
+- Pseudoclasses - permitem **selecionar elementos** com base em **estados** ou **interações** específicas
+  - :hover -> seleciona um elemento quando o cursor está sobre ele
+  - :active -> seleciona um elemento quando ele é clicado
+  - :visited -> seleciona um link já visitado
+  - :focus -> seleciona um elemento quando ele recebe foco
+- Responsividade e media queries
+  - Responsividade:
+    > É a **capacidade de um site se adaptar** a diferentes dispositivos e tamanhos de tela.
+  - Media queries
+    > São uma técnica do CSS que permite **aplicar diferentes estilos** com base em pontos de interrupções (**breakpoints**) e nas **características do dispositivo**.
+
+#### Páginas de apoio
+
+- [Código Exemplo](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/responsividade.css)
+- [Google Fonts](https://fonts.google.com/)
+- [Cores para HTML](https://htmlcolorcodes.com/)
+- [Unidades de medida CSS](https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/) 

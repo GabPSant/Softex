@@ -1,0 +1,25 @@
+body{
+    display: grid;
+    row-gap: 7px;
+    color: red;
+    background-color: black;
+}
+
+header, main, footer{
+    border: 3px solid green;
+}
+main{
+    height: 100vh; /*1vh é igual a 1/100 da altura da tela*/
+}
+nav{
+    margin: 6px 6px 6px 75%;
+    border: 3px solid orange;
+}
+aside{
+    border: 3px solid orange;
+    flex-direction: column;
+    float: right;
+    width: 45vh;
+    margin: 6px 6px 0 0;
+}
+
