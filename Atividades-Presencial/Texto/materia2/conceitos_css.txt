@@ -3,14 +3,17 @@ Compreendendo o CSS e seu papel no desenvolvimento web
 1º Questão: O que é o CSS e qual é o seu papel no desenvolvimento web? Como o CSS ajuda a separar a
 apresentação visual do conteúdo estrutural em uma página web?
 
-R: CSS é uma linguagem de estilo cujo objetivo é dar estilo aos elementos das páginas HTML. Ele ajuda na apresentação virtual ao definir o posicionamento dos elementos, coloração dos diferentes containers e padronizar as seções iguais dentro das páginas web.
+R: CSS é uma linguagem de estilo cujo objetivo é dar estilo aos elementos das páginas HTML. 
+    Ele ajuda na apresentação virtual ao definir o posicionamento dos elementos, coloração dos diferentes containers 
+    e padronizar as seções iguais dentro das páginas web.
 
 2º Questão: Além do HTML, quais outras tecnologias frequentemente trabalham em conjunto com o CSS para
 melhorar a experiência do usuário em um site? Como essa integração afeta a usabilidade e a
 estilização das páginas?
 
-R:
-
+R: A tecnologia mais frequentemente usada é JavaScript, uma linguagem de programação, que é usada para deixar as páginas web
+    mais dinámicas e interativas para o usuário.
+    
 
 Identificando a estrutura de uma regra CSS
 
