@@ -11,7 +11,7 @@ R: CSS é uma linguagem de estilo cujo objetivo é dar estilo aos elementos das 
 melhorar a experiência do usuário em um site? Como essa integração afeta a usabilidade e a
 estilização das páginas?
 
-R: A tecnologia mais frequentemente usada é JavaScript, uma linguagem de programação, que é usada para deixar as páginas web
+R: A tecnologia mais frequentemente usada é JavaScript, uma linguagem de programação, que é usada para  deixar as páginas web
     mais dinámicas e interativas para o usuário.
     
 

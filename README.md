@@ -18,6 +18,8 @@
   - [10º Aula (HTML - Parte 2)](#10º-aula)
   - [11º Aula (CSS - Parte 1)](#11º-aula)
   - [12º Aula (CSS - Parte 2)](#12º-aula)
+  - [13º Aula (CSS - revisão)](#13º-aula)
+  - [14º Aula (Extra: Git e Github)](#14º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -360,3 +362,16 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - [Google Fonts](https://fonts.google.com/)
 - [Cores para HTML](https://htmlcolorcodes.com/)
 - [Unidades de medida CSS](https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/)
+
+### 13º Aula
+
+- Revisão de HTML/CSS e termino da tela de [interface](https://github.com/GabPSant/Softex/blob/main/Atividades-Presencial/HTML/materia2/interface.html)
+
+### 14º Aula
+
+#### Aula sobre usar o Git e versionamento de projetos.
+
+- [Git](https://www.atlassian.com/br/git/tutorials/what-is-git)
+- [Github](https://tecnoblog.net/responde/o-que-e-github/)
+- [Versionamento](https://www.alura.com.br/artigos/versionamento-semantico-breve-introducao?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=662261334153&hsa_src=g&hsa_tgt=aud-1295637864136:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwgNanBhDUARIsAAeIcAssrIEUhNR-OxKh-XTncu3qC6ON_qmk5i4jIMOBkUn2KjjsxuT2xJUaApShEALw_wcB)
+
