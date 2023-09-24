@@ -20,24 +20,42 @@ Identificando a estrutura de uma regra CSS
 1º Questão: Descreva os três componentes principais de uma regra CSS: seletor, propriedades e valores. Dê um
 exemplo de uma regra CSS completa.
 
-R: 
+R: O seletor é usado para selecionar o elemento HTML que será estilizado, podendo esse elemento ser tipos (Ex: p, div),classe 
+   (Ex: .classe) ou ID (ex: #id). Propriedades definem quais aspectos do HTML serão alterados e Valores serão usados para
+   definir o tipo de alteração na propriedade.
+   Ex:
+        body{
+            color: red; /*altera a cor do texto*/
+            background-color: rgb(195,48,93); /*altera a cor do background*/
+            font-size: 16px; /*definir o tamanho da fonte para ser 16 pixels*/
+        }
 
 2º Questão: Como as regras CSS são interpretadas pelos navegadores? Como o navegador determina qual estilo
 aplicar a um elemento específico com base nas regras CSS?
 
-R:
+R: O navegador avalia os elementos do HTML primeiro e depois executar as regras CSS nos elementos correspondentes. Ele avalia com
+   base no seletor específico relacionado a regra.
 
 
 Aplicando estilos básicos usando seletores
 
 1º Questão: Explique a diferença entre seletores de tipo, classe e ID no CSS. Quando você usaria um seletor de classe em vez de um seletor de ID?
 
-R: 
+R: Os seletores de tipo selecionam elementos HTML existentes, não necessitam de um caracter especial. Seletores de classe, são 
+   usados para selecionar elementos HTML que tenham a classe selecionada, são representados usando o caracter ponto (.). Seletores
+   ID são usados para selecionar um elemento com o ID selecionado, são representado usando o caracter hashtag (#).
+   Eu usaria o seletor de classe quando precissa definir a mesma regra de estilização para um conjunto de elementos e usaria o se-
+   -letor de ID quando só necessitase alterar um elemento em especifico.
 
 2º Questão: Além dos seletores básicos, como os seletores de pseudo-elementos podem ser usados para
 estilizar partes específicas de um elemento HTML? Dê exemplos.
 
-R:
+R: Os seletores de pseudo-elementos permitem selecionar partes especificas dos tipos selecionados.
+   Ex:
+        p::first-line{ /*Serve para alterar especificamente a primeira linha de cada paragrafo*/
+            font-size: 15px;
+            color: green;
+        }
 
 
 Controlando tamanho e posicionamento com box model
@@ -46,12 +64,23 @@ Controlando tamanho e posicionamento com box model
 como as propriedades de margem, borda e preenchimento (margin, border e padding) afetam o
 tamanho de um elemento.
 
-R: 
+R: O box model, ou, modelo de caixa CSS, é um conceito fundamental no desenvolvimento da Web que determina como os elementos em 
+uma página da Web são dimensionados e posicionados. Suas partes principais são:
+    -- altura (height) -> representa a altura da caixa;
+    -- largura (width) -> representa a largura da caixa;
+    -- preenchimento interno (padding) -> representa o espacamento interno da caixa (distancia entre o conteudo da caixa e sua
+    borda);
+    -- borda (board) -> limiar da caixa (delimita o final da região da caixa)
+    -- margem (marge) -> representa o espacamento externo da caixa (o espaço entre a caixa e os elementos fora da caixa)
 
 2º Questão: Como você pode usar o modelo de caixa para controlar o espaçamento entre elementos em uma
 página? Dê exemplos de situações em que ajustar as margens, bordas e preenchimentos seria útil.
 
-R:
+R:  Pode ser usado para definir a quantidade de espaço em uma página e organizar a estrutura dos elementos com base em suas margens
+    Ex:
+    -- Margem -> para definir o espaçamento entre várias caixas diferentes na página e organiza-las em diversas posições
+    -- Borda -> para definir a região delimitante de cada caixa e ficar sabendo do limite de cada caixa e onde elas terminam.
+    -- Preenchimentos -> para que os elementos dentro da caixa não ultrapassem a borda da caixa,  deixando o conteúdo mais organizado
 
 
 Compreendendo o modelo de layout Flexbox
@@ -59,12 +88,19 @@ Compreendendo o modelo de layout Flexbox
 1º Questão: Explique o que é o modelo de layout Flexbox. Quais são os principais conceitos por trás desse
 modelo e como ele facilita a criação de layouts responsivos?
 
-R: 
+R: É um modelo de  baseado em CSS que permite que os elementos dentro de um contêiner sejam dispostos automaticamente de acordo 
+   com o tamanho da tela do dispositivo em que estão sendo visualizados.
+   É um conceito que visa organizar os elementos de uma página HTML dentro de seus containers de forma dinâmica. Ou seja, 
+   independente das suas dimensões eles sempre manterão um layout flexível dentro do seu elemento pai, reorganizando-se e acordo 
+   com a necessidade.
 
 2º Questão: Compare o modelo de layout Flexbox com o modelo de layout baseado em grades (Grid Layout). Em
 quais situações você escolheria usar um modelo sobre o outro?
 
-R:
+R: A principal diferença é que um Flexbox pode funcionar em linhas ou colunas ao mesmo tempo, enquanto que o Grid, sendo 
+   bidimensional, pode funcionar em ambas ao mesmo tempo. Outra diferença significativa é que o Grid tem uma base no layout, 
+   enquanto o Flexbox tem uma base no conteúdo. O Flexbox é mais recomendado para uma dimensão, seja ela vertical ou horizontal,
+   e o Grid Layout é mais recomendado para duas dimensões (ex: linhas e colunas).
 
 
 Utilizando propriedades de fonte para estilizar textos
@@ -72,12 +108,18 @@ Utilizando propriedades de fonte para estilizar textos
 1º Questão: Cite pelo menos três propriedades CSS que podem ser usadas para estilizar textos. Como você pode
 aplicar essas propriedades para melhorar a legibilidade e a estética do texto em uma página web?
 
-R: 
+R:
+    -- color -> define o cor do texto
+    -- font-size -> define o tamanho do texto
+    -- font-family -> define a familia/tipo de texto (Ex: Times New Roman)
 
+    Pode ser usada para diferenciar ou padronizar os textos em difentes elementos HTML, deixá-los o texto mais destacado em certas
+    partes e melhorar a leitura do texto.
 2º Questão: Além das propriedades de fonte, como as propriedades de espaçamento (como line-height e
 letter-spacing) podem afetar a aparência do texto em uma página?
 
-R:
+R: line-height define o espaçamento entre as linhas, afetando como as linhas seriam lidas dentro de certos elementos.
+   letter-spacing define o espaçamento entre as letras no texto.
 
 
 Aplicando cores a elementos
@@ -85,12 +127,15 @@ Aplicando cores a elementos
 1º Questão: Descreva as propriedades color e background-color no CSS. Como você pode usar essas
 propriedades para definir as cores do texto e do fundo de um elemento?
 
-R: 
+R:
+    -- color -> define a cor do texto
+    -- background-color -> define a cor do fundo do container.
 
 2º Questão: Além das cores sólidas, como o CSS permite a aplicação de gradientes de cores em elementos?
 Quais são as vantagens de usar gradientes em comparação com cores sólidas?
 
-R:
+R: Geralmente, usamos o comando rgb para definir cores com gradientes especificos. A vantagem é que permite usar uma variação
+   maior de cores, na qual aumenta a liberdade de alterar a tela HTML.
 
 
 Identificando pseudoclasses comuns
@@ -98,23 +143,31 @@ Identificando pseudoclasses comuns
 1º Questão: O que são pseudoclasses no CSS e por que elas são usadas? Dê exemplos de pseudoclasses comuns,
 como :hover, :active, :visited e :focus, e explique quando elas são aplicadas.
 
-R: 
+R:  Uma pseudo-classe é uma palavra-chave adicionada aos seletores que especificam um estado especial do elemento selecionado. 
+    Por exemplo, :hoverpode ser usado para alterar a cor de um botão quando o usuário passa o cursor sobre ele.
 
 2º Questão: Além das pseudoclasses mencionadas, cite outras pseudoclasses que podem ser usadas para criar
 interações e estilos específicos em elementos HTML. Como as pseudoclasses contribuem para a
 experiência do usuário?
 
-R:
+R: 
+    -- not -> seleciona todos os elementos que não são um em especifico (Ex: not(h1))
+    -- first-line -> define que a alteração só sera usada dentro da primeira linha
+    -- first-of-types -> só seleciona a primeira ocorrência do elemento
 
 
 Criando layouts responsivos
 
 1º Questão: O que é um layout responsivo e por que é importante considerar a responsividade ao desenvolver um site? Como as consultas de mídia (media queries) são usadas para criar layouts que se adaptam a diferentes dispositivos?
 
-R: 
+R: é uma técnica de estruturação HTML e CSS, que consiste em adaptar o site ao browser do usuário sem que seja necessário definir 
+várias folhas de estilos específicas para cada resolução, ou seja, é um tipo de design onde o layout fica fluído e variante de 
+acordo com a resolução do usuário.
 
 2º Questão: Além das consultas de mídia, quais outras abordagens podem ser usadas para melhorar a
 responsividade de um site? Como o design fluido e os sistemas de grid podem contribuir para uma
 experiência consistente em diversos dispositivos?
 
-R:
+R: Podemos criar design responsivos usando Media Queries, um recurso que nos permite executar uma série de testes para identificar
+o tamanho da tela e alterar o design de acordo com especificações feitas por nós. Com as Queries, conseguimos adaptar nosso conteúdo 
+para diferentes dispositivos, e a melhor maneira de aplicar esse recurso, é com o conceito de Mobile First (nosso próximo tema).
