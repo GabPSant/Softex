@@ -20,6 +20,7 @@
   - [12º Aula (CSS - Parte 2)](#12º-aula)
   - [13º Aula (CSS - revisão)](#13º-aula)
   - [14º Aula (Extra: Git e Github)](#14º-aula)
+  - [15º Aula (Extra: SASS)](#15º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -375,3 +376,16 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - [Github](https://tecnoblog.net/responde/o-que-e-github/)
 - [Versionamento](https://www.alura.com.br/artigos/versionamento-semantico-breve-introducao?utm_term=&utm_campaign=%5BSearch%5D+%5BPerformance%5D+-+Dynamic+Search+Ads+-+Artigos+e+Conte%C3%BAdos&utm_source=adwords&utm_medium=ppc&hsa_acc=7964138385&hsa_cam=11384329873&hsa_grp=111087461203&hsa_ad=662261334153&hsa_src=g&hsa_tgt=aud-1295637864136:dsa-843358956400&hsa_kw=&hsa_mt=&hsa_net=adwords&hsa_ver=3&gclid=Cj0KCQjwgNanBhDUARIsAAeIcAssrIEUhNR-OxKh-XTncu3qC6ON_qmk5i4jIMOBkUn2KjjsxuT2xJUaApShEALw_wcB)
 
+### 15º Aula
+
+#### [SASS (Syntactically Awesome Style Sheets)](https://sass-lang.com/)
+
+- O que é Sass?
+  - É uma linguagem de folhas de estilo que se **estende ao CSS**, fornecendo **funcionalidades adicionais** e **facilitando a escrita e manutenção de código CSS**.
+- [Principais recuros](https://sass-lang.com/guide/)
+  1. Variáveis - podem **armazenar informações** que você deseja **reutilizar** em toda a sua folha de estilo!
+  2. Aninahmento - permite que você **aninhe** seus **seletores CSS** de uma forma que siga a mesma **hierarquia visual do seu HTML**.
+  > Atenção - "As regras **excessivamente aninhadas** podem resultar em CSS muito específico, o que pode ser **difícil de manter** e geralmente é considerado uma **má prática**".
+  3. Módulos - você não precisa escrever todo o seu **Sass em um único arquivo**. Você pode **dividir** como quiser com a regra '@use'.
+  4. Mixins - '@mixins' são **blocos de estilos reutilizáveis** que podem ser **personalizados** atráves de **parâmetros** (basicamente uma função)
+  5. Herança - @extend permite **compartilhar** um conjunto
