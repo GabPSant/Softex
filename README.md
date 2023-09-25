@@ -21,6 +21,7 @@
   - [13º Aula (CSS - revisão)](#13º-aula)
   - [14º Aula (Extra: Git e Github)](#14º-aula)
   - [15º Aula (Extra: SASS)](#15º-aula)
+  - [16º Aula (HTML DOM e Frameworks CSS)](#16º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -389,3 +390,29 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   3. Módulos - você não precisa escrever todo o seu **Sass em um único arquivo**. Você pode **dividir** como quiser com a regra '@use'.
   4. Mixins - '@mixins' são **blocos de estilos reutilizáveis** que podem ser **personalizados** atráves de **parâmetros** (basicamente uma função)
   5. Herança - @extend permite **compartilhar** um conjunto
+   
+### 16º Aula
+
+#### HTML DOM
+
+- O HTML DOM é um **modelo de objeto padrão** e **interface de programação** para HTML. Ele define:
+  1. Os elementos HTML como **objetos**
+  2. As **propriedades** de todos os elementos HTML;
+  3. Os **métodos** para acessar todos os elementos HTML;
+  4. Os **eventos** para todos os elementos HTML.
+- Em outras palavras: O HTML DOM **é um padrão de como obter, alterar, adicionar ou excluir** elementos HTML.
+- Arvore de objetos HTML DOM:
+![Imagem da arvore](img/arvore-DOM.png)
+- HTML e JavaScript:
+  1. JavaScript pode alterar todos os **elementos** HTML da página;
+  2. JavaScript pode alterar todos os **atributos** HTML da página;
+  3. JavaScript pode alterar todos os **estilos** CSS da página;
+  4. JavaScript pode **remover elementos e atributos** HTML existentes;
+  5. JavaScript pode **adicionar novos elementos** e atributos HTML;
+  6. JavaScript pode **reagir a todos os eventos** HTML existentes na página;
+  7. JavaScript pode **criar novos eventos HTML** na página.
+
+### [Frameworks CSS](https://www.brasilcode.com.br/frameworks-css/)
+
+- É uma ferramente que facilita a **criação de interfaces do usuários** e funcionais, **fornecendo um conjunto predefinido** de estilos, componentes e funcionalidades.
+![Frameworks CSS mais conhecidos](img/frameworks.jpg)
