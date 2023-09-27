@@ -414,5 +414,5 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### [Frameworks CSS](https://www.brasilcode.com.br/frameworks-css/)
 
-- É uma ferramente que facilita a **criação de interfaces do usuários** e funcionais, **fornecendo um conjunto predefinido** de estilos, componentes e funcionalidades.
+- É uma ferramente que facilita a **criação de interfaces do usuários** e funcionais, **fornecendo um conjunto predefinido** de estilos, componentes e funcionalidades.  
 ![Frameworks CSS mais conhecidos](img/frameworks.jpg)
