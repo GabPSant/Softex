@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+header, footer{
+    color: white;
+    background-color: rgb(13, 153, 196);
+}
+
+main{
+    display: block;
+    padding-left: 1.5rem;
+}
+
+section{
+    margin: 1.5rem 0;
+}
+
+footer{
+    height: 8rem;
+}
+
+h1{
+    text-align: center;
+    padding-bottom: 1.2rem;
+}
+
+a{
+    text-decoration: none;
+    color:blueviolet;
+}
+a:visited{
+    color: rgb(227, 227, 16);
+}
+
+#navegacao>h2{
+    text-align: center;
+}
+
+#navegacao>ol{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 1rem 0;
+}
+
+#principal{
+    width: 65%;
+}
+
+#referencias{
+    padding-top: 0.5rem;
+}
+
+.titulo{
+    font-weight: 600;
+}
+
+.imagem{
+    width: 50%;
+    object-fit: cover;
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+.descricao{
+    font-size: large;
+    text-align: justify;
+    padding-right: 1.4rem;
+}
+
+@media (max-width: 525px){
+    #principal{
+        width: 40%;
+    }
+    .descricao{
+        font-size: medium;
+    }
+}
