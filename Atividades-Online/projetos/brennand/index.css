@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+main{
+    display: flex;
+    justify-content: space-between;
+}
+
+aside{
+    border: 2px dashed red;
+    width: 20%;
+    height: 10rem;
+}
+
+h1{
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 550;
+    letter-spacing: 2px;
+    padding: 1.3rem 0;
+    color: white;
+    background-color: black;
+}
+
+#header_titulo{
+    text-decoration: underline;
+}
+
+#principal{
+    width: 85%;
+}
+
+#botoes{
+    display: flex;
+    flex-direction: column;
+    align-content: space-around center;
+}

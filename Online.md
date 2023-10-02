@@ -288,3 +288,5 @@
   - canvas -> pode ser usado para criar gráficos usando scripts ([explicação](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/canvas))
   - noscript -> quando é necessário usar um script não suportado pelo navegador da página
   - script -> serve para executar código dentro do html.
+- Forms
+  - Servem para criar formulários (contem as tags input)
