@@ -2,22 +2,42 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    font-family:'Arial Narrow';
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 main{
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
 }
 
-aside{
-    border: 2px dashed red;
-    width: 20%;
+footer{
+    padding: 0 0.5rem 0.5rem;
+    color: white;
+    background-color: black;
+}
+
+nav{
+    border: 2px solid black;
+    border-radius: 5%;
     height: 10rem;
+    width: 20rem;
+    text-align: center;
+    margin: 1.5rem 0;
+    background-color: rgba(213, 204, 204, 0.695);
+    align-self: center;
+}
+
+nav h2{
+    color: black;
+    padding-bottom: 0.5rem;
 }
 
 h1{
     text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 550;
     letter-spacing: 2px;
     padding: 1.3rem 0;
@@ -30,11 +50,49 @@ h1{
 }
 
 #principal{
-    width: 85%;
+    padding: 0.7rem;
 }
 
-#botoes{
+#principal img{
+    width: 45% ;
+    align-self: center;
+}
+
+#principal section{
     display: flex;
     flex-direction: column;
-    align-content: space-around center;
+    gap: 0.5rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+#principal span{
+    font-size: 1.2rem;
+}
+
+#navegacao{
+    text-align: left;
+    padding-left: 1rem;
+    flex-direction: column;
+    
+    font-size: 1.2em;
+}
+
+.link{
+    padding: 0.2rem;
+}
+
+.link a{
+    width: 12rem;
+    height: 2rem;
+    margin: 2rem 0;
+    color: rgba(0, 0, 0, 0.658);
+    text-decoration: none;
+}
+
+.titulo{
+    font-family: 'Times New Roman';
+    font-weight: bold;
+    color: black;
+    text-decoration: underline;
 }
