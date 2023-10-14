@@ -1,0 +1,14 @@
+/*
+h1:hover{...} //Quando o mouse estiver sobre esse elemento essas propriedades serão ativadas
+
+h1:active{...} //Quando o mouse ativar (geralmente ao clicar) o elemento essas propriedades serão ativadas
+
+h1:focus{...} //Quando o elemento estiver em foco (for marcado) essas propriedades serão ativadas
+
+li:nth-child(even){...} //todos os items de uma lista em posições pares terão estas propriedades
+
+li:nth-child(odd){...} //todos os items de uma lista em posições impares terão estas propriedades
+
+p:not(.exemplo){...} //todos os paragrafos com essa classe teram essas propriedades retiradas
+
+*/

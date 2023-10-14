@@ -1,0 +1,75 @@
+/*
+    As easing functions, ou as funções de suavização, são essenciais para criar transições 
+    e animações suaves em CSS. Elas definem a velocidade de mudança de um valor ao longo do tempo, 
+    proporcionando uma sensação mais natural e dinâmica.
+
+    Em vez de mover-se a uma velocidade constante do início ao fim, 
+    as funções de suavização permitem que as animações acelerem ou desacelerem de maneira mais agradável.
+*/
+
+/*  Por que as easing functions são importantes?
+
+    1. Naturalidade: 
+        movimentos no mundo real raramente começam ou param abruptamente. 
+        As funções de suavização mimetizam essa física natural, tornando as animações mais realistas.
+
+    2. Atenção dirigida: 
+        uma animação bem projetada com a suavização correta pode direcionar 
+        a atenção do usuário para onde você deseja de maneira eficaz.
+
+    3. Feedback: 
+        as animações proporcionam feedback visual. Uma suavização adequada pode transmitir 
+        informações sobre uma ação, como se foi bem-sucedida ou se encontrou um erro.
+
+*/
+
+/*  Linear
+
+    Move-se a uma velocidade constante do início ao fim. É a ausência de qualquer suavização.
+*/
+
+h1{
+    transition-timing-function: linear;
+}
+
+/*  Ease-in
+
+    Começa lentamente e acelera à medida em que avança.
+*/
+
+h1{
+    transition-timing-function: ease-in;
+}
+
+/*  Ease-out
+
+    Começa rapidamente e desacelera à medida em que se aproxima do fim.
+*/
+
+h1{
+    transition-timing-function: ease-out;
+}
+
+/*  Ease-in-out
+
+    Começa e termina lentamente, com uma aceleração no meio.
+*/
+
+h1{
+    transition-timing-function: ease-in-out;
+}
+
+/*  Easing functions personalizadas com cubic-bezier
+
+    Para ter um controle mais preciso sobre a curva de suavização, 
+    o CSS oferece a função cubic-bezier. Ela aceita quatro argumentos, 
+    representando dois pontos de controle para a curva Bézier cúbica.
+
+    Existem várias ferramentas on-line que permitem visualizar e ajustar essas curvas, 
+    tornando mais fácil entender e definir as funções cubic-bezier personalizadas.
+
+*/
+
+h1{
+    transition-timing-function: cubic-bezier(0.17, 0.67, 0.83, 0.67);
+}

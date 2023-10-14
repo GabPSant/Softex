@@ -1,0 +1,103 @@
+/*
+    Transições são uma maneira de controlar a mudança de propriedades de um elemento 
+    de um estado inicial para um estado final. 
+    Em vez de uma mudança abrupta, a transição suaviza o processo 
+    ao longo de um período de tempo especificado.
+*/
+
+/*  Caracteristicas das transições:
+
+    1. Propriedade em transição: 
+        é possível definir qual propriedade específica você deseja suavizar a mudança, como cor, altura, largura etc.;
+
+    2. Duração: 
+        quanto tempo a transição levará do início até o fim;
+
+    3. Timing (ou ritmo): 
+        como a transição ocorre ao longo de um tempo, 
+        sendo possível definir o timing que a mudança ocorre. 
+        Pode ser em um ritmo constante, acelerando no início, desacelerando no final etc.;
+
+    4. Delay: 
+        quanto tempo esperar antes de iniciar a transição.
+
+*/
+
+/*  Propriedade transition (transition-property):
+
+    É a propriedade principal usada para estabelecer uma transição. 
+    Quando usada sozinha, geralmente, é uma forma resumida (shorthand) de definir 
+    várias propriedades de transição de uma vez. 
+    Normalmente, ela determina quais propriedades do elemento serão animadas.
+
+*/
+h1{
+    transition-property: all; /*Todas as propriedades animaveis serão animadas*/
+    transition-property: none; /*Nenhuma propriedade animavel será animada*/
+    transition-property: width; /*A largura será animada*/
+    transition-property: height; /*A altura será animada*/
+}
+
+/*  Duração da transição (transition-duration):
+
+    Essa propriedade estabelece quanto tempo 
+    a transição levará da sua origem até o seu estado final.
+
+*/
+
+h1{
+    transition-duration: 2s; /*A transição vai durar 2 segundos*/
+    transition-duration: 500ms; /*A transição vai durar 500 milisegundos (0.5 segundos)*/
+}
+
+/*  Definindo o timing da transição
+    Valores Comuns:
+
+        1. linear: 
+            velocidade constante do início ao fim;
+
+        2. ease: 
+            começa lento, acelera no meio e desacelera no final;
+
+        3. ease-in: 
+            começa lento;
+
+        4. ease-out:
+            desacelera no final;
+        
+        5. ease-in-out: 
+            começa lento, acelera e, então, desacelera;
+
+        6. cubic-bezier(n,n,n,n): 
+            define sua própria função de timing usando a função Bézier cúbica.
+
+*/
+
+h1{
+    transition-timing-function: linear;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.75, 0.5, 0.8);
+}
+
+/*  Delay na transição (transition-delay):
+
+    - Define o tempo que a transição começará após a mudança ser acionada.
+
+*/
+
+h1{
+    transition-delay: 1s;
+    transition-delay: 400ms;
+}
+
+/*  Shorthand: juntando tudo
+
+    A propriedade transition permite combinar várias propriedades de transição 
+    em uma declaração única. Formato: 
+    
+        transition: [property] [duration] [timing-function] [delay];
+*/
+
+h1{
+    transition: all 2s ease 500ms;
+}

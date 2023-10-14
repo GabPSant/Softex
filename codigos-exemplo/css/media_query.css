@@ -1,0 +1,54 @@
+/*Mobile*/
+@media (max-width: 480px){}
+
+
+/*Dispositivos pequenos*/
+@media (min-width: 481px) and (max-width: 767px){}
+
+
+/*Tablets pequenos*/
+@media (min-width: 768px) and (max-width: 991px){}
+
+
+/*Tablets grandes e notebooks*/
+@media (min-width: 992px) and (max-width: 1199px){}
+
+
+/*Desktops (Computadores de messa)*/
+@media (min-width: 1200px) and (max-width: 1919px){}
+
+
+/*Telas muito grandes*/
+@media (min-width: 1920px){}
+
+/*Tela - Estabelece valores de comprimento e altura*/
+
+@media screen and (max-width: 900px) and (max-height: 700px){}
+
+/*Orientação*/
+
+@media (orientation: portrait){} /*Define essa media se a orientação for retrato*/
+
+@media (orientation: landscape){} /*Define essa media se a orientação for paisagem*/
+
+/*Resolução*/
+
+@media (min-resolution: 192dpi){} /*Caso a resolução seja de pelo menos 192 dpi (dots per inch)*/
+
+/*Media querys para estilos de midia*/
+
+/*Impressão*/
+@media print{}
+
+/*  Por exemplo, você pode definir estilos específicos para garantir 
+    que o conteúdo seja apresentado corretamente ao ser impresso, 
+    como remover cores de fundo ou ocultar elementos não essenciais
+*/
+
+/*Tela ou Monitor*/
+@media screen{}
+
+/*
+    Usado para dispositivos de tela, como monitores de computador, tablets e smartphones. 
+    A maioria dos estilos padrão é definida para dispositivos de tela
+*/

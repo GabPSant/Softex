@@ -1,0 +1,114 @@
+/*
+    Animação são um mecanismo mais flexível para criar efeitos 
+    de movimento e mudanças de estilo em elementos HTML e CSS.
+
+    Enquanto as transições CSS são usadas para suavizar mudanças entre estados, 
+    as animações CSS oferecem uma maneira mais complexa e controlada de animar elementos, 
+    definindo múltiplos pontos-chave de animação.
+*/
+
+/*  Caracteristicas das animações
+
+    1. Keyframes: 
+        define uma sequência de estados (ou etapas) pela qual o elemento passará;
+
+    2. Duração: 
+        quanto tempo a animação completa levará;
+
+    3. Iteration: 
+        quantas vezes a animação deve repetir;
+
+    4. Direction: 
+        a ordem em que os keyframes são percorridos (como normal ou reverso);
+
+    5. Timing: 
+        assim como com nas transições, é como a animação ocorre ao longo do tempo;
+
+    6. Delay: 
+        quanto tempo esperar antes de iniciar a animação.
+
+*/
+
+/*  Keyframes: definindo os passos da animação
+
+    Keyframes são usados para especificar diferentes estados de uma animação.
+*/
+
+@keyframes animacao{
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/*  Propriedade animation-name: nomeando a animação
+
+    Identifica a animação que você deseja aplicar, referindo-se ao nome dado nos keyframes.
+*/
+
+h1{
+    animation-name: animacao;
+}
+
+/*  Propriedade animation-duration: definindo a duração
+
+    Especifica quanto tempo uma animação deve levar para concluir uma iteração.
+*/
+
+h1{
+    animation-duration: 2s;
+}
+
+/*  Propriedade animation-timing-function: 
+
+    controla o timing, ou seja, a aceleração e a desaceleração da animação.
+*/
+
+h1{
+    animation-timing-function: ease-out;
+}
+
+/*  Propriedade animation-delay: 
+
+    adiciona um atraso, ou seja, define um período de espera antes que a animação comece.
+*/
+
+h1{
+    animation-delay: 1s;
+}
+
+/*  Propriedade animation-iteration-count: 
+
+    define quantas vezes a animação será repetida.
+*/
+
+h1{
+    animation-iteration-count: infinite; /*a animação se repete infinitivamente*/
+}
+
+/*  Propriedade animation-fill-mode: 
+
+    define o estado do elemento antes e depois da animação. Os valores incluem none, forwards, backwards e both.
+*/
+
+h1{
+    animation-fill-mode: none; /*A animação volta para seu estado pré-animação ao finalizar o processo*/
+    animation-fill-mode: forwards; /*A animação fica em seu estado pós animação*/
+    animation-fill-mode: backwards; /*A animação volta para seu estado pré-animação durante o processo*/
+    animation-fill-mode: both; /*A animação fica em seu estado de finalização, igual ao forwards*/
+}
+
+/*  Propriedade animation-play-state: 
+
+    pausando e resumindo animações, controla se a animação está em execução ou pausada.
+*/
+
+h1{
+    animation-play-state: running; /*Animação está rodando*/
+    animation-play-state: paused; /*Animação está pausada*/
+}

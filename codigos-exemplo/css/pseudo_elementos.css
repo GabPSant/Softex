@@ -1,0 +1,31 @@
+.info::before{content: "i ";} /*Adiciona o elemento i no inicio do conteudo de todos os elmentos com a classe info*/
+
+.alert::after{content:" !";} /*Adiciona o elemento i no fim do conteudo de todos os elmentos com a classe alert*/
+
+p::first-line { /*Define que a primeira linha do paragrafo vai receber essas propriedades*/
+    font-weight: bold; 
+    color: blue; 
+}
+
+p::first-letter { /*Define que a primeira letra do paragrafo vai receber essas propriedades*/
+    font-size: 2em; 
+    float: left; 
+    margin-right: 4px;
+}
+
+::selection{
+    background-color: lightblue;
+    color: white;
+}
+/*  Estiliza a parte de um elemento que foi selecionada pelo usuário. 
+    Por exemplo, o texto que o usuário destacou com o mouse.
+*/
+
+input:placeholder{
+    color: grey;
+    font-style: italic;
+}
+/*
+    Estiliza o texto de placeholder (o texto que aparece temporariamente em um campo de entrada, 
+    como um campo de pesquisa ou formulário, antes que o usuário insira algum texto).
+*/

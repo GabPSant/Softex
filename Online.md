@@ -1,4 +1,4 @@
-# Aulas Online (Indice)
+# [Aulas Online (Indice)](/codigos-exemplo/)
 
 - [Pensamento Computacional (JavaScript básico)](#pensamento-computacional)
 - [HTML e CSS](#htmlcss)
@@ -290,3 +290,33 @@
   - script -> serve para executar código dentro do html.
 - Forms
   - Servem para criar formulários (contem as tags input)
+
+### CSS
+
+- Pontos principais:
+  - [Media query](/codigos-exemplo/css/media_query.css)
+  - [Pseudo-classes](/codigos-exemplo/css/pseudo_classes.css)
+  - [Pseudo-elementos](/codigos-exemplo/css/pseudo_elementos.css)
+  - [Transições](/codigos-exemplo/css/transicoes.css)
+  - [Animação](/codigos-exemplo/css/animacao.css)
+  - [Transformações](/codigos-exemplo/css/transformacoes.css)
+  - [Easing fuctions](/codigos-exemplo/css/easing_functions.css)
+
+#### Principios básicos de design de animação
+
+- Timing
+  - O timing refere-se à duração de uma animação e à velocidade com que ela se move.
+  - O timing certo pode fazer uma animação aparentar natural, como o movimento de um galho ao vento ou a forma como uma bolha sobe na água.
+  - O timing deve ser considerado com base no contexto. Por exemplo, uma animação de feedback para um botão pressionado deve ser rápida e imediata, enquanto uma animação de introdução pode ser mais lenta e deliberada.
+- Sequência
+  - A sequência refere-se à ordem e ao arranjo de múltiplas animações ou ações.
+  - Uma boa sequência ajuda a guiar a atenção do usuário e a entender uma série de eventos. Ela também pode dar um sentido de ritmo e cadência.
+  - Em interfaces, a sequência pode ser usada para guiar o olho do usuário de um ponto de foco para outro ou para estabelecer uma hierarquia visual. Por exemplo, ao carregar uma página, elementos principais podem aparecer primeiro, seguidos de elementos secundário.
+- Feedback
+  - É uma animação ou ação que informa ao usuário que sua ação foi reconhecida.
+  - O feedback visual ajuda a confirmar as ações dos usuários, tornando a interface mais intuitiva e confiável.
+  - Em UI/UX, o feedback pode ser tão simples quanto um botão mudando de cor ao ser clicado ou um ícone agitando-se quando uma ação não pode ser completada.
+- Facilitação (ou easing, em inglês)
+  - Refere-se à aceleração e desaceleração de uma animação ao longo do tempo.
+  - Ela dá uma sensação de realismo e fluidez. Na vida real, poucos movimentos começam e terminam abruptamente; geralmente, eles aceleram e desaceleram.
+  - Em CSS, a facilitação é frequentemente controlada pela propriedade transition-timing-function ou por funções cubic-bezier personalizadas. A escolha do tipo de facilitação pode afetar drasticamente como uma animação é percebida, seja dando uma sensação de leveza, peso ou elasticidade.

@@ -1,0 +1,75 @@
+/*
+    Quando você utiliza um aplicativo de smartphone 
+    e toca no ícone de menu ou desliza para abrir o painel de configurações, 
+    ele, geralmente, desliza para a tela de forma suave e gradual. 
+    Essa transição é realizada usando transformações CSS para animar o movimento 
+    do painel de configurações, tornando a experiência de uso mais agradável e visualmente atraente.
+
+    As transformações em CSS são propriedades que permitem alterar a posição, 
+    o tamanho, a rotação e outras características visuais dos elementos HTML de uma página da web.
+
+    Essas transformações são aplicadas sem a necessidade de modificar o conteúdo HTML ou usar JavaScript.
+*/
+
+/*  Propriedades  */
+
+/*
+    A propriedade transform:
+        permite aplicar transformações 2D ou 3D em um elemento. 
+        Ela pode mudar a forma, o tamanho, a posição ou inclinação de um elemento.
+
+    Podemos combinar várias funções de transformação em uma única declaração 
+    e elas serão aplicadas na forma que foram ordenadas.
+*/
+
+h1{
+    transform: translate(50px, 50px) rotate(45deg) scale(2, 0.5) skew(20deg, 10deg);;
+}
+
+/*
+    A propriedade translate:
+        move um elemento ao longo dos eixos X e Y. 
+        Ela é especialmente útil para animações e para ajustar 
+        a posição de um elemento sem alterar o seu layout.
+*/
+
+h1{
+    transform: translateX(50px); /*O objeto vai se mover 50px no eixo X*/
+
+    transform: translateY(50px); /*O objeto vai se mover 50px no eixo Y*/
+
+    transform: translate(50px, 50px); /*O objeto vai se mover 50px no eixo X e no eixo Y*/
+}
+
+/*
+    A propriedade rotate:
+        permite girar um elemento ao redor de um ponto central.
+*/
+
+h1{
+    transform: rotate(180deg); /*O elemento vai rotacionar 180 graus*/
+}
+
+/*
+    A propriedade scale:
+        permite redimensionar um elemento, ampliando ou diminuindo o seu tamanho.
+*/
+
+h1{
+    transform: scaleX(2); /*Dobra o elemento no eixo X*/
+
+    transform: scaleY(0.5); /*Dobra o elemento no eixo Y*/
+
+    transform: scale(1.5, 1.5); /* Aumenta em 1.5 vezes o elemento no eixo X e no eixo Y*/
+}
+
+/*
+    A propriedade skew:
+        inclina um elemento ao longo dos eixos X e Y.
+*/
+
+h1{
+    transform: skewX(45deg); /*Inclina o elemento 45 graus no eixo X*/
+
+    transform: skew(45deg); /*Inclina o elemnento 45 graus no eixo Y*/
+}
