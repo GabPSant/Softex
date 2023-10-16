@@ -22,6 +22,8 @@
   - [14º Aula (Extra: Git e Github)](#14º-aula)
   - [15º Aula (Extra: SASS)](#15º-aula)
   - [16º Aula (HTML DOM e Frameworks CSS)](#16º-aula)
+- [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
+  - [17º Aula (TypeScript)](#17º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -163,7 +165,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - break: interrompe totalmente o processo de repetição.
 - continue: pula uma repetição do processo de repetição.
-- É possível fazer iterações de listas ([código explicando o conceito](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/testeFor.js))
+- É possível fazer iterações de listas ([código explicando o conceito](https://github.com/GabPSant/Softex/tree/main/codigos-exemplo/javascript/testeFor.js))
 
 ### 7º Aula
 
@@ -241,10 +243,12 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 ##### 4. Imagens e mídia
 
 - Imagem (img):
+
   > src -> para buscar um arquivo de imagem  
   > alt -> descrição alternativa da imagem
 
 - Vídeo (video):
+
   > src -> para buscar um arquivo de vídeo  
   > controls -> adiciona controles de repetição do vídeo
 
@@ -266,6 +270,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - form: usado para criar formulários em HTML
 - Tipos de entrada
+
   > input:  
   > --> Texto  
   > --> Senha  
@@ -275,27 +280,29 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - button: envio do formulário
 - Rótulos (label)
-  - label - é usado para **associar** um rótulo a um elemento de formulário.  
+
+  - label - é usado para **associar** um rótulo a um elemento de formulário.
   - for - é usado em label **para corresponder ao atributo** id **do elemento de formulário**
 
 - Agrupamentos de elementos de formulário
-  - fieldset - define o bloco de agrupamento  
+  - fieldset - define o bloco de agrupamento
   - legend - fornece uma legenda descritiva para o grupo
 
 ##### 7. Estruturação avançada
 
 - tag div: usada para criar uma divisão lógica ou seção de contéudo (é uma tag genérica que pode seu usada para **agrupar elementos** e **aplicar estilos** ou comportamentos a eles)
 - Seções
-  - Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios.  
-  - Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.  
-  - Conteúdo principal (main): é usada para **envolver o conteúdo principal** de um documento. Geralmente, **só deve háver um main** por página, e ele deve conter o contéudo central do documento.  
-  - Seções (section): é usada para **divider o conteúdo de uma página** em seções temáticas distintas. Ela é usada para **agrupar e estruturar semanticamente** o contéudo relacionado.  
-  - Composição (article): é usada para **representar uma composição autônome** e independendte dentro de uma página. Ela é adequada para contéudo que pode  ser distribuído e **reutilizado** de forma independente , como **postagens de blog**, **notícias**, etc.
+
+  - Cabeçalho (header): usada para representar uma **seção de navegação** em um documento. Ela é usada para incluir o **logotipo**, o **título do site**, **menus denavegação** e outros elementos introdutórios.
+  - Navegação (nav): usado para representar uma **seção de navegação** em um documento. Ela é usada para **agrupar links que levam a outras páginas do site** ou a diferentes seções da mesma página.
+  - Conteúdo principal (main): é usada para **envolver o conteúdo principal** de um documento. Geralmente, **só deve háver um main** por página, e ele deve conter o contéudo central do documento.
+  - Seções (section): é usada para **divider o conteúdo de uma página** em seções temáticas distintas. Ela é usada para **agrupar e estruturar semanticamente** o contéudo relacionado.
+  - Composição (article): é usada para **representar uma composição autônome** e independendte dentro de uma página. Ela é adequada para contéudo que pode ser distribuído e **reutilizado** de forma independente , como **postagens de blog**, **notícias**, etc.
   - Conteúdo relacionado (aside): é usada para **representar conteúdo relacionado** ou suplementar que está separado do conteúdo principal. Ela pode conter informações adicionais, como **barras laterais**, **anúncios**, **contéudo relacionado**, entre outros.
   - Rodapé (footer): é usada para **representar o rodapé de um documento** ou seção. Geralmente, é usada para incluir **informações de direitos autorais**, **links para páginas relacionais**, **informações de contato**, entre outros.
 
 - Visão geral:
-  - Essas tags fornecem **uma melhor semântica e estruturação** do conteúdo.  
+  - Essas tags fornecem **uma melhor semântica e estruturação** do conteúdo.
   - **Não são obrigátorias**, e o seu emprego deve ser feito **de acordo com a finalidade e estrutura do seu site**.
 
 ### 11º Aula
@@ -386,11 +393,11 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - [Principais recuros](https://sass-lang.com/guide/)
   1. Variáveis - podem **armazenar informações** que você deseja **reutilizar** em toda a sua folha de estilo!
   2. Aninahmento - permite que você **aninhe** seus **seletores CSS** de uma forma que siga a mesma **hierarquia visual do seu HTML**.
-  > Atenção - "As regras **excessivamente aninhadas** podem resultar em CSS muito específico, o que pode ser **difícil de manter** e geralmente é considerado uma **má prática**".
+     > Atenção - "As regras **excessivamente aninhadas** podem resultar em CSS muito específico, o que pode ser **difícil de manter** e geralmente é considerado uma **má prática**".
   3. Módulos - você não precisa escrever todo o seu **Sass em um único arquivo**. Você pode **dividir** como quiser com a regra '@use'.
   4. Mixins - '@mixins' são **blocos de estilos reutilizáveis** que podem ser **personalizados** atráves de **parâmetros** (basicamente uma função)
   5. Herança - @extend permite **compartilhar** um conjunto
-   
+
 ### 16º Aula
 
 #### HTML DOM
@@ -402,7 +409,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   4. Os **eventos** para todos os elementos HTML.
 - Em outras palavras: O HTML DOM **é um padrão de como obter, alterar, adicionar ou excluir** elementos HTML.
 - Arvore de objetos HTML DOM:
-![Imagem da arvore](img/arvore-DOM.png)
+  ![Imagem da arvore](img/arvore-DOM.png)
 - HTML e JavaScript:
   1. JavaScript pode alterar todos os **elementos** HTML da página;
   2. JavaScript pode alterar todos os **atributos** HTML da página;
@@ -415,4 +422,18 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 ### [Frameworks CSS](https://www.brasilcode.com.br/frameworks-css/)
 
 - É uma ferramente que facilita a **criação de interfaces do usuários** e funcionais, **fornecendo um conjunto predefinido** de estilos, componentes e funcionalidades.  
-![Frameworks CSS mais conhecidos](img/frameworks.jpg)
+  ![Frameworks CSS mais conhecidos](img/frameworks.jpg)
+
+## 3º Matéria (TypeScript e React)
+
+### 17º Aula
+
+#### [TypeScript (site oficial - link)](https://www.typescriptlang.org/)
+
+- O que é TypeScript?
+  - TypeScript é uma linguagem de programação de código aberto que é uma extensão do
+    JavaScript. Ela adiciona recursos de tipagem estática ao JavaScript.
+  - Isso que significa que você pode declarar o **tipo de dados** para variáveis, **parâmetros de função** e **valores de retorno** de função.
+- Outras características do TypeScript
+  - TypeScript ajuda a **detectar erros** e **melhorar a manutenção do código**, tornando-o mais seguro e confiável durante o desenvolvimento de aplicativos.
+  - TypeScript é **transpilado para JavaScript** para ser executado nos navegadores ou em qualquer ambiente que suporte JavaScript.

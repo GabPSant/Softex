@@ -68,7 +68,11 @@ function isPar(inteiro) {
 
 // Questão 7
 function media(nota1, nota2, nota3) {
-  if (Number.isNaN(Number(nota1)) ||Number.isNaN(Number(nota2)) ||Number.isNaN(Number(nota3))) {
+  if (
+    Number.isNaN(Number(nota1)) ||
+    Number.isNaN(Number(nota2)) ||
+    Number.isNaN(Number(nota3))
+  ) {
     return "Pelo menos um dos valores não é aceitavel!";
   }
   return ((nota1 + nota2 + nota3) / 3).toFixed(3);
@@ -81,20 +85,24 @@ function imc(altura, peso) {
   peso = Number(peso);
   if (Number.isInteger(altura) || !Number.isInteger(peso)) {
     return "Um dos valores não é válido";
-  } 
-  const imc = peso/Math.pow(altura,2);
+  }
+  const imc = peso / Math.pow(altura, 2);
   return `Seu IMC é ${imc.toFixed(2)}`;
 }
 //console.log(imc(1.72,77));
 
 // Questão 9
-function calcularDesconto(produto = 4000,percentualDesconto = 50){
+function calcularDesconto(produto = 4000, percentualDesconto = 50) {
   produto = Number(produto);
   percentualDesconto = Number(percentualDesconto);
-  if(Number.isNaN(produto) || Number.isNaN(percentualDesconto) || (percentualDesconto<=0 && percentualDesconto>100)){
+  if (
+    Number.isNaN(produto) ||
+    Number.isNaN(percentualDesconto) ||
+    (percentualDesconto <= 0 && percentualDesconto > 100)
+  ) {
     return "Ou o valor não é aceitável ou o percentual está alem do limite (0% a 100%)";
   }
-  const produtoDesconto = (produto*(1/(percentualDesconto/100))).toFixed(3);
+  const produtoDesconto = (produto * (percentualDesconto / 100)).toFixed(3);
   return `Seu desconto seria ${percentualDesconto}% para o produto de valor ${produto}\nCusto final do produto: ${produtoDesconto}`;
 }
 //console.log(calcularDesconto(800000,75));
