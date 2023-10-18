@@ -1,4 +1,4 @@
-# [Softex](https://softex.br/)
+# [Softex (site oficial)](https://softex.br/)
 
 - Curso de Aceleração Front-end da Softex (nesse repositório tem todos os códigos, atividades e projetos feitos por mim durante o curso)
 
@@ -23,7 +23,8 @@
   - [15º Aula (Extra: SASS)](#15º-aula)
   - [16º Aula (HTML DOM e Frameworks CSS)](#16º-aula)
 - [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
-  - [17º Aula (TypeScript)](#17º-aula)
+  - [17º Aula (TypeScript - Parte 1)](#17º-aula)
+  - [18º Aula (TypeScript - Parte 2)](#18º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -447,3 +448,12 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Comando de instalação: **npm i -g tsx** [Esse comando deve ser usado no prompt de comando da máquina]
   - Agora com isso feito e a extensão instalada, você pode compilar os arquivos typescript com o comando: **tsx (nome do arquivo).ts**
 - [Codigos exemplos](codigos-exemplo/typescript/)
+
+### 18º Aula
+
+- Passo a passo para usar TypeScript na programação front-end (web)
+  - Primeiro, usar o comando **npm init -y**, para instalar o package.json (Criar um projeto JavaScript)
+  - Instalar a dependência do desenvolvedor para TypeScript no package.json, usando **npm install typescript -D** (o '-D' serve para definir o typescript como dominio do desenvolvedor)
+  - E por fim iniciar a compilação de arquivos typescript na versão javascript adequada com o comando **npx tsc --init**
+  - Agora para compilar qualquer arquivo TypeScript é possivel usar o comando **npx tsc (nome do arquivo).ts** e será criado um código de mesmo nome em JavaScript.
+  - Caso queira que o terminal fique compilando constantemente um arquivo TypeScript use o comando **npx tsc --watch (nome do arquivo).ts**, caso queira que pare use 'CONTROL + C'.
