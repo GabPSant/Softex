@@ -307,7 +307,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 11º Aula
 
-#### CSS (Cascading Style Sheets) - Parte 1 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
+#### CSS (Cascading Style Sheets) - Parte 1 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-exemplo/css/exemplo.css)
 
 - Conceitos básicos
   - É uma **linguagem de estilo** utilizada para definir a **apresentação e o design de páginas web**
@@ -341,7 +341,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 12º Aula
 
-#### CSS (Cascading Style Sheets) - Parte 2 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/exemplo.css)
+#### CSS (Cascading Style Sheets) - Parte 2 [[Explicação]](https://github.com/GabPSant/Softex/tree/main/codigos-exemplo/css/exemplo.css)
 
 - Tipografia
   - color: define a cor do texto
@@ -367,7 +367,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 #### Páginas de apoio
 
-- [Código Exemplo](https://github.com/GabPSant/Softex/tree/main/codigos-testes/css/responsividade.css)
+- [Código Exemplo](https://github.com/GabPSant/Softex/tree/main/codigos-exemplo/css/responsividade.css)
 - [Google Fonts](https://fonts.google.com/)
 - [Cores para HTML](https://htmlcolorcodes.com/)
 - [Unidades de medida CSS](https://desenvolvimentoparaweb.com/css/unidades-css-rem-vh-vw-vmin-vmax-ex-ch/)
