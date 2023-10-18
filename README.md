@@ -444,6 +444,6 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Agora com isso feito e as extensões instaladas, você pode compilar os arquivos typescript com o comando: **npx ts-node (nome do arquivo).ts**
 - Forma de compilar com tsx (**importante!**)
   - Essa é outra forma de compilar arquivos typescript usando somente a extensão 'tsx'.
-  - Comando de instalação: **npm i -g tsx** [Esse comandos devem ser usado no prompt de comando da máquina]
+  - Comando de instalação: **npm i -g tsx** [Esse comando deve ser usado no prompt de comando da máquina]
   - Agora com isso feito e a extensão instalada, você pode compilar os arquivos typescript com o comando: **tsx (nome do arquivo).ts**
 - [Codigos exemplos](codigos-exemplo/typescript/)
