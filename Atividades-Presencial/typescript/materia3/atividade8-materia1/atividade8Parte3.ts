@@ -1,9 +1,12 @@
-// Questão 16
+// Questão 16 - A função adivinheNumero() por usar comandos como alert e prompt causa erro ao tentar rodar o código, por isso
+// Vai ficar em formato de comentário no arquivo
+/*
+
 function adivinheNumero() {
   const numeroCerto: number = Math.floor(Math.random() * 100) + 1;
   let contador: number = 0,
     frase: string = "Digite um valor inteiro (entre 1 e 100)",
-    resposta: number;
+    resposta: number = 0;
   alert(
     "Jogo do número aleátorio! \nTente adivinhar o número secreto\n(Dica: ele está entre 1 e 100)"
   );
@@ -24,7 +27,8 @@ function adivinheNumero() {
   }
   console.log(numeroCerto, contador);
   alert(`Parabéns! A resposta era ${numeroCerto}\nTentativas: ${contador}`);
-}
+
+}*/
 //adivinheNumero();
 
 // Questão 17
@@ -116,4 +120,4 @@ function livrosDeCertoAutor(
   }
   return livrosAutor;
 }
-console.log(livrosDeCertoAutor(livros, "Autor 3"));
+//console.log(livrosDeCertoAutor(livros, "Autor 3"));
