@@ -76,12 +76,12 @@ class User implements Usuario{
 
 type chavesUsuario = keyof Usuario;//Contem todas as chaves do type/interface Usuario (funciona pra ambos)
 
-function pegarPropriedade(usuario:Usuario, propriedade:chavesUsuario){
+function pegarPropriedadeUsuario(usuario:Usuario, propriedade:chavesUsuario){
     return usuario[propriedade];
 }
 
-console.log(pegarPropriedade(usuario, "idade")); //Retorna '34'
-console.log(pegarPropriedade(usuario, "nome")); //Retorna 'undefined'
+console.log(pegarPropriedadeUsuario(usuario, "idade")); //Retorna '34'
+console.log(pegarPropriedadeUsuario(usuario, "nome")); //Retorna 'undefined'
 
 const video = {
     titulo: "Aprendendo TypeScript",
@@ -94,7 +94,7 @@ type chavesVideo = keyof typeof video;
 //Utility Types/Generics - Permite converter uma função javascript em um formato
 
 //  ReturnType - retorna o tipo
-type pegarPropriedadeRetornarTipo = ReturnType<typeof pegarPropriedade>;
+type pegarPropriedadeRetornarTipo = ReturnType<typeof pegarPropriedadeUsuario>;
 /* 
     O type criado pode armazenar os retornos possiveis da função 'pegarPropriedades',
     sendo eles: string | number | Endereco | undefined.
@@ -110,3 +110,50 @@ type UsuarioSemNomeEIdade = Omit<Usuario, "nome" | "idade">;
 
 //  Pick - só pega as informações que você deseja
 type UsuarioNomeEIdade = Pick<Usuario, "nome" | "idade">;
+
+//  Partial - Permite criar um tipo que define todas as informações como "?:"
+//  , permitindo que possam ser indefinidas.
+type UsuarioParcial = Partial<Usuario>;
+
+//--------------------------------------
+//  Formas de definir o tipo de uma variável
+
+type DBConfig = {// Pense nisso como a conexão para um banco de dados
+    nome?: string,
+    url: string,
+}
+
+const conexao1 = {nome: "postgres", url: "postgres://user:password"} as DBConfig;
+// 'as' - força uma tipagem, mesmo que conexao1 não contenha as informações de forma apropriada
+//        ele ainda sera considerado DBConfig. Não a avaliação ao criar a conexao1 se ela contem 
+//        os dados adequados.
+
+const conexao2:DBConfig = {nome: "mysql", url: "mysql://user:password"};
+// ':' - Ele faz a avaliação dos dados na variavel, mas não vai conter as informações contidas na variavel.
+//       Com essa tipagem o TypeScript não pode inferir resultados da variavel
+
+const conexao3 = {nome: "sqlite", url: "sqlite://user:password"} satisfies DBConfig;
+// 'satisfies' - Ele faz a avaliação dos dados da variavel e permite inferencia das informações
+
+/*Exemplos:
+    const teste1 = conexao2.nome;
+    const teste2 = conexao3.nome;
+
+    - teste1 deveria ser sempre string, mas sua tipagem o define como string | undefined 
+    - enquanto no teste2 o tipo sempre é string, pois o valor já pode ser inferido
+*/
+
+//  Generics - formato que permite criar funções que aceitam qualquer tipagem
+
+function pegarPropriedadeGenerics<T>(tipo:T, chave:keyof T): T[keyof T]{
+    return tipo[chave];
+}
+
+const videoT = {
+    nome: "TypeScript",
+    duracao: 1500,
+}
+
+type VideoT = typeof videoT;
+
+console.log(pegarPropriedadeGenerics<VideoT>(videoT, "nome")); // TypeScript
