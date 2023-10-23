@@ -1,6 +1,7 @@
 # [Softex (site oficial)](https://softex.br/)
 
 - Curso de Aceleração Front-end da Softex (nesse repositório tem todos os códigos, atividades e projetos feitos por mim durante o curso)
+- [Professor: Augusto Cesar](https://github.com/augustocesarfmo)
 
 ## Indíce
 
@@ -25,6 +26,7 @@
 - [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
   - [17º Aula (TypeScript - Parte 1)](#17º-aula)
   - [18º Aula (TypeScript - Parte 2)](#18º-aula)
+  - [19º Aula (React)](#19º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -458,3 +460,34 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - E por fim iniciar a compilação de arquivos typescript na versão javascript adequada com o comando **npx tsc --init**
   - Agora para compilar qualquer arquivo TypeScript é possivel usar o comando **npx tsc (nome do arquivo).ts** e será criado um código de mesmo nome em JavaScript.
   - Caso queira que o terminal fique compilando constantemente um arquivo TypeScript use o comando **npx tsc --watch (nome do arquivo).ts**, caso queira que pare use 'CONTROL + C'.
+- [Link para manipulação do construtor Date()](https://date-fns.org/)
+
+### 19º Aula
+
+#### [React](https://react.dev/)
+
+- React **é uma biblioteca de JavaScript** de código aberto, desenvolvida pelo **Facebook**, que é amplamente usada para **construir interfaces de usuário interativas e reativas** para aplicativos da web.
+- Ela foi lançada em 2013 e rapidamente se **tornou uma das principais ferramentas** para o desenvolvimento **front-end** moderno.
+- Vantagens do React
+  - A principal característica do React é sua abordagem de "componentização". Ele permite que os desenvolvedores **dividam a interface do usuário em pequenos componenetes independentes**, cada um com **seu próprio estado** e **comportamento**.
+- Criando um novo projeto com React
+  - Instalação do Node.js ([link](https://nodejs.org/pt-br))
+  - [Next.js](https://nextjs.org/): é um framework React full-stack. É versátil e permite criar apps React de qualquer tamanho – desde um blog estático a um app dinâmico complexo.
+  - Execute o comando em seu terminal (dentro de uma pasta especifica): npx create-next-app
+  > Ou o comando: npx create-next-app@latest
+  - Responda a lista de perguntas para a instalação do React:
+  ![imagem das perguntas de instalação](./img/perguntas-React.png)
+  - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): npm run dev
+- Extensões recomendadas para o VSCode quando usar React ([link](https://react.dev/learn/editor-setup#recommended-text-editor-features))
+- Projetos desenvolvidos com React (feitos em outros repositórios)
+  - [primeiro-projeto](https://github.com/GabPSant/React-first-project)
+
+##### Componentes em React (terminar de anotar o resto...)
+
+- Contexto:
+  - Componentes são um dos **conceitos centrais** do React. Um **componente** consiste na combinação de códigos **HTML**, **CSS** e **JavaScript** para construção de "componentes" (interfaces de usuários) **personalizados e reutilizáveis**.
+  - Componentes retornam uma estrutura visual do HTML (são funções especiais do React que permitem criar partes reutilizaveis de uma página).
+  - Componentes: blocos de interface de usuário ([link de aprendizado](https://react.dev/learn/your-first-component))
+- Definindo um Componente ([link de estudo e exemplo prático](https://react.dev/learn/your-first-component#defining-a-component))
+- Importando e exportando componentes
+  - 
