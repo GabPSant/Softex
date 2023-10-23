@@ -294,13 +294,13 @@
 ### CSS
 
 - Pontos principais:
-  - [Media query](/codigos-exemplo/css/media_query.css)
-  - [Pseudo-classes](/codigos-exemplo/css/pseudo_classes.css)
-  - [Pseudo-elementos](/codigos-exemplo/css/pseudo_elementos.css)
-  - [Transições](/codigos-exemplo/css/transicoes.css)
-  - [Animação](/codigos-exemplo/css/animacao.css)
-  - [Transformações](/codigos-exemplo/css/transformacoes.css)
-  - [Easing fuctions](/codigos-exemplo/css/easing_functions.css)
+  - [Media query](../codigos-exemplo/css/media_query.css)
+  - [Pseudo-classes](../codigos-exemplo/css/pseudo_classes.css)
+  - [Pseudo-elementos](../codigos-exemplo/css/pseudo_elementos.css)
+  - [Transições](../codigos-exemplo/css/transicoes.css)
+  - [Animação](../codigos-exemplo/css/animacao.css)
+  - [Transformações](../codigos-exemplo/css/transformacoes.css)
+  - [Easing fuctions](../codigos-exemplo/css/easing_functions.css)
 
 #### Principios básicos de design de animação
 
