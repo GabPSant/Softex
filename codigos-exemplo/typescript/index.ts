@@ -67,10 +67,10 @@ const usuario:Usuario = {
 
 //Diferente de 'type', interfaces podem ser implementadas por classes
 class User implements Usuario{
-    nome?: "João"
-    idade: 35;
-    endereco: {
-        rua: "Avenida sem número",
+    nome?: "João";
+    idade: 35 = 35;
+    endereco!: {
+        rua: "Avenida sem número";
     };
 }
 

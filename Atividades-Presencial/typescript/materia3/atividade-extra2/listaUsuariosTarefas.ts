@@ -1,4 +1,5 @@
-import {Usuario, Tarefa, data} from "./gerenciamento";
+import {Usuario, Tarefa, aleatorio} from "./gerenciamento";
+import {format} from 'date-fns';
 // Usuarios (4 usuários)
 
 export const usuario1 = {
@@ -32,10 +33,8 @@ export const tarefa1 = {
     descricao: "Lista de atividades para criação de algoritmos por descrição narrativa e fluxograma",
     concluida: false,
     responsavel: usuario3,
-    dataCriacao: `${data.getDay}/${data.getMonth}/${data.getFullYear}, 
-                    ${data.getHours}:${data.getMinutes}:${data.getSeconds}`,
-    dataConclusao: `${data.getDay}/${data.getMonth}/${data.getFullYear}, 
-                        ${data.getHours}:${data.getMinutes}:${data.getSeconds}`
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm')
 } satisfies Tarefa
 
 export const tarefa2 = {
@@ -43,8 +42,8 @@ export const tarefa2 = {
     descricao: "Lista de exercicios para variáveis (var, let, export const) em JavaScript",
     concluida: false,
     responsavel: usuario2,
-    dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
-    dataConclusao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
 } satisfies Tarefa
 
 export const tarefa3 = {
@@ -52,8 +51,8 @@ export const tarefa3 = {
     descricao: "Lista de exercicios sobre input e output de dados",
     concluida: false,
     responsavel: usuario1,
-    dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
-    dataConclusao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
 } satisfies Tarefa
 
 export const tarefa4 = {
@@ -61,8 +60,8 @@ export const tarefa4 = {
     descricao: "Lista de atividades sobre controle de fluxo por condicionais (if, else if, else e switch)",
     concluida: false,
     responsavel: usuario4,
-    dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
-    dataConclusao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
 } satisfies Tarefa
 
 export const tarefa5 = {
@@ -70,8 +69,8 @@ export const tarefa5 = {
     descricao: "Lista de atividades sobre repetição de comandos, focando no comando for",
     concluida: false,
     responsavel: usuario2,
-    dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
-    dataConclusao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
 } satisfies Tarefa
 
 export const tarefa6 = {
@@ -79,6 +78,6 @@ export const tarefa6 = {
     descricao: "Lista de atividades sobre repetição de comandos, focando no comando for",
     concluida: false,
     responsavel: usuario1,
-    dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
-    dataConclusao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+    dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
+    dataConclusao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
 } satisfies Tarefa

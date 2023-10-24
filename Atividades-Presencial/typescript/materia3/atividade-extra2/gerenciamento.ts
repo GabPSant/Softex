@@ -5,6 +5,8 @@ Problema:
    usar estruturas de repetição para exibir informações e condicionais para gerenciar as tarefas.
 */
 
+import {format} from 'date-fns';
+
 // Definição das interfaces: Usuário e Tarefa
 
 export interface Usuario{
@@ -28,7 +30,10 @@ export interface Tarefa{
 export const usuarios:Usuario[] = []; // Representa o grupo total de usuários
 export const tarefas:Tarefa[] = []; // Representa a quantidade de tarefas
 
-export const data:Date = new Date();//Armazena a informação do horário
+export const aleatorio = (x:number) => Math.random()*x;//Cria um valor aleatório
+/*
+    Como não tenho como um grande conhecimento sobre bancos de dados
+*/
 
 // Funções com parâmetros
 
@@ -50,7 +55,7 @@ export function adicionarTarefa(titulo:string, descricao:string, user:Usuario){
             descricao: descricao,
             concluida: false,
             responsavel: user,
-            dataCriacao: `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`,
+            dataCriacao: format(new Date(2023, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm'),
             dataConclusao: "Ainda não concluida"
         })
     }
@@ -61,11 +66,11 @@ export function adicionarTarefa(titulo:string, descricao:string, user:Usuario){
 export function listaTarefas(){
     console.log("Lista de Tarefas\n");
     tarefas.forEach(t =>{
-        console.log(`ID: ${t.id}\n
+        console.log(`ID: ${t.id}
         Título: ${t.titulo}
         Descrição: ${t.descricao}
         Concluida: ${t.concluida}
-        Responsavel: ${t.responsavel.nome} (ID: ${t.responsavel.id})`);
+        Responsavel: ${t.responsavel.nome} (ID: ${t.responsavel.id})\n`);
     })
 }
 
@@ -77,10 +82,10 @@ export function concluirTarefa(tarefa:Tarefa){
         tarefas.forEach(t =>{
             if(t === tarefa){
                 t.concluida = true;
-                t.dataConclusao = `${data.getDay()}/${data.getMonth()}/${data.getFullYear()}, ${data.getHours()}:${data.getMinutes()}:${data.getSeconds()}`;
+                t.dataConclusao = format(new Date(2024, aleatorio(11), aleatorio(31), aleatorio(23), aleatorio(59)), 'dd/MM/yyyy, HH:mm');
             }
         });
     }
 }
 
-// Testes do sistema no código 'gerenciamentoTestes.ts'
+// Testes do sistema no código 'gerenciamentoTeste.ts'

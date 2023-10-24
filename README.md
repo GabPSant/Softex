@@ -477,7 +477,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   > Ou o comando: npx create-next-app@latest
   - Responda a lista de perguntas para a instalação do React:
   ![imagem das perguntas de instalação](./img/perguntas-React.png)
-  - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): npm run dev
+  - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): **npm run dev**
 - Extensões recomendadas para o VSCode quando usar React ([link](https://react.dev/learn/editor-setup#recommended-text-editor-features))
 - Projetos desenvolvidos com React (feitos em outros repositórios)
   - [primeiro-projeto](https://github.com/GabPSant/React-first-project)
@@ -490,4 +490,10 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Componentes: blocos de interface de usuário ([link de aprendizado](https://react.dev/learn/your-first-component))
 - Definindo um Componente ([link de estudo e exemplo prático](https://react.dev/learn/your-first-component#defining-a-component))
 - Importando e exportando componentes
-  - 
+  - À medida que você **aninha mais e mais componentes**, geralmente faz sentido começar a **dividi-los em arquivos diferentes**.
+  - **Dividir componentes em arquivos** diferentes permite uma **melhor reutilização** em outros lugares e uma **busca mais facilitada**.
+  - [Como importar e exportar componentes (link)](https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component)
+- Escrevendo marcações com JSX
+  - Por muitos anos, os desenvolvedores da Web mantiveram o **conteúdo HTML, CSS e JavaScript** em **arquivos diferentes**. **JSX** permite escrever **lógica de renderização** e de **marcação juntas** no mesmo lugar.
+  - [As Regras do JSX, Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)
+- [JavaScript em JSX, Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
