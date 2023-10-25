@@ -26,7 +26,8 @@
 - [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
   - [17º Aula (TypeScript - Parte 1)](#17º-aula)
   - [18º Aula (TypeScript - Parte 2)](#18º-aula)
-  - [19º Aula (React)](#19º-aula)
+  - [19º Aula (React - Parte1)](#19º-aula)
+  - [20º Aula (React - Parte 2)](#20º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -431,7 +432,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 17º Aula
 
-#### [TypeScript (site oficial - link)](https://www.typescriptlang.org/)
+#### [TypeScript - Parte 1](https://www.typescriptlang.org/)
 
 - O que é TypeScript?
   - TypeScript é uma linguagem de programação de código aberto que é uma extensão do
@@ -454,6 +455,8 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 18º Aula
 
+#### TypeScript - Parte 2
+
 - Passo a passo para usar TypeScript na programação front-end (web)
   - Primeiro, usar o comando **npm init -y**, para instalar o package.json (Criar um projeto JavaScript)
   - Instalar a dependência do desenvolvedor para TypeScript no package.json, usando **npm install typescript -D** (o '-D' serve para definir o typescript como dominio do desenvolvedor)
@@ -464,7 +467,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 19º Aula
 
-#### [React](https://react.dev/)
+#### [React - Parte 1](https://react.dev/)
 
 - React **é uma biblioteca de JavaScript** de código aberto, desenvolvida pelo **Facebook**, que é amplamente usada para **construir interfaces de usuário interativas e reativas** para aplicativos da web.
 - Ela foi lançada em 2013 e rapidamente se **tornou uma das principais ferramentas** para o desenvolvimento **front-end** moderno.
@@ -478,6 +481,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Responda a lista de perguntas para a instalação do React:
   ![imagem das perguntas de instalação](./img/perguntas-React.png)
   - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): **npm run dev**
+- *Obs: * Quando for necessário pegar um arquivo React do github, lembre de instalar o diretório node-modules com o comando: **npm install node-modules**.
 - Extensões recomendadas para o VSCode quando usar React ([link](https://react.dev/learn/editor-setup#recommended-text-editor-features))
 - Projetos desenvolvidos com React (feitos em outros repositórios)
   - [primeiro-projeto](https://github.com/GabPSant/React-first-project)
@@ -497,3 +501,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Por muitos anos, os desenvolvedores da Web mantiveram o **conteúdo HTML, CSS e JavaScript** em **arquivos diferentes**. **JSX** permite escrever **lógica de renderização** e de **marcação juntas** no mesmo lugar.
   - [As Regras do JSX, Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)
 - [JavaScript em JSX, Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
+
+### 20º Aula
+
+#### React - Parte 2 (o conteudo ainda vai ser colocado)
