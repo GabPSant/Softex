@@ -27,8 +27,9 @@
 - [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
   - [17º Aula (TypeScript - Parte 1)](#17º-aula)
   - [18º Aula (TypeScript - Parte 2)](#18º-aula)
-  - [19º Aula (React - Parte1)](#19º-aula)
+  - [19º Aula (React - Parte 1)](#19º-aula)
   - [20º Aula (React - Parte 2)](#20º-aula)
+  - [21º Aula (React - Parte 3)](#21º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -473,7 +474,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 19º Aula
 
-#### [React - Parte 1](https://react.dev/)
+#### [React - Parte 1](https://react.dev/) (Introdução)
 
 - React **é uma biblioteca de JavaScript** de código aberto, desenvolvida pelo **Facebook**, que é amplamente usada para **construir interfaces de usuário interativas e reativas** para aplicativos da web.
 - Ela foi lançada em 2013 e rapidamente se **tornou uma das principais ferramentas** para o desenvolvimento **front-end** moderno.
@@ -512,4 +513,55 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 ### 20º Aula
 
-#### React - Parte 2 (o conteudo ainda vai ser colocado)
+#### React - Parte 2 (Componentes)
+
+- Componentes
+  - O que são componentes?
+
+    > Componentes são um dos **conceitos centrais** do React. Um **componente** consiste na
+    combinação de códigos **HTML, CSS e JavaScript** para construção de "componentes"
+    (interfaces de usuários) **personalizados** e **reutilizáveis**.
+
+  - Importando e exportando componentes:
+
+    > À medida que você aninha mais e mais componentes, geralmente faz sentido começar a
+    dividi-los em arquivos diferentes.
+
+    > Dividir componentes em arquivo diferentes permite uma melhor reutilização em outros
+    lugares e uma busca mais facilitada.
+
+  - Escrevendo marcação com JSX:
+
+    > Por muitos anos, os desenvolvedores da Web mantiveram o conteúdo HTML, CSS e
+    JavaScript em arquivos diferentes. JSX permite escrever lógica de renderização e de
+    marcação juntas no mesmo lugar.
+
+  - Documentação (links para exemplos práticos):
+
+    > [Componentes: blocos de interface de usuário](https://react.dev/learn/your-first-component)  
+    > [Documentação React](https://react.dev/learn/your-first-component#defining-a-component)  
+    > [Como importar e exportar componentes?](https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component)  
+    > [As regras do JSX | Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)  
+    > [Passando strings com aspas | Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
+
+
+### 21º Aula
+
+#### React - Parte 3 (Props)
+
+- Props (propriedades)
+  - O que são props?
+
+    > **Props são informações** que você passa para uma tag JSX. Por exemplo, className ,
+    src, alt width e height são algumas props que você pode passar para uma 'img'.
+  
+  - Exemplificando
+
+    > Um componente <Avatar> **pode ser renderizado de várias maneiras** através de
+    **diferentes propriedades**.
+    
+    > ![Exemplo do props](./img/exemplo-props.png)
+
+  - Documentação (link para exemplo prático)
+
+    > [Passando props para um componente](https://react.dev/learn/passing-props-to-a-component#familiar-props)
