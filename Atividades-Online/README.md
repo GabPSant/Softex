@@ -2,6 +2,7 @@
 
 - [Pensamento Computacional (JavaScript básico)](#pensamento-computacional)
 - [HTML e CSS](#htmlcss)
+- [JavaScript e Orientação a Objetos](#javascript-e-orientação-a-objetos)
 
 ## Pensamento Computacional
 
@@ -241,10 +242,12 @@
   - HTML - estrutura a página web  
 - Tags metadados (responsáveis para guardar informações da página como estilos, scripts e dados. Ajuda na renderização da página pelo navegador)
   - head ->  contem os dados metas
-    > link: representa o link que sera usado no arquivo html  
-    > meta: representa informações que não podem ser lidas em outras formatos  
-    > style: representa informações de estilo usadas no arquivo html  
-    > title: contem o título da página
+  
+    > link - representa o link que sera usado no arquivo html  
+    > meta - representa informações que não podem ser lidas em outras formatos  
+    > style - representa informações de estilo usadas no arquivo html  
+    > title - contem o título da página
+
 - Tags de separação de contéudo (responsáveis pela organização lógica da página):
   - address -> Contêm as informações de contato do autor
   - h1 a h6 -> Definem o tamanho do título
@@ -293,7 +296,7 @@
 
 ### CSS
 
-- Pontos principais:
+- Pontos principais (os links são para códigos exemplos no repositório):
   - [Media query](../codigos-exemplo/css/media_query.css)
   - [Pseudo-classes](../codigos-exemplo/css/pseudo_classes.css)
   - [Pseudo-elementos](../codigos-exemplo/css/pseudo_elementos.css)
@@ -320,3 +323,121 @@
   - Refere-se à aceleração e desaceleração de uma animação ao longo do tempo.
   - Ela dá uma sensação de realismo e fluidez. Na vida real, poucos movimentos começam e terminam abruptamente; geralmente, eles aceleram e desaceleram.
   - Em CSS, a facilitação é frequentemente controlada pela propriedade transition-timing-function ou por funções cubic-bezier personalizadas. A escolha do tipo de facilitação pode afetar drasticamente como uma animação é percebida, seja dando uma sensação de leveza, peso ou elasticidade.
+
+## JavaScript e Orientação a Objetos
+
+### JSON (JavaScript Object Notation/ Notação de Objetos JavaScript)
+
+- Permite armazenar objetos JS em um formato mais:
+  - Mais rápido na execução
+  - Com espaço menor e mais légivel
+- São usados em:
+  - API (Application Programming Interface ou  interfaces de programação de aplicativos) como armazenadores de dados
+  - Comunicação entre sistemas Front-End e Back-End
+- Regras do JSON
+  - **Não** pode ter funções
+  - **Não** pode ter comentários
+  - E as propriedades e textos sempre precisam ter aspas duplas
+- Em JavaScript, podemos usar a biblioteca 'JSON' para **converter um objeto em um json**.
+  - Ex: const jsonData = JSON.stringify(objs);
+  - A função 'stringify()' converte o objeto criado em JS para o formato JSON
+  - O JavaScript enxerga o JSON como string
+- Em Javascript, podemos usar a biblioteca 'JSON' para **converter um JSON em um objeto**.
+  - Ex: const obj = JSON.parse(valorJSON);
+
+### HTTP
+
+- Protocolo HTTP
+  - Você já deve ter observado que cada site possui um URL. Conforme acessamos suas abas e realizamos ações, o final do URL vai mudando, mas você sabe como isso funciona?
+- O que é o protocolo HTTP?
+  - HyperText Transfer Protocol (HTTP) é um protocolo, ou seja, um conjunto de regras que o servidor precisa seguir para transmitir todos os tipos de dados pela internet.
+  - O HTTP possibilita que as pessoas insiram o URL do site na web e, dessa forma, possam ver os conteúdos e dados que existem nele.
+- Métodos HTTP
+  - Aprendemos que existem métodos para **criar**, **ler**, **modificar** ou **atualizar** e **deletar** informações, sendo cada um configurado em um URL. Relembre os mais utilizados:
+
+    | Operador | Objetivo                                                                                                   |
+    | -------- | ----------------------------------------------------------------------------------------------------------------------- |
+    | get      | Utilizado para ler dados. Ele faz a leitura e retorna a informação desejada para o usuário.                |
+    | post     | Utilizado para criar ou adicionar um novo item ao URL solicitado. Por exemplo, criar uma nova conta ou postar um comentário novo em um blog. |
+    | put      | Utilizado para modificar ou substituir os dados atuais pelos dados solicitados. Por exemplo, alterar a senha em um site. |
+    | delete   | Utilizado para excluir todos os dados do local de destino solicitado pelo usuário. É uma operação arriscada, pois não pode ser recuperada depois de excluída. |
+
+- Se já existe um código Node.js com métodos HTTP criados, seria necessário fazer outro código no front-end e na linguagem JavaScript para testá-lo? 
+  - Não necessariamente. Atualmente, quando um back-end é criado, é possível testá-lo em programas, como o [Insomnia](https://insomnia.rest/download) e o [Postman](https://www.postman.com).
+- Aplicação de Rotas
+  - Nesses programas, só é preciso colocar o URL e um método HTTP para o programa mostrar o retorno. Assim, é possível testar suas rotas e saber quais métodos estão falhando.
+- Aprendendo a criar rotas
+  - Agora, veremos como utilizar esses métodos HTTP em código na linguagem JavaScript. Para isso, vamos precisar [instalar alguns pacotes](https://www.youtube.com/watch?v=mdig0FJwJcQ).
+    
+    > O vídeo explica como:  
+
+    > Instalar node.js  ([link]())
+    > Iniciar o npm (Node Package Manager) [comando: npm init]  
+    > Instalar express.js [comando: npm install express --save]  
+    > Como usar o express.js  
+    > Explica sobre [Middlewares](https://expressjs.com/pt-br/guide/using-middleware.html)  
+    > Instalar o nodemon.js (é importante para automatizar a atualização do servidor) [comando: npm install --save-dev nodemon]  
+    > Como usar o nodemon.js [comando: npx nodemon (nome do arquivo).js]
+    > E usar o Postman para testar o servidor criado
+
+  - Para conectar o seu projeto no programa, é necessário deixar o back-end ativo com o [Express](https://expressjs.com/pt-br/). Para isso, você deve utilizar a biblioteca [nodemon](https://www.npmjs.com/package/nodemon), que ativará o back-end automaticamente.
+
+### Frameworks
+
+- Eles são muito úteis no mercado de trabalho, pois você pode usá-los de acordo com suas necessidades, seja no front-end ou back-end.
+- O que é um Framework?
+  - Ele é uma ferramenta cujo objetivo é focar no desenvolvimento do projeto e não em detalhes de configurações.
+  - O framework evita tarefas repetitivas, pois ele automatiza parte do trabalho.
+
+    > Por exemplo, imagine que temos que criar um formulário e precisamos da [validação de e-mail](https://www.devmedia.com.br/validando-e-mail-em-inputs-html-com-javascript/26427). O framework já tem a validação pronta para facilitar o processo, mas isso não impede que o programador, caso queira, faça sua própria validação.
+
+- Frameworks para JavaScript
+  - Existem vários frameworks JavaScript disponíveis. Agora, vamos conhecer os mais utilizados:
+    
+    > [React.js](https://pt-br.legacy.reactjs.org) - é uma ferramenta para o front-end conhecida por ser uma biblioteca para criar interfaces eficientes. Tem como característica a facilidade na hora de ter um código limpo e reutilizável;
+
+    > [AngularJS](https://angularjs.org) - desenvolvido pelo Google, é um  framework open source muito utilizado para criar as [Single Page Applications (SPA)](https://www.devmedia.com.br/ja-ouviu-falar-em-single-page-applications/39009). Essa é uma tecnologia comumente encontrada nas empresas.
+
+    > Também existem outros frameworks para front-end, como [Vue.js](https://vuejs.org), [Ember.js](https://emberjs.com) e o [Preact.js](https://preactjs.com). Para back-end, os mais utilizados são o Node.js e o Express.js. 
+  
+  - Um exemplo de utilização de framework é a conexão com um banco de dados através do Node.js e seus módulos.
+
+- O que é um banco de dados?
+  - De forma resumida, um **banco de dados** é um conjunto de dados ordenados onde é possível armazenar e manipular informações, além de gerenciar quem tem acesso a elas.
+  - Além disso, podemos administrá-los através de um sistema de gerenciamento de banco de dados chamado [SGBD](https://www.fiveacts.com.br/sgbd), que possibilita o cadastro, a consulta, a edição e a exclusão de informações em um banco de dados.
+
+### Implementando Banco de Dados
+
+- O que é Sequelize?
+  - Sequelize é utilizado, especialmente, em aplicativos e sistemas web para interagir com bancos de dados relacionais de forma mais fácil e eficiente. Imagine um banco de dados como uma gigantesca prateleira com várias caixas organizadas, que contêm informações importantes, e você precisa encontrá-las ou ajustá-las. A tarefa do Sequelize é atuar como um assistente pessoal que simplifica o processo de localizar, adicionar, atualizar ou remover itens nessas caixas.
+  - Com o Sequelize, é possível criar consultas em formato de código, economizando tempo e garantindo uma melhor estrutura e segurança no acesso aos dados. Por isso, ele é uma ferramenta valiosa para facilitar o trabalho com informações em aplicativos e sistemas complexos, possibilitando que os desenvolvedores se concentrem mais na lógica de negócios do que nos detalhes da interação com o banco de dados.
+- Como Sequelize atua?
+  - Ele é uma biblioteca de Object-Relational Mapping (Mapeamento objeto-relacional, em tradução livre), ou ORM, para Node.js. As suas interações acontecem com bancos de dados relacionais, como MySQL, PostgreSQL, SQLite e outros. 
+  - O Sequelize atua como uma camada de abstração entre o código JavaScript e o banco de dados. Assim, os desenvolvedores podem interagir com o banco de dados, usando objetos e métodos familiares em vez de escrever consultas SQL manualmente.
+- Principais características do Sequelize:
+
+  | Característica        | Objetivo                                                                                              |
+  | --------------------- | ------------------------------------------------------------------------------------------------------|
+  | Modelo                | possibilita definir modelos que representam tabelas do banco de dados como classes JavaScript. Cada modelo corresponde a uma entidade no banco de dados, com suas colunas e associações. |
+  | Migrações             | suporta migrações, que são arquivos que descrevem alterações no esquema do banco de dados. Com elas, é possível criar, atualizar e excluir tabelas e colunas do banco de dados de forma controlada. |
+  | Consultas e operações | possibilita a realização de operações CRUD (Create, Read, Update, Delete) no banco de dados usando métodos simples, como **create()**, **findAll()**, **update()** e **destroy()**. |
+  | Relacionamentos       | facilita o estabelecimento de relacionamentos entre diferentes modelos, como **um-para-um**, **um-para-muitos** e **muitos-para-muitos**. |
+  | Validações            | suporta a definição de validações para garantir a integridade dos dados antes de serem salvos no banco de dados. |
+  | Consultas personalizadas | além das operações CRUD, o Sequelize oferece a execução de consultas personalizadas usando a sintaxe das suas consultas. |
+  | Compatibilidade com várias bases de dados | é compatível com vários bancos de dados SQL, possibilitando que os desenvolvedores usem o mesmo código em diferentes bancos de dados. |
+
+- Em Resumo:
+  
+  > O Sequelize é uma ferramenta poderosa para facilitar o desenvolvimento de aplicações Node.js, que interagem com bancos de dados relacionais. Ele oferece uma abordagem orientada a objetos para a manipulação de dados, simplificando o código e melhorando a produtividade do desenvolvedor ao trabalhar com bancos de dados SQL.
+
+- Como usar o Sequelize em um projeto (passo-a-passo)
+  - *Passo 1*: Configuração do Projeto
+    
+    > Você precisa ter o Node.Js instalado em seu computador. Depois, crie um novo diretório para o projeto e acesse-o no terminal. 
+     
+    > Inicie um novo projeto Node.js executando **npm init** e siga as instruções para criar o arquivo package.json.
+
+  - *Passo 2*: Instalação das dependências
+
+    > Instale o Sequelize e os drivers do banco de dados que você vai utilizar, como MySQL ou PostgreSQL, por meio do comando no terminal:  
+    > *npm install sequelize sequelize-cli mysql8* (para MySQL8)

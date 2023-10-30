@@ -1,6 +1,24 @@
 {
+  "name": "softex",
+  "description": "- Curso de Aceleração Front-end da Softex (nesse repositório tem todos os códigos, anotações, atividades e projetos feitos por mim durante o curso)\r - [Professor: Augusto Cesar](https://github.com/augustocesarfmo)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
   "dependencies": {
     "date-fns": "^2.30.0",
-    "node-modules": "^0.0.1"
+    "express": "^4.18.2",
+    "mysql8": "^2.17.3",
+    "node-modules": "^0.0.1",
+    "sequelize": "^6.33.0",
+    "sequelize-cli": "^6.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
