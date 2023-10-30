@@ -5,7 +5,7 @@
 
 ## Indíce
 
-- [(Extra) Estudos onlines (joyclass)](/atividades-online/README.md)
+- [(Extra) Estudos onlines (joyclass)](/Atividades-Online/README.md)
 - [1º Matéria (lógica de programação e JavaScript)](#1º-matéria-lógica-de-programação-e-javascript)
   - [1º Aula (Conceitos básicos - Parte 1)](#1º-aula)
   - [2º Aula (Conceitos básicos - Parte 2)](#2º-aula)
