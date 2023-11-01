@@ -430,7 +430,7 @@
   
   > O Sequelize é uma ferramenta poderosa para facilitar o desenvolvimento de aplicações Node.js, que interagem com bancos de dados relacionais. Ele oferece uma abordagem orientada a objetos para a manipulação de dados, simplificando o código e melhorando a produtividade do desenvolvedor ao trabalhar com bancos de dados SQL.
 
-- Como usar o Sequelize em um projeto (passo-a-passo)
+- Como usar o Sequelize em um projeto, passo-a-passo ([Pasta com os códigos resultante](../codigos-exemplo/banco-de-dados/))
   - *Passo 1*: Configuração do Projeto
     
     > Você precisa ter o Node.Js instalado em seu computador. Depois, crie um novo diretório para o projeto e acesse-o no terminal. 
@@ -441,3 +441,29 @@
 
     > Instale o Sequelize e os drivers do banco de dados que você vai utilizar, como MySQL ou PostgreSQL, por meio do comando no terminal:  
     > *npm install sequelize sequelize-cli mysql8* (para MySQL8)
+
+  - *Passo 3*: Configuração da conexão com o banco de dados
+
+    > Crie um arquivo chamado config.js na raiz do projeto para configurar a conexão com o banco de dados. Por exemplo, para usar o MySQL, basta adicionar o código ao arquivo. ([Código exemplo](../codigos-exemplo/banco-de-dados/config.js))
+
+  - *Passo 4*: Criação do modelo do produto
+
+    > Crie um diretório chamado **models** na raiz do projeto.
+
+    > Dentro do diretório **models**, crie um arquivo chamado **produto.js** para definir o modelo do produto ([código exemplo](../codigos-exemplo/banco-de-dados/models/produto.js)).
+
+  - *Passo 5*: Criação das migrações
+
+    > No terminal, execute o seguinte comando para criar uma migração para a tabela  
+    > Produto: **npx sequelize migration:generate --name create_produto**
+
+    > Isso criará um novo arquivo dentro do diretório **migrations**.
+
+  - *Passo 6*: Criação das tabelas Produto
+
+    > Abra o arquivo e adicione o código para criar a tabela **Produto** com as colunas correspondentes.
+
+  - *Passo 7*: Execução das migrações - Continuar daqui, resolver essa etapa
+
+    > No terminal, execute o comando: **npx sequelize migration:generate**  
+    > Para aplicar as migrações e criar a tabela no banco de dados.
