@@ -1,17 +1,18 @@
-# [Aulas Online (Indice)](/codigos-exemplo/)
+# Aulas Online (Indice)
 
 - [Pensamento Computacional (JavaScript básico)](#pensamento-computacional)
 - [HTML e CSS](#htmlcss)
 - [JavaScript e Orientação a Objetos](#javascript-e-orientação-a-objetos)
+- [Pasta de códigos exemplo](/codigos-exemplo/)
 
 ## Pensamento Computacional
 
 ### Blikstein (2008) afirma que o pensamento computacional é manusear o computador de forma criativa e eficaz para solucionar problemas. Então, essa forma de pensar é uma competência que está baseada na resolução de problemas de forma criativa e está fundamentada em quatro pilares
 
-> decomposição;
-> reconhecimento de padrões;  
-> abstração;  
-> pensamento algorítmico ou simplesmente algoritmo.
+  > decomposição;  
+  > reconhecimento de padrões;  
+  > abstração;  
+  > pensamento algorítmico ou simplesmente algoritmo.
 
 #### **Explicação dos pilares**
 
@@ -27,9 +28,9 @@
 - Sequência de **passos finitos** e **ordenados** para resolver um problema.
 - Para construir um algoritmo é necessário:
 
-> 1. A **entrada dos dados** que serão utilizados durante o processo e que são as informações iniciais recebidas;
-> 2. o **processamento** desses dados, que é formado pelos passos necessários para atingir uma meta;
-> 3. a **saída do resultado** do processamento, que mostra se o resultado foi eficaz ou não.
+  > 1. A **entrada dos dados** que serão utilizados durante o processo e que são as informações iniciais recebidas;
+  > 2. o **processamento** desses dados, que é formado pelos passos necessários para atingir uma meta;
+  > 3. a **saída do resultado** do processamento, que mostra se o resultado foi eficaz ou não.
 
 #### _Obs._ É importante lembrar que o algoritmo não é o resultado final, mas sim todo o processamento para chegar ao resultado
 
@@ -40,10 +41,10 @@
 
 - São divididas em:
 
-> 1. simples (if)
-> 2. composta (if - else)
-> 3. encadeada (if - else if - else)
-> 4. multipla escolha (switch)
+  > 1. simples (if)
+  > 2. composta (if - else)
+  > 3. encadeada (if - else if - else)
+  > 4. multipla escolha (switch)
 
 - Obs. Pagina para melhorar a utilização do git [("Use Git like a senior engineer")](https://levelup.gitconnected.com/use-git-like-a-senior-engineer-ef6d741c898e)
 
@@ -51,24 +52,24 @@
 
 - Tipos de Arrays (importantes)
 
-> Array com tamanho fixo (Ex: let tamanhoFixo = Array(5);)  
-> Array usando from (Ex: let arrayPorFrom = Array.from('JavaScript');) - Separa cada letra do string
+  > Array com tamanho fixo (Ex: let tamanhoFixo = Array(5);)  
+  > Array usando from (Ex: let arrayPorFrom = Array.from('JavaScript');) - Separa cada letra do string
 
 - Spread(...): permite unir strings ou arrays (Ex: let numeros = [1,2,3]; let maisNumeros = [...numeros,4,5,6];)
 - Manipulação de arrays (Inserção)
 
-> push(): adiciona um ou mais elementos ao final do array  
-> unshift(): adiciona um ou mais elementos no início do array  
-> splice(): adiciona ou altera o elemento em uma posição especifica  
-> Ex1: array.splice(2,0,3) {Adiciona o valor 3 na posição 2 do array (aumenta o tamanho do array)}  
-> Ex2: array.splice(2,1,3) {Substitui o valor na posição 2 do array para 3 (mantem o tamanho do array)}
+  > push(): adiciona um ou mais elementos ao final do array  
+  > unshift(): adiciona um ou mais elementos no início do array  
+  > splice(): adiciona ou altera o elemento em uma posição especifica  
+  > Ex1: array.splice(2,0,3) {Adiciona o valor 3 na posição 2 do array (aumenta o tamanho do array)}  
+  > Ex2: array.splice(2,1,3) {Substitui o valor na posição 2 do array para 3 (mantem o tamanho do array)}
 
 - Manipulação de arrays (Remoção)
 
-> pop(): remove e retorna o último elemento do array  
-> shift(): remove e retorna o primeiro elemento do array  
-> splice(): pode ser usado para remover um elemento em uma posição especifica  
-> Ex: array.splice(2,1) {Remove o elemento da posição 2 do array}
+  > pop(): remove e retorna o último elemento do array  
+  > shift(): remove e retorna o primeiro elemento do array  
+  > splice(): pode ser usado para remover um elemento em uma posição especifica  
+  > Ex: array.splice(2,1) {Remove o elemento da posição 2 do array}
 
 - Manipulação de arrays (iteração com loops)  
   Loop forEach - é uma função nativa dos arrays em JavaScript que permite executar uma função para cada elemento do array. Esse loop é uma forma mais simplificada de percorrer os elementos, especialmente quando você não precisa de controle direto sobre o índice.
@@ -83,11 +84,11 @@
 
 - Características:
 
-> Enfileirar (enqueue) - adicionar um elemento no final da fila  
-> Desenfileirar (denqueue) - remover um elemento do início da fila  
-> Frente (front) - consultar o primeiro elemento da fila  
-> Fundo (rear) - consultar o último elemento da fila  
-> Tamanho (size) - a quantidade de elementos na fila
+  > Enfileirar (enqueue) - adicionar um elemento no final da fila  
+  > Desenfileirar (denqueue) - remover um elemento do início da fila  
+  > Frente (front) - consultar o primeiro elemento da fila  
+  > Fundo (rear) - consultar o último elemento da fila  
+  > Tamanho (size) - a quantidade de elementos na fila
 
 ### 2. [Listas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/lista.mjs)
 
@@ -95,12 +96,12 @@
 
 - Operações básicas:
 
-> Inserção (insertion) - adiciona um novo elemento em uma posição específica ou no final dela.  
-> Remoção (deletion) - remove um elemento específico da lista.  
-> Busca (search) - procura um elemento específico da lista e retorna a sua posição ou referência.  
-> Atualização (update) - modifica o valor de um elemento existente na lista.  
-> Tamanho (size) - conta o número de elementos na lista.  
-> Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos.
+  > Inserção (insertion) - adiciona um novo elemento em uma posição específica ou no final dela.  
+  > Remoção (deletion) - remove um elemento específico da lista.  
+  > Busca (search) - procura um elemento específico da lista e retorna a sua posição ou referência.  
+  > Atualização (update) - modifica o valor de um elemento existente na lista.  
+  > Tamanho (size) - conta o número de elementos na lista.  
+  > Verificação se está vazia (isEmpty) - Confere se a lista nõa contem elementos.
 
 ### 3. [Pilhas](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/estruturas_de_dados/pilha.mjs)
 
@@ -108,11 +109,11 @@
 
 - Operações básicas:
 
-> Empilhar (push) - recebe um parâmetro, que é o elemento que você deseja adicionar à pilha.  
-> Desempilhar (pop) - não recebe parâmetro, pois ela vai desempilhar o elemento do topo da pilha.  
-> Topo (top) - função não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo  
-> Tamanho (size) - não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo.  
-> Verificar se está vázia (isEmpty) - não recebe parâmetro, pois ela apenas verifica se a pilha está vazia.
+  > Empilhar (push) - recebe um parâmetro, que é o elemento que você deseja adicionar à pilha.  
+  > Desempilhar (pop) - não recebe parâmetro, pois ela vai desempilhar o elemento do topo da pilha.  
+  > Topo (top) - função não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo  
+  > Tamanho (size) - não recebe parâmetro, pois ela apenas retorna o elemento que está no topo da pilha, sem modificá-lo.  
+  > Verificar se está vázia (isEmpty) - não recebe parâmetro, pois ela apenas verifica se a pilha está vazia.
 
 #### **Obs**. Com Node.js em versão 14 ou superior é possivel usar a extensão 'mjs' (module javascript) para exportar e importar arquivos javascript (importante lembrar que tanto o arquivo que importa quanto o que exporta deve ter essa extensão)
 
@@ -125,19 +126,19 @@
 
 - Operações fundamentais:
 
-> 1. Nó (node): É um elemento individual em uma árvore. Cada nó contém um valor (dados) e uma referência para seus nós filhos.
-> 2. Raiz (root): É o nó inicial da árvore, ou seja, o ponto de partida para percorrer toda a estrutura.
-> 3. Nó filho (child): É o nó que está diretamente abaixo de outro na hierarquia.
-> 4. Nó pai (parent): É o nó que está diretamente acima de outro na hierarquia.
-> 5. Nó folha (leaf): É o nó que não possui nós filhos, ou seja, está na extremidade da árvore.
-> 6. Nível (level): É o número de arestas entre o nó e a raiz. O nível da raiz é 0 e a aresta é a ligação de um nó com outro.
-> 7. Altura (higth): É o número de níveis em uma árvore. Caso uma árvore tenha apenas um nó, ou seja, o nó raiz, sua altura é zero (altura = nivel até chegar na folha).
+  > 1. Nó (node): É um elemento individual em uma árvore. Cada nó contém um valor (dados) e uma referência para seus nós filhos.
+  > 2. Raiz (root): É o nó inicial da árvore, ou seja, o ponto de partida para percorrer toda a estrutura.
+  > 3. Nó filho (child): É o nó que está diretamente abaixo de outro na hierarquia.
+  > 4. Nó pai (parent): É o nó que está diretamente acima de outro na hierarquia.
+  > 5. Nó folha (leaf): É o nó que não possui nós filhos, ou seja, está na extremidade da árvore.
+  > 6. Nível (level): É o número de arestas entre o nó e a raiz. O nível da raiz é 0 e a aresta é a ligação de um nó com outro.
+  > 7. Altura (higth): É o número de níveis em uma árvore. Caso uma árvore tenha apenas um nó, ou seja, o nó raiz, sua altura é zero (altura = nivel até chegar na folha).
 
 - Função: As árvores são utilizadas para resolver diversos problemas na ciência da computação e engenharia de software
 
-> 1. _Estruturas de dados avançadas_: as árvores são a base para muitas estruturas de dados importantes, como árvores de busca binária, árvores de segmentos, árvores AVL, árvores B, entre outras.
-> 2. _Pesquisas eficientes_: as árvores de busca binária são, especialmente, úteis para pesquisas em grandes conjuntos de dados ordenados.
-> 3. _Jogos e inteligência artificial_: as árvores de jogos são usadas para analisar as várias opções e determinar a melhor jogada possível.
+  > 1. _Estruturas de dados avançadas_: as árvores são a base para muitas estruturas de dados importantes, como árvores de busca binária, árvores de segmentos, árvores AVL, árvores B, entre outras.
+  > 2. _Pesquisas eficientes_: as árvores de busca binária são, especialmente, úteis para pesquisas em grandes conjuntos de dados ordenados.
+  > 3. _Jogos e inteligência artificial_: as árvores de jogos são usadas para analisar as várias opções e determinar a melhor jogada possível.
 
 - Beneficíos: Árvores na programação são estruturas hierárquicas que nos possibilitam organizar dados de forma inteligente e eficiente, trazendo elegância e agilidade para nossos algoritmos.
 
@@ -147,16 +148,16 @@
 - Diferentemente dos arrays, as listas ligadas não precisam alocar memória contínua para armazenar os elementos, sendo dinâmicas e flexíveis.
 - Conceitos básicos:
 
-> 1. Nó (node): É a unidade básica de uma lista ligada. Contém o dado a ser armazenado e um ponteiro (referência) para o próximo nó da lista.
-> 2. Cabeça (head): É o primeiro nó da lista. Serve como ponto de partida para percorrer toda a estrutura.
-> 3. Cauda (tail): É o último nó da lista. Seu ponteiro aponta para null, indicando o fim da lista.
-> 4. Ponteiro (pointer): É a referência de um nó para o próximo da lista, mantendo a conexão entre eles.
+  > 1. Nó (node): É a unidade básica de uma lista ligada. Contém o dado a ser armazenado e um ponteiro (referência) para o próximo nó da lista.
+  > 2. Cabeça (head): É o primeiro nó da lista. Serve como ponto de partida para percorrer toda a estrutura.
+  > 3. Cauda (tail): É o último nó da lista. Seu ponteiro aponta para null, indicando o fim da lista.
+  > 4. Ponteiro (pointer): É a referência de um nó para o próximo da lista, mantendo a conexão entre eles.
 
 - Função: As listas ligadas podem ser aplicadas em diversos cenários. Por exemplo, quando não sabemos a quantidade exata de elementos que precisamos armazenar ou quando as operações de inserção e remoção de elementos são frequentes.
 
-> 1. _Gerenciamento de memórias_: As listas ligadas são comumente usadas em sistemas operacionais para gerenciar a memória livre e a ocupada.
-> 2. _Implementação de filas e pilhas_: Essas estruturas podem ser facilmente implementadas por meio das listas ligadas. A inserção e remoção ocorrem sempre no início (pilhas) ou no final (filas) da lista.
-> 3. _Listas encadeadas duplamente encadeadas_: Nesta variação, cada nó possui um ponteiro para o próximo e outro para o nó anterior, permitindo percorrer a lista em ambas as direções.
+  > 1. _Gerenciamento de memórias_: As listas ligadas são comumente usadas em sistemas operacionais para gerenciar a memória livre e a ocupada.
+  > 2. _Implementação de filas e pilhas_: Essas estruturas podem ser facilmente implementadas por meio das listas ligadas. A inserção e remoção ocorrem sempre no início (pilhas) ou no final (filas) da lista.
+  > 3. _Listas encadeadas duplamente encadeadas_: Nesta variação, cada nó possui um ponteiro para o próximo e outro para o nó anterior, permitindo percorrer a lista em ambas as direções.
 
 - Operações básicas:
 
@@ -173,11 +174,11 @@
 - Classe ListaLigada: Essa classe define a estrutura ligada com vários nós e as operações necessárias para a manipulação da lista ligada. Ela possui um construtor que recebe o nó cabeça da lista, além de ter os métodos referentes às operações que vimos anteriormente.
 - Métodos da classe ListaLigada:
 
-> 1. addFirst: Esse método instancia um novo nó com um nome que será adicionado. O novo nó recebe a cabeça da lista ligada como o próximo. Assim, a nova cabeça passa a ser o nó que foi adicionado.
-> 2. addLast: Esse método instancia um novo nó com um nome que será adicionado. Se esse nó for o primeiro da lista, ele se tornará a nova cabeça. Caso contrário, a operação fica sendo executada até que o próximo de algum nó esteja vazio. Quando isso acontecer, o novo nó será encadeado na lista ligada.
-> 3. removeFirst: Esse método sempre remove o primeiro elemento de uma lista ligada, o qual sempre será o primeiro e, por isso, sempre será a cabeça da lista ligada. Dessa forma, a nova cabeça será o próximo nó da cabeça que será removida.
-> 4. removeLast: Esse método sempre remove o último elemento de uma lista ligada. Para isso, deve-se sempre começar da cabeça da lista, verificando se o próximo é vazio. Se o próximo de um nó for vazio, esse é o nó que será removido.
-> 5. search: Verifica se o elemento do nó é igual ao que está sendo pesquisado. Se sim, retorna o nó encontrado. Caso contrário, vai para o próximo do nó e continua pesquisando. Se chegar ao fim da lista e ainda não ter encontrado o nó, o valor retornado é nulo.
+  > 1. addFirst: Esse método instancia um novo nó com um nome que será adicionado. O novo nó recebe a cabeça da lista ligada como o próximo. Assim, a nova cabeça passa a ser o nó que foi adicionado.
+  > 2. addLast: Esse método instancia um novo nó com um nome que será adicionado. Se esse nó for o primeiro da lista, ele se tornará a nova cabeça. Caso contrário, a operação fica sendo executada até que o próximo de algum nó esteja vazio. Quando isso acontecer, o novo nó será encadeado na lista ligada.
+  > 3. removeFirst: Esse método sempre remove o primeiro elemento de uma lista ligada, o qual sempre será o primeiro e, por isso, sempre será a cabeça da lista ligada. Dessa forma, a nova cabeça será o próximo nó da cabeça que será removida.
+  > 4. removeLast: Esse método sempre remove o último elemento de uma lista ligada. Para isso, deve-se sempre começar da cabeça da lista, verificando se o próximo é vazio. Se o próximo de um nó for vazio, esse é o nó que será removido.
+  > 5. search: Verifica se o elemento do nó é igual ao que está sendo pesquisado. Se sim, retorna o nó encontrado. Caso contrário, vai para o próximo do nó e continua pesquisando. Se chegar ao fim da lista e ainda não ter encontrado o nó, o valor retornado é nulo.
 
 ## [Algoritmos de Busca](https://github.com/GabPSant/Softex/tree/main/codigos-testes/javascript/algoritmos_de_busca)
 
@@ -192,10 +193,10 @@
 - Essa abordagem é útil quando os elementos estão desordenados ou quando a lista é **pequena o suficiente** para ser percorrida facilmente.
 - Conceitos:
 
-> 1. _Coleção de dados_: Essa estrutura contém os elementos que serão pesquisados. Pode ser um array, uma lista ou qualquer outra que possibilita o acesso sequencial aos elementos.
-> 2. _Elemento de busca_: É o valor que desejamos encontrar na coleção de dados.
-> 3. _Percorrer a coleção_: Significa analisar cada elemento da coleção até que o buscado seja encontrado.
-> 4. _Complexidade de tempo_: No pior caso, a busca linear precisa percorrer todos os elementos da coleção. Portanto, a sua complexidade de tempo é O(n), sendo "n" o número de elementos na coleção.
+  > 1. _Coleção de dados_: Essa estrutura contém os elementos que serão pesquisados. Pode ser um array, uma lista ou qualquer outra que possibilita o acesso sequencial aos elementos.
+  > 2. _Elemento de busca_: É o valor que desejamos encontrar na coleção de dados.
+  > 3. _Percorrer a coleção_: Significa analisar cada elemento da coleção até que o buscado seja encontrado.
+  > 4. _Complexidade de tempo_: No pior caso, a busca linear precisa percorrer todos os elementos da coleção. Portanto, a sua complexidade de tempo é O(n), sendo "n" o número de elementos na coleção.
 
 - Obs. Não muito eficiênte para grandes conjuntos de dados.
 
@@ -206,9 +207,9 @@
 - A busca binária é uma estratégia inteligente, pois **reduz significativamente** o espaço de busca a cada tentativa.
 - Conceitos:
 
-> 1. _Coleção ordenada de dados_: A busca binária exige que a coleção de dados esteja ordenada, seja em ordem crescente ou decrescente. Caso contrário, não será possível aplicar a estratégia de descarte da metade da coleção.
-> 2. _Divisão recursiva_: O algoritmo divide, repetidamente, a coleção ao meio, comparando o valor buscado com o do meio da coleção. Dependendo da comparação, o algoritmo prossegue com a busca na metade esquerda ou direita da coleção.
-> 3. _Complexidade de tempo_: A complexidade de tempo da busca binária é O(log n), sendo "n" o número de elementos na coleção. Isso significa que a busca binária é muito mais rápida em coleções grandes do que a busca linear O(n), tornando-a uma opção muito eficiente.
+  > 1. _Coleção ordenada de dados_: A busca binária exige que a coleção de dados esteja ordenada, seja em ordem crescente ou decrescente. Caso contrário, não será possível aplicar a estratégia de descarte da metade da   coleção.
+  > 2. _Divisão recursiva_: O algoritmo divide, repetidamente, a coleção ao meio, comparando o valor buscado com o do meio da coleção. Dependendo da comparação, o algoritmo prossegue com a busca na metade esquerda ou direita da coleção.
+  > 3. _Complexidade de tempo_: A complexidade de tempo da busca binária é O(log n), sendo "n" o número de elementos na coleção. Isso significa que a busca binária é muito mais rápida em coleções grandes do que a busca linear O(n), tornando-a uma opção muito eficiente.
 
 - Obs. Só funciona em coleções ordenadas, muito eficiente para grandes conjuntos de dados.
 
@@ -337,7 +338,7 @@
 - Regras do JSON
   - **Não** pode ter funções
   - **Não** pode ter comentários
-  - E as propriedades e textos sempre precisam ter aspas duplas
+  - E as propriedades e textos sempre precisam ter **aspas duplas**
 - Em JavaScript, podemos usar a biblioteca 'JSON' para **converter um objeto em um json**.
   - Ex: const jsonData = JSON.stringify(objs);
   - A função 'stringify()' converte o objeto criado em JS para o formato JSON
