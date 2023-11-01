@@ -27,9 +27,10 @@
 - [3º Matéria (TypeScript e React)](#3º-matéria-typescript-e-react)
   - [17º Aula (TypeScript - Parte 1)](#17º-aula)
   - [18º Aula (TypeScript - Parte 2)](#18º-aula)
-  - [19º Aula (React - Parte 1)](#19º-aula)
-  - [20º Aula (React - Parte 2)](#20º-aula)
-  - [21º Aula (React - Parte 3)](#21º-aula)
+  - [19º Aula (React - Introdução)](#19º-aula)
+  - [20º Aula (React - Componentes)](#20º-aula)
+  - [21º Aula (React - Propriedades)](#21º-aula)
+  - [22º Aula (React - )](#22º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -565,3 +566,8 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Documentação (link para exemplo prático)
 
     > [Passando props para um componente](https://react.dev/learn/passing-props-to-a-component#familiar-props)
+
+### 22º Aula
+
+#### React - Parte 4 (Condicionais)
+
