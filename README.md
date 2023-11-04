@@ -30,7 +30,7 @@
   - [19º Aula (React - Introdução)](#19º-aula)
   - [20º Aula (React - Componentes)](#20º-aula)
   - [21º Aula (React - Propriedades)](#21º-aula)
-  - [22º Aula (React - )](#22º-aula)
+  - [22º Aula (React - Renderização Condicional)](#22º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -484,9 +484,9 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - Criando um novo projeto com React
   - Instalação do Node.js ([link](https://nodejs.org/pt-br))
   - [Next.js](https://nextjs.org/): é um framework React full-stack. É versátil e permite criar apps React de qualquer tamanho – desde um blog estático a um app dinâmico complexo.
-  - Execute o comando em seu terminal (dentro de uma pasta especifica): npx create-next-app
+  - Execute o comando em seu terminal (dentro de uma pasta especifica): **npx create-next-app**
 
-  > Ou o comando: npx create-next-app@latest
+  > Ou o comando: **npx create-next-app@latest**
 
   - Responda a lista de perguntas para a instalação do React:
   ![imagem das perguntas de instalação](./img/perguntas-React.png)
@@ -502,14 +502,17 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Componentes são um dos **conceitos centrais** do React. Um **componente** consiste na combinação de códigos **HTML**, **CSS** e **JavaScript** para construção de "componentes" (interfaces de usuários) **personalizados e reutilizáveis**.
   - Componentes retornam uma estrutura visual do HTML (são funções especiais do React que permitem criar partes reutilizaveis de uma página).
   - Componentes: blocos de interface de usuário ([link de aprendizado](https://react.dev/learn/your-first-component))
+
 - Definindo um Componente ([link de estudo e exemplo prático](https://react.dev/learn/your-first-component#defining-a-component))
 - Importando e exportando componentes
   - À medida que você **aninha mais e mais componentes**, geralmente faz sentido começar a **dividi-los em arquivos diferentes**.
   - **Dividir componentes em arquivos** diferentes permite uma **melhor reutilização** em outros lugares e uma **busca mais facilitada**.
   - [Como importar e exportar componentes (link)](https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component)
+
 - Escrevendo marcações com JSX
   - Por muitos anos, os desenvolvedores da Web mantiveram o **conteúdo HTML, CSS e JavaScript** em **arquivos diferentes**. **JSX** permite escrever **lógica de renderização** e de **marcação juntas** no mesmo lugar.
   - [As Regras do JSX, Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)
+
 - [JavaScript em JSX, Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
 
 ### 20º Aula
@@ -537,18 +540,17 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     JavaScript em arquivos diferentes. JSX permite escrever lógica de renderização e de
     marcação juntas no mesmo lugar.
 
-  - Documentação (links para exemplos práticos):
-
-    > [Componentes: blocos de interface de usuário](https://react.dev/learn/your-first-component)  
-    > [Documentação React](https://react.dev/learn/your-first-component#defining-a-component)  
-    > [Como importar e exportar componentes?](https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component)  
-    > [As regras do JSX | Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)  
-    > [Passando strings com aspas | Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
+- Documentação (links para exemplos práticos):
+  - [Componentes: blocos de interface de usuário](https://react.dev/learn/your-first-component)  
+  - [Documentação React](https://react.dev/learn/your-first-component#defining-a-component)  
+  - [Como importar e exportar componentes?](https://react.dev/learn/importing-and-exporting-components#exporting-and-importing-a-component)  
+  - [As regras do JSX | Documentação React](https://react.dev/learn/writing-markup-with-jsx#1-return-a-single-root-element)  
+  - [Passando strings com aspas | Documentação React](https://react.dev/learn/javascript-in-jsx-with-curly-braces#passing-strings-with-quotes)
 
 
 ### 21º Aula
 
-#### React - Parte 3 (Props)
+#### React - Parte 3 (Props/Propriedades)
 
 - Props (propriedades)
   - O que são props?
@@ -563,11 +565,26 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     
     > ![Exemplo do props](./img/exemplo-props.png)
 
-  - Documentação (link para exemplo prático)
-
-    > [Passando props para um componente](https://react.dev/learn/passing-props-to-a-component#familiar-props)
+- Documentação (link para exemplo prático)
+  - [Passando props para um componente](https://react.dev/learn/passing-props-to-a-component#familiar-props)
 
 ### 22º Aula
 
-#### React - Parte 4 (Condicionais)
+#### React - Parte 4 (Renderização Condicional)
 
+- Renderização Condicional
+  - O que é renderização condicional?
+
+    > Renderização condicional consiste na **exibição de coisas diferentes**, **dependendo de diferentes condições**.
+
+    > No React, podemos renderizar **JSX condicionalmente** utilizando as instruções if, && e os operadores e ? :.
+
+  - Exemplificando:
+
+    > Como eu posso marcar com um ✔ os itens de uma lista a partir de uma condição?  
+    > Exemplo:
+
+    > ![Imagem exemplo de condicionais em React](/img/exemplo-condicional.jpg)
+  
+- Documentação React
+  - [Como usar renderização condicional em React](https://react.dev/learn/conditional-rendering#conditionally-returning-jsx)

@@ -35,7 +35,7 @@ function adivinheNumero() {
 const verificarPropriedade = (objeto: object, frase: string) => {
   return Object(objeto).hasOwnProperty(frase);
 };
-const objeto = { nome: "João", voz: "Grossa", idade: 423 };
+const objeto:object = { nome: "João", voz: "Grossa", idade: 423 };
 //console.log(verificarPropriedade(objeto, "profissão"));
 
 // Questão 18

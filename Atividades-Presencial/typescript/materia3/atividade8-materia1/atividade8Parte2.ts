@@ -89,8 +89,8 @@ function calcularIdade(anoNascimento: number) {
 //console.log(calcularIdade(2002));
 
 // Questão 15
-function gerarTabuada(numero: number) {
-  let tabuada = `Tabuada do ${numero}\n`;
+function gerarTabuada(numero: number):string {
+  let tabuada:string = `Tabuada do ${numero}\n`;
   for (let i: number = 0; i <= 10; i++)
     tabuada += `${numero} x ${i} = ${numero * i}\n`;
   return tabuada;
