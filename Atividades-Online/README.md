@@ -3,6 +3,7 @@
 - [Pensamento Computacional (JavaScript básico)](#pensamento-computacional)
 - [HTML e CSS](#htmlcss)
 - [JavaScript e Orientação a Objetos](#javascript-e-orientação-a-objetos)
+- [React](#react)
 - [Pasta de códigos exemplo](/codigos-exemplo/)
 
 ## Pensamento Computacional
@@ -468,3 +469,27 @@
 
     > No terminal, execute o comando: **npx sequelize migration:generate**  
     > Para aplicar as migrações e criar a tabela no banco de dados.
+
+  - (Falta terminar esse modulo)
+
+## React
+
+### Web Moderna (Um pouco de história...)
+
+  - Apesar de ter sido criada na década de 1980, a World Wide Web (WWW) só veio a ter destaque em 1993 com a introdução do navegador Mosaic. A partir disso, as empresas passaram a reconhecer o potencial  comercial da web.
+  - Criação do HTML
+    - Em 1989, o físico Tim Berners-Lee (1955-) esboçou um conceito de plataforma de computador para facilitar a colaboração entre pesquisadores do mundo inteiro.
+    - Isso levou à criação da Hypertext Markup Language (HTML), que se tornou a linguagem de estruturação da WWW e o centro da codificação e infraestrutura na parte de front-end.
+  - Surgimento da linguagem CSS
+    - A linguagem Cascading Style Sheets (CSS) foi idealizada em 1994 por Håkon Lie (1965-). Ela tinha o objetivo de facilitar a complexidade da programação de sites, que utilizava diversos códigos para chegar em um elemento simples, como criar uma tabela.
+    - *Objetivo* da linguagem CSS
+
+      > Lançada em 1995, a linguagem CSS foi desenvolvida pela W3C, um grupo de empresas do ramo da informática. Assim, a linguagem de estilos ganhou destaque entre 1997 e 1999.  
+      > A linguagem CSS serve para definir a aparência e o layout de páginas web, permitindo ao usuário criar páginas com códigos mais simples.
+  
+  - Surgimento da linguagem JavaScript
+    - A linguagem JavaScript também foi criada na década de 1990 pelo programador Brendan Eich (1961-), que trabalhava para a Netscape.
+    - O surgimento dela causou um grande impacto na divulgação e no uso da internet, pois, até então, os navegadores eram estáticos.
+    - *Objetivo* da linguagem JavaScript
+
+      > A proposta da linguagem JavaScript é criar páginas [dinâmicas](https://br.godaddy.com/blog/site-estatico-e-site-dinamico/), permitindo que o usuário interaja com elas, modificando os seus elementos, clicando em um botão e alterando a exibição no navegador.
