@@ -31,6 +31,7 @@
   - [20º Aula (React - Componentes)](#20º-aula)
   - [21º Aula (React - Propriedades)](#21º-aula)
   - [22º Aula (React - Renderização Condicional)](#22º-aula)
+  - [23º Aula (React - )](#23º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -588,3 +589,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   
 - Documentação React
   - [Como usar renderização condicional em React](https://react.dev/learn/conditional-rendering#conditionally-returning-jsx)
+
+### 23º Aula
+
+#### React - Parte 5 (Renderização de Listas)
