@@ -480,7 +480,7 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     tsx nome_do_arquivo.ts
     ```
 
-- [Codigos exemplos](codigos-exemplo/typescript/)
+- [Codigo exemplo](codigos-exemplo/typescript/index.ts)
   - [Video de apoio para os exemplos](https://www.youtube.com/live/GWwuQl0jXU4?si=4jsiWyjXubkuklLa)
 
 ### 18º Aula
