@@ -451,13 +451,33 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - TypeScript é **transpilado para JavaScript** para ser executado nos navegadores ou em qualquer ambiente que suporte JavaScript.
 - Forma de compilar com ts-node (**importante!**)
   - Primeiramente, é preciso baixar as extenções com npm (node package manager) para poder compilar arquivos typescript na máquina. As extensões necessárias são 'typescript' e 'ts-node'.
-  - Comando de instalação: **npm i -g typescript ts-node** [Esse comando devem ser usados no prompt de comando da máquina]
+  - Comando de instalação (Esse comando devem ser usados no prompt de comando da máquina): 
+
+    ```bash
+    npm i -g typescript ts-node
+    ```
+
   - Qualquer informação extra use este [site (link)](https://www.digitalocean.com/community/tutorials/typescript-running-typescript-ts-node), só avisando que o site está em inglês.
-  - Agora com isso feito e as extensões instaladas, você pode compilar os arquivos typescript com o comando: **npx ts-node (nome do arquivo).ts**
+  - Agora com isso feito e as extensões instaladas, você pode compilar os arquivos typescript com o comando:
+
+    ```bash
+    npx ts-node nome_do_arquivo.ts
+    ```
+
 - Forma de compilar com tsx (**importante!**)
   - Essa é outra forma de compilar arquivos typescript usando somente a extensão 'tsx'.
-  - Comando de instalação: **npm i -g tsx** [Esse comando deve ser usado no prompt de comando da máquina]
-  - Agora com isso feito e a extensão instalada, você pode compilar os arquivos typescript com o comando: **tsx (nome do arquivo).ts**
+  - Comando de instalação (Esse comando deve ser usado no prompt de comando da máquina):  
+
+    ```bash
+    npm i -g tsx
+    ```
+
+  - Agora com isso feito e a extensão instalada, você pode compilar os arquivos typescript com o comando:
+
+    ```bash
+    tsx nome_do_arquivo.ts
+    ```
+
 - [Codigos exemplos](codigos-exemplo/typescript/)
   - [Video de apoio para os exemplos](https://www.youtube.com/live/GWwuQl0jXU4?si=4jsiWyjXubkuklLa)
 
@@ -467,10 +487,36 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 - Passo a passo para usar TypeScript na programação front-end (web)
   - Primeiro, usar o comando **npm init -y**, para instalar o package.json (Criar um projeto JavaScript)
-  - Instalar a dependência do desenvolvedor para TypeScript no package.json, usando **npm install typescript -D** (o '-D' serve para definir o typescript como dominio do desenvolvedor)
-  - E por fim iniciar a compilação de arquivos typescript na versão javascript adequada com o comando **npx tsc --init**
-  - Agora para compilar qualquer arquivo TypeScript é possivel usar o comando **npx tsc (nome do arquivo).ts** e será criado um código de mesmo nome em JavaScript.
-  - Caso queira que o terminal fique compilando constantemente um arquivo TypeScript use o comando **npx tsc --watch (nome do arquivo).ts**, caso queira que pare use 'CONTROL + C'.
+  - Instalar a dependência do desenvolvedor para TypeScript no package.json, usando o comando:
+
+    ```bash
+    npm i typescript --save-dev
+    ```
+
+    > o '--save-dev' serve para instalar o typescript no dominio do desenvolvedor
+
+  - E por fim iniciar a compilação de arquivos typescript na versão javascript adequada com o comando:
+
+    ```bash
+    npx tsc --init
+    ```
+
+  - Agora para compilar um arquivo TypeScript especifico é possivel usar o comando: 
+
+    ```bash
+    npx tsc nome_do_arquivo.ts
+    ```
+
+    > Será criado um código de mesmo nome em JavaScript.
+
+  - Caso queira que o terminal fique compilando constantemente um arquivo TypeScript, use o comando: 
+
+    ```bash
+    npx tsc --watch nome_do_arquivo.ts
+    ```
+
+    > Caso queira que pare de compilar, use o comando 'CONTROL + C' no terminal.
+
 - [Link para manipulação do construtor Date()](https://date-fns.org/)
 
 ### 19º Aula
@@ -484,17 +530,29 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 - Criando um novo projeto com React
   - Instalação do Node.js ([link](https://nodejs.org/pt-br))
   - [Next.js](https://nextjs.org/): é um framework React full-stack. É versátil e permite criar apps React de qualquer tamanho – desde um blog estático a um app dinâmico complexo.
-  - Execute o comando em seu terminal (dentro de uma pasta especifica): **npx create-next-app**
+  - Execute o comando em seu terminal (dentro de uma pasta especifica): 
+  
+    ```bash
+    npx create-next-app
+    ```
 
-  > Ou o comando: **npx create-next-app@latest**
+    > Ou o comando: 
+
+      ```bash
+      npx create-next-app@latest
+      ```
 
   - Responda a lista de perguntas para a instalação do React:
-  ![imagem das perguntas de instalação](./img/perguntas-React.png)
+
+    ![imagem das perguntas de instalação](./img/perguntas-React.png)
+  
   - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): **npm run dev**
-- *Obs: * Quando for necessário pegar um arquivo React do github, lembre de instalar o diretório node-modules com o comando: **npm install node-modules**.
+- *Obs:* Quando for necessário pegar um arquivo React do github, lembre de instalar o diretório node-modules com o comando: **npm install node-modules**.
 - Extensões recomendadas para o VSCode quando usar React ([link](https://react.dev/learn/editor-setup#recommended-text-editor-features))
 - Projetos desenvolvidos com React (feitos em outros repositórios)
   - [primeiro-projeto](https://github.com/GabPSant/React-first-project)
+  - [post do instagram](https://github.com/GabPSant/post-instagram)
+  - [CineLista](https://github.com/GabPSant/Filmes-web)
 
 ##### Componentes em React (terminar de anotar o resto...)
 
