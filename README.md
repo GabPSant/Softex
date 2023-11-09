@@ -15,7 +15,7 @@
   - [6º Aula (Estruturas de repetição - Parte 1)](#6º-aula)
   - [7º Aula (Estruturas de repetição - Parte 2)](#7º-aula)
   - [8º Aula (Funções)](#8º-aula)
-- [2º Matéria (HTML/CSS)](#2º-matéria-htmlcss)
+- [2º Matéria (HTML/CSS) ](#2º-matéria-htmlcss)
   - [9º Aula (HTML - Parte 1)](#9º-aula)
   - [10º Aula (HTML - Parte 2)](#10º-aula)
   - [11º Aula (CSS - Parte 1)](#11º-aula)
@@ -31,6 +31,8 @@
   - [20º Aula (React - Componentes)](#20º-aula)
   - [21º Aula (React - Propriedades)](#21º-aula)
   - [22º Aula (React - Renderização Condicional)](#22º-aula)
+  - [23º Aula (React - Renderização de Listas)](#23º-aula)
+  - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -646,3 +648,39 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   
 - Documentação React
   - [Como usar renderização condicional em React](https://react.dev/learn/conditional-rendering#conditionally-returning-jsx)
+
+### 23º Aula
+
+#### React - Parte 5 (Renderização de Listas)
+
+- Contextualizando
+  - Frequentemente, você precisará mostra **várias instâncias do mesmo componente**
+  utilizando dados diferentes. Nessas situações, **arrays JavaScript** podem ser utilizados na
+  **renderização de listas**.
+  - Exemplo:
+
+    ![Imagem exemplo para renderização de listas](img/exemplo-listas.png)
+
+- Documentação React
+  - [Como usar renderização de lista em React](https://react.dev/learn/rendering-lists#rendering-data-from-arrays)
+
+
+### 24º Aula
+
+  - Apresentação em sala do projeto React desenvolvido em equipe
+    - A ideia do meu grupo foi fazer uma lista de filmes do projeto:
+      
+      > [Filmes-web (link do repositório)](https://github.com/GabPSant/Filmes-web)  
+      > [Filmes-web (deploy)](https://filmes-web-one.vercel.app/)
+
+    - Se quiser pode pegar o repositório com esse comando abaixo (Existe um passo a passo bem detalhado no repositório) 
+
+      ```bash
+        git clone https://github.com/GabPSant/Filmes-web.git
+      ```
+
+  - Membros do projeto
+    - [@GabPSant](https://www.github.com/GabPSant)
+    - [@MariCruz31](https://www.github.com/MariCruz31)
+    - [@Giselle-Jacinto](https://www.github.com/Giselle-Jacinto)
+    - [@sthallysson](https://www.github.com/sthallysson)
