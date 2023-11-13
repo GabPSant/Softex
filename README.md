@@ -33,6 +33,7 @@
   - [22º Aula (React - Renderização Condicional)](#22º-aula)
   - [23º Aula (React - Renderização de Listas)](#23º-aula)
   - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
+  - [25º Aula (Extra: GitFlow)](#25º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -694,3 +695,9 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     - [@MariCruz31](https://www.github.com/MariCruz31)
     - [@Giselle-Jacinto](https://www.github.com/Giselle-Jacinto)
     - [@sthallysson](https://www.github.com/sthallysson)
+
+### 25º Aula
+
+#### GitFlow
+
+  - [Site da alura](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar)
