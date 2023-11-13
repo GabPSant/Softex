@@ -437,12 +437,21 @@
     
     > Você precisa ter o Node.Js instalado em seu computador. Depois, crie um novo diretório para o projeto e acesse-o no terminal. 
      
-    > Inicie um novo projeto Node.js executando **npm init** e siga as instruções para criar o arquivo package.json.
+    > Inicie um novo projeto Node.js executando
+
+      ```bash
+      npm init
+      ```
+    
+    > Siga as instruções para criar o arquivo package.json.
 
   - *Passo 2*: Instalação das dependências
 
-    > Instale o Sequelize e os drivers do banco de dados que você vai utilizar, como MySQL ou PostgreSQL, por meio do comando no terminal:  
-    > *npm install sequelize sequelize-cli mysql8* (para MySQL8)
+    > Instale o Sequelize e os drivers do banco de dados que você vai utilizar, como MySQL ou PostgreSQL, por meio do comando no terminal(para MySQL8):  
+
+      ```bash
+      npm install sequelize sequelize-cli mysql8
+      ```
 
   - *Passo 3*: Configuração da conexão com o banco de dados
 
@@ -457,7 +466,11 @@
   - *Passo 5*: Criação das migrações
 
     > No terminal, execute o seguinte comando para criar uma migração para a tabela  
-    > Produto: **npx sequelize migration:generate --name create_produto**
+    > Produto:
+
+      ```bash
+      npx sequelize migration:generate --name create_produto
+      ```
 
     > Isso criará um novo arquivo dentro do diretório **migrations**.
 
@@ -467,7 +480,12 @@
 
   - *Passo 7*: Execução das migrações - Continuar daqui, resolver essa etapa
 
-    > No terminal, execute o comando: **npx sequelize migration:generate**  
+    > No terminal, execute o comando:  
+
+      ```bash
+      npx sequelize migration:generate
+      ```
+
     > Para aplicar as migrações e criar a tabela no banco de dados.
 
   - (Falta terminar esse modulo)
@@ -493,3 +511,146 @@
     - *Objetivo* da linguagem JavaScript
 
       > A proposta da linguagem JavaScript é criar páginas [dinâmicas](https://br.godaddy.com/blog/site-estatico-e-site-dinamico/), permitindo que o usuário interaja com elas, modificando os seus elementos, clicando em um botão e alterando a exibição no navegador.
+
+### [Construção do Ambiente React com Next.js](../README.md/#19º-aula)
+
+### Análise de projeto, Estruturas de pastas, Função de arquivos (React sem usar Next.js)
+
+- Criando novos projetos react
+  - Após as instalações, para criar um projeto simples, você deve abrir um **terminal** ou um prompt de comando no Windows, navegar até a área de trabalho e digitar o comando:
+
+    ```bash
+    npx create-react-app [my-app]
+    ```
+
+  - Nele, [my-app] é o nome que você deseja para o seu projeto.
+- Projeto básico
+  - Com o projeto básico feito, você pode perceber que diversas pastas e arquivos foram criados automaticamente. Vale destacar que não precisamos conhecer esses documentos para compreender um **projeto** react, pois a maioria deles garante a configuração e o funcionamento.
+- Pastas react
+  - Na sua área de trabalho, haverá uma pasta com o nome definido no comando. Dentro dela vai ter algumas outras pastas, e as mais importantes são a **public** e a **src**.
+  - A **public** contém os arquivos como as imagens, os vídeos e logotipos da sua aplicação. Já os códigos que você escreverá estarão na pasta **src**, que é uma abreviação da palavra *source*.
+- Arquivos básicos do react
+  - Na pasta **src**, há diversos arquivos. Porém, os componentes react podem ser divididos em dois principais:
+
+    > um arquivo JSX, que contém as linguagens HTML e JavaScript em um único arquivo;  
+    > um arquivo CSS, que contém a estilização dos componentes.
+
+  - Além disso, um arquivo **test** pode ser adicionado para a realização de testes.
+- Como rodar a aplicação
+  - Com um prompt de comando na pasta do projeto react criado, você deverá rodar o comando:
+
+    ```bash
+    npm start
+    ```
+
+    > Ele indicará ao react que você quer inicializar o projeto.
+
+  - Após iniciá-lo, ele abrirá automaticamente o navegador. Caso isso não aconteça, você deverá ir até o navegador e digitar https://localhost:3000 na barra de navegação.
+
+### Apresentação do [JSX](https://www.mundojs.com.br/2020/09/23/o-que-e-jsx/)
+
+- O que é JSX?
+  - JSX vem da sigla em inglês JavaScript XML, que significa JavaScript Extensível. Ele permite que você escreva componentes de interface do usuário em código JavaScript com aparência semelhante a HTML, facilitando a leitura e a compreensão do código.
+- Onde fica o JSX no React?
+  - JSX pode ser encontrado em cada componente react e dentro do seu respectivo arquivo de script, cujo final tem a extensão “.js.”
+- Como funciona o JSX?
+  - Basicamente, você pode declarar uma função, ou classe, dentro de um arquivo react e, no retorno dela, passar as tags HTML. Caso seja um conjunto de tags, é obrigatório o uso de uma tag div, englobando todos os elementos e a utilização de parênteses com o retorno. Veja o exemplo na próxima página.
+- Expressões em JSX
+  - JSX tem a capacidade adicional de utilizar códigos JavaScript em HTML, ou seja, ao utilizar chaves, é possível escrever comandos JavaScript para serem rodados dentro da HTML retornada. Esse recurso pode ser usado para fazer cálculos, por exemplo, antes de retornar um elemento, atualizando seus dados.
+- Uso de atributos em JSX
+  - Utilizando o mesmo recurso da utilização de expressões, é possível definir variáveis no código. Elas podem ser referenciadas utilizando as chaves e o nome da variável definida dentro delas. Observe os exemplos a seguir.
+  - A diferença principal entre HTML puro e JSX é que, em JSX, você está escrevendo código JavaScript dentro de elementos HTML. Por isso, você precisa escrever algumas coisas de maneira diferente, como o atributo “class” , que deve ser escrito como “className” para evitar conflito com a palavra-chave do JavaScript.
+- Observação no uso de JSX
+  - Em JSX, não é necessário utilizar os parênteses no retorno da HTML, a não ser que seja necessário retornar mais de um componente. Nesse caso, os componentes retornados devem estar dentro de um elemento 'div' e de parênteses. Observe os exemplos a seguir.
+
+### Gerenciamento de estado
+
+- O que é gerenciamento de estados?
+  - O gerenciamento de estados é a capacidade de modificar os dados de um componente react, dentro de uma página, à medida que o usuário realiza ações ou interage com certos elementos.
+- O que são props em React
+  - Os **props** são atributos que podem ser passados na criação de um componente react. Eles são utilizados para que seja possível usar dados que serão transmitidos ao componente através da chamada deles em HTML.
+- Como utilizar os props do React
+  - Primeiro, colocamos o atributo props na função criadora do componente:
+
+    > function NomeDoComponente(props)
+
+  - Em seguida, o nome do atributo, que será passado no componente, deverá ser chamado. Ele poderá ser referenciado por props.name.
+- Vantagens da utilização de props
+  - A principal vantagem do uso de [props](https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props-pt) é poder utilizar e manipular dados ao longo da aplicação. Isso a deixa mais dinâmica, pois modifica a página à medida em que o usuário interage com ela.
+- O que são states?
+  - Enquanto os props são variáveis, os states se referem aos valores dinâmicos, ou seja, aqueles que podem ser modificados ao longo da interação com o componente.
+- Vamos entender melhor (Props X States)
+  - *States* e *props* em react podem ser comparados a uma máquina de sorvete. O **state** seria o tipo de sorvete selecionado na tela de seleção de sabores, que pode mudar dinamicamente quando o usuário escolhe um novo sabor.
+  - Já os **props** seriam as informações externas, como a lista de sabores disponíveis e o preço de cada um. Ou seja, eles fornecem informações para o componente, mas não o mudam. Assim, o componente usa as informações dos props para decidir como mudar seu state.
+
+### Hooks
+
+- O que são Hooks?
+  - Hooks são funcionalidades que permitem que os desenvolvedores usem estados e outros recursos da react sem precisar escrever uma classe.
+  - Com eles, podemos introduzir o estado e outras funcionalidades da react em componentes funcionais, que antes eram exclusivos para componentes baseados em classe.
+- Por que os Hooks foram criados?
+  - A criação dos hooks permitiu a reutilização da lógica entre os componentes. Assim, eles também servem para gerenciar o ciclo de vida de um componente, por exemplo, rodando um código quando o componente é criado ou deletado da tela.
+- Os Hooks mais utilizados são:
+
+  |   Hooks   | Objetivo                                                                                        |
+  | --------- | ----------------------------------------------------------------------------------------------- |
+  |  UseState | Permite que os desenvolvedores gerenciem o estado em componentes funcionais. Ele retorna um array com duas posições: o estado atual e uma função para atualizar esse estado.|
+  | UseEffect | Permite que os desenvolvedores gerenciem efeitos em componentes funcionais na react. Assim, torna-se possível adicionar um comportamento dinâmico e interativo aos componentes.
+
+- Como utilizar os Hooks useState?
+  - Você deve importar o **useState** no começo do seu código. Para isso, utilize:
+
+    > import React, { useState } from 'react';
+
+  - Em seguida, defina um objeto através do **useState**:
+
+    > const [increment, setIncrement] = useState(0);
+
+- [Extras](https://www.zup.com.br/blog/react-hooks)
+  - Outros hooks podem ser criados de forma genérica ou padronizada, sendo reaproveitados entre os componentes. Pesquise mais sobre os hooks e continue aprimorando suas habilidades.
+
+### Routes
+
+- O que é o roteamento?
+  - Roteamento é a capacidade de mostrar diferentes páginas ao usuário. Com ele, o usuário pode navegar entre diferentes partes de uma aplicação.
+- Como o roteamento funciona
+  - Um exemplo simples de roteamento de páginas está presente nos sites de vendas. Nessas plataformas, os produtos são expostos e os usuários podem clicar neles para a página recarregar e mostrar detalhes do produto. Dessa forma, o consumidor pode adicionar algo ao carrinho ou voltar à página anterior para observar mais produtos
+- Roteamento em React
+  - Por padrão, react não possui roteamento porque o seu modelo de aplicação é [Single Page](https://www.iugu.com/talks4devs), ou seja, de página única. Com isso, as funcionalidades ficam concentradas em uma única página para o usuário, não em várias.
+  - Um exemplo de **Single Page** é o **Gmail**. Em uma mesma página, é possível abrir uma mensagem, excluí-la, respondê-la etc. Podemos fazer tudo isso sem que a estrutura total da página seja recarregada.
+- O que é react-router-dom
+  - O funcionamento do roteamento pode ser adicionado na **react com react-router-dom**, que é uma biblioteca, ou seja, é um conjunto de códigos que permite a utilização da funcionalidade de roteamento dentro da aplicação.
+- react-router-dom dentro da aplicação
+  - Para instalar o react-router-dom dentro da aplicação use este comando:
+
+    ```bash
+    npm i react-router-dom --save
+    ```
+
+  - Para utilizar a biblioteca **react-router-dom** em uma aplicação, é necessário importar o **BrowserRouter** dentro do arquivo da aplicação, utilizando o seguinte código:
+
+    > import {BrowserRouter, Routes} from 'react-router-dom';
+
+- Componentes importantes de react-router-dom
+  - O 'Route' é o principal componente dos hooks e serve para definir uma rota. Cada 'Route' é uma rota do nosso sistema.
+  - O atributo **path** indica qual vai ser o caminho do URL. Por isso, ele deve ser inserido no navegador para encaminhar o usuário até uma página.
+  - Também existe o atributo component, que serve para definir o componente renderizado no URL.
+
+    ```
+    <Route path=”/home” component={HomeComponente} />
+    ```
+
+- Uso de links dinâmicos
+  - O componente link é utilizado para criar links dinâmicos e trocar de rota. Ao clicar em um link, ele aponta para a sua página correspondente. Isso facilita o uso da biblioteca **react-router-dom**, pois o link já vem dentro dela. Para usá-lo:
+
+    ```
+    <Link to="/">Home</Link>
+    ```
+
+- Atributo extra
+  - Por fim, o atributo exact serve para que o roteamento só seja realizado quando o URL for igual ao que está escrito no path. 
+  - Exemplo:
+
+    ```
+    <Route exact path=”/teste” component={ComponenteTeste} />
+    ```

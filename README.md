@@ -548,8 +548,18 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
     ![imagem das perguntas de instalação](./img/perguntas-React.png)
   
-  - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto): **npm run dev**
-- *Obs:* Quando for necessário pegar um arquivo React do github, lembre de instalar o diretório node-modules com o comando: **npm install node-modules**.
+  - Para rodar o projeto com o terminal (lembrando, o terminal deve ser o da pasta do projeto):
+
+    ```bash
+    npm run dev
+    ```
+
+- *Obs:* Quando for necessário pegar um arquivo React do github, lembre de instalar o diretório node-modules com o comando:
+
+  ```bash
+  npm install node-modules
+  ```
+
 - Extensões recomendadas para o VSCode quando usar React ([link](https://react.dev/learn/editor-setup#recommended-text-editor-features))
 - Projetos desenvolvidos com React (feitos em outros repositórios)
   - [primeiro-projeto](https://github.com/GabPSant/React-first-project)
