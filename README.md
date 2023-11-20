@@ -34,6 +34,7 @@
   - [23º Aula (React - Renderização de Listas)](#23º-aula)
   - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
   - [25º Aula (Extra: GitFlow)](#25º-aula)
+  - [26º Aula (React - Adicionando Interatividade)](#26º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -700,4 +701,18 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
 
 #### GitFlow
 
-  - [Site da alura](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar)
+  - O Git Flow é recomendado para projetos que utilizam versionamento semântico (semantic versioning) ou que precisam oferecer suporte a várias versões de seu software.
+  - [Explicação detalhada (Alura)](https://www.alura.com.br/artigos/git-flow-o-que-e-como-quando-utilizar)
+
+### 26º Aula
+
+#### Adicionando Interatividade
+
+  - Contextualizando
+    - Algumas coisas na tela são atualizadas em **resposta à entrada do usuário**. Por exemplo,
+    clicar em uma imagem da galeria alterna a imagem ativa. No React, os **dados que mudam**
+    **com o tempo** são chamados de estado.
+  - Obs: children são do tipo React.ReactNode;
+  - Documentação React
+    - [Respondendo a Eventos](https://react.dev/learn/responding-to-events)
+    - [Estado: memória de um componente](https://react.dev/learn/state-a-components-memory)
