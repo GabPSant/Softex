@@ -35,6 +35,7 @@
   - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
   - [25º Aula (Extra: GitFlow)](#25º-aula)
   - [26º Aula (React - Adicionando Interatividade)](#26º-aula)
+  - [27º AUla (React - )](#27º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -716,3 +717,5 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
   - Documentação React
     - [Respondendo a Eventos](https://react.dev/learn/responding-to-events)
     - [Estado: memória de um componente](https://react.dev/learn/state-a-components-memory)
+
+### 27º Aula

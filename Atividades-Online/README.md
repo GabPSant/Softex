@@ -645,8 +645,11 @@
 
 - O que é gerenciamento de estados?
   - O gerenciamento de estados é a capacidade de modificar os dados de um componente react, dentro de uma página, à medida que o usuário realiza ações ou interage com certos elementos.
+
+#### [Props](https://www.w3schools.com/react/react_props.asp)
+
 - O que são props em React
-  - Os **props** são atributos que podem ser passados na criação de um componente react. Eles são utilizados para que seja possível usar dados que serão transmitidos ao componente através da chamada deles em HTML.
+  - Os [**props**](https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props-pt) são atributos que podem ser passados na criação de um componente react. Eles são utilizados para que seja possível usar dados que serão transmitidos ao componente através da chamada deles em HTML.
 - Como utilizar os props do React
   - Primeiro, colocamos o atributo props na função criadora do componente:
 
@@ -654,7 +657,10 @@
 
   - Em seguida, o nome do atributo, que será passado no componente, deverá ser chamado. Ele poderá ser referenciado por props.name.
 - Vantagens da utilização de props
-  - A principal vantagem do uso de [props](https://www.digitalocean.com/community/tutorials/how-to-customize-react-components-with-props-pt) é poder utilizar e manipular dados ao longo da aplicação. Isso a deixa mais dinâmica, pois modifica a página à medida em que o usuário interage com ela.
+  - A principal vantagem do uso de props é poder utilizar e manipular dados ao longo da aplicação. Isso a deixa mais dinâmica, pois modifica a página à medida em que o usuário interage com ela.
+
+#### [States](https://www.w3schools.com/react/react_state.asp)
+
 - O que são states?
   - Enquanto os props são variáveis, os states se referem aos valores dinâmicos, ou seja, aqueles que podem ser modificados ao longo da interação com o componente.
 - Vamos entender melhor (Props X States)
@@ -733,10 +739,77 @@
     <Route exact path=”/teste” component={ComponenteTeste} />
     ```
 
-### Gerenciamento de Estados e Estilização
+### Testes em React
 
-  - O que é gerenciamento de Estados?
-    - O gerenciamento de estados é a capacidade de modificar os dados de um componente react, dentro de uma página, à medida que o usuário realiza ações ou interage com certos elementos.
-  - O que são props no React?
-    - Os **props** são atributos que podem ser passados na criação de um componente react.
-    - Eles são utilizados para que seja possível usar dados que serão transmitidos ao componente através da chamada deles em HTML.
+- Por que fazer testes?
+  - Testar seus aplicativos React é uma prática fundamental para garantir que eles funcionem de forma consistente, confiável e escalável. Além disso, ajuda a evitar erros caros e a manter a qualidade do software à medida que ele cresce e evolui.
+- Quais são os principais tipos de testes?
+  - Os principais tipos de testes no contexto de desenvolvimento de software são *Testes Unitários*, *Testes de Integração*, *Testes Funcionais* (ou de Aceitação), *Testes de Regressão*, *Testes de Performance*, *Testes de Usabilidade*, *Testes de Segurança* e *Testes de Conformidade* (Compliance Testing).
+- Exemplo de Uso de Testes
+  - Imagine que você trabalha para uma empresa que está lançando um novo site de comércio eletrônico. Neste site, os usuários podem **visualizar** produtos, **adicionar** itens ao carrinho de compras, **efetuar** pagamentos e **concluir** pedidos.
+
+    > Você implementou um fluxo de compra completo em React, onde os usuários selecionam produtos, adicionam ao carrinho, inserem informações de pagamento e finalizam o pedido. **Testes de integração** são essenciais para garantir que todos os componentes envolvidos nesse processo funcionem corretamente e que os pedidos sejam processados sem problemas.
+
+    > Seu site precisa atualizar dinamicamente os preços dos produtos com base em descontos e promoções. **Testes unitários** em componentes React responsáveis por exibir preços ajudam a garantir que os cálculos sejam precisos e que os descontos sejam aplicados corretamente.
+
+    > Os clientes acessam o site de diferentes navegadores, como Chrome, Firefox e Edge. **Testes de compatibilidade** de navegador garantem que o site funcione consistentemente em todas as principais plataformas.
+
+    > Seu site inclui um carrossel de produtos que permite aos usuários navegar por várias ofertas. **Testes unitários** em componentes de carrossel garantem que os produtos sejam exibidos de forma adequada e que os cliques em "próximo" e "anterior" funcionem corretamente.
+
+    > A segurança é fundamental ao lidar com informações de pagamento. **Testes de segurança** são necessários para garantir que os dados do cartão de crédito dos usuários sejam protegidos e que os processos de pagamento sejam seguros.
+
+    > À medida que a empresa lança novas promoções ou faz alterações no site, é importante que as mudanças não quebrem funcionalidades existentes. **Testes automatizados** ajudam a detectar possíveis problemas após atualizações.
+  
+- Principais Bibliotecas de Teste em React
+  - Há várias bibliotecas de teste utilizadas para testar aplicativos React. Cada uma delas tem suas próprias características e vantagens. Algumas das principais bibliotecas de teste para React são:
+
+    1. [**Jest**](https://jestjs.io/pt-BR/docs/tutorial-react):  É uma biblioteca de teste amplamente utilizada desenvolvida pelo Facebook. Ela é frequentemente usada em conjunto com o React para testes unitários e testes de integração.Oferece uma estrutura de teste completa, incluindo funções de simulação de eventos, afirmações (assertions) e ferramentas para testar componentes React.
+    2. [**React Testing Library**](https://testing-library.com/docs/react-testing-library/intro/): É projetada para facilitar os testes que se concentram no comportamento do usuário em vez de detalhes de implementação. Fornece utilitários para interagir com componentes React de maneira semelhante ao usuário real, usando seletores que se baseiam nas interações do usuário.
+    3. [**Enzyme**](https://enzymejs.github.io/enzyme/): É uma biblioteca de testes React desenvolvida pela Airbnb. Ela fornece ferramentas para renderizar componentes, encontrar elementos na árvore de componentes e interagir com eles. Oferece recursos poderosos para testes de componentes React, incluindo montagem de componentes, busca de elementos e simulação de eventos.
+
+- Aplicando o Jest e Enzyme (em um app React criado)
+  - Existem duas formas de configurar o seu projeto para a instalação da biblioteca Jest , é necessário instalar como dependência de desenvolvimento utilizando o npm: 
+
+    ```bash
+    npm install --save-dev react-test-renderer
+    ```
+
+    - Ou instalando-o usando o yarn:
+
+      ```bash
+      yarn add --dev react-test-renderer
+      ```
+
+  - Para configurar o Enzyme, é necessário instalar como dependência de desenvolvimento utilizando o npm: 
+
+    ```bash
+    npm i --save-dev enzyme enzyme-adapter-react-16
+    ```
+  
+    - Ou instalando-o usando o yarn:
+
+      ```bash
+      yarn add --dev enzyme-adapter-react-16
+      ```
+    
+- Aplicações com Jest
+  - O Jest é frequentemente usado para escrever **testes unitários para componentes React**. Isso permite que os desenvolvedores verifiquem se os componentes funcionam conforme o esperado e se eles produzem a saída correta com base em várias entradas.
+  - O Jest também é usado para **testar fluxos de aplicativos completos**, onde vários componentes interagem. Isso permite a verificação de como os diferentes componentes funcionam em conjunto.
+
+- Métodos do Enzyme
+  - O Enzyme fornece uma variedade de métodos para interagir com e testar componentes React. Esses métodos são organizados em três categorias principais: **renderização**, **busca de elementos** e **simulação de eventos**.
+  - Métodos de Renderização
+    - **shallow(component)**: Renderiza um componente de forma "rasa", criando uma instância do componente sem renderizar seus filhos.
+    - **mount(component)**: Renderiza um componente de forma "profunda", criando uma instância do componente e seus filhos.
+    - **render()**: Retorna a saída renderizada do componente em forma de uma árvore de componentes Enzyme.
+    - **unmount()**: Desmonta o componente renderizado.
+  - Métodos de Busca de Elementos
+    - **find(selector)**: Busca elementos dentro do componente com base em seletores, semelhantes à seleção de elementos em CSS.
+    - **filter(selector)**: Filtra os elementos correspondentes a um seletor específico.
+    - **contains(nodeOrNodes)**: Verifica se o componente contém um nó específico ou nós.
+    - **get(index)**: Obtém o n-ésimo nó no conjunto de nós correspondentes.
+  - Métodos de Simulação de Eventos
+    - **simulate(event, data)**: Simula eventos em elementos, como cliques, alterações e envios. O primeiro argumento é o tipo de evento, e o segundo argumento é opcional e fornece dados simulados para o evento.
+- Links de apoio
+  - [ROCKETSEAT. Testando aplicações React com Jest & Testing Library - Decode.](https://www.youtube.com/watch?v=edXudaVB0Bg)
+  - [SANTOS, Márcio. Testes de componentes React com Jest e Enzyme](https://medium.com/aurum-tech/testes-de-componentes-react-com-jest-e-enzyme-be3921fae8b1)
