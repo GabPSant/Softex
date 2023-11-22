@@ -546,6 +546,28 @@
     - É possível entender a lógica da Programação Orientada a Objetos após a compreensão das suas seis vantagens.
     - Diferente da Programação Estruturada (PE), que é recomendada para a resolução de um problema específico, a POO é muito utilizada na criação de sistemas mais complexos, pois entrega melhores resultados nesses tipos de programas. Ambas têm lados positivos e negativos, por isso, suas utilizações irão depender de cada caso.
 
+#### Visibilidade de atributos e métodos
+
+  - No desenvolvimento de um sistema Orientado a Objetos, a visibilidade dos atributos e métodos é baseada no conceito do [Diagrama de Classes UML](https://www.lucidchart.com/pages/pt/o-que-e-diagrama-de-classe-uml) (Linguagem de Modelagem Unificada).
+  - Esse diagrama é um dos mais usados da UML e tem o objetivo de facilitar o mapeamento da estrutura de um determinado sistema. Assim, ele possibilita uma melhor compreensão dos requisitos necessários para o desenvolvimento da programação.
+  - A visibilidade define quais classes específicas poderão usar ou ter acesso a determinados elementos de outras classes, como os atributos, que são as variáveis, e os métodos.
+  - Modificadores de Visibilidade
+    - Os [modificadores de visibilidade](https://www.alura.com.br/apostila-python-orientacao-a-objetos/encapsulamento) são aplicados em atributos e métodos e representados por palavras-chave ou símbolos. 
+    - Na estruturação de um código, independente de qual modificador será usado, é necessário inserir a visibilidade para cada método e atributo.
+    - Tipos de modificadores:
+
+      | Modificador | Definição |
+      | ----------- | --------- |
+      | public (público) | É o modificador que tem menos restrição. **Ele possibilita que os atributos e métodos sejam visualizados e manipulados a partir de qualquer classe**. |
+      | private (privado) | É o modificador de visibilidade que tem a função de restringir totalmente o acesso. **Ele impossibilita a visualização e a manipulação dos atributos e métodos por qualquer outra classe que não seja a sua de origem**. |
+      | protected (protegido) | Esse modificador **possibilita que os atributos e métodos sejam visualizados e manipulados a partir da sua classe de origem e todas as suas subclasses**. Ele será melhor compreendido quando definirmos o conceito de [herança](https://br.ccm.net/contents/414-poo-heranca).
+
+    - Embora JavaScript não tenha modificadores de visibilidade como outras linguagens (como "private", "public", etc.), existem maneiras de indicar que um atributo ou método deve ser tratado como "privado". Duas formas comuns são:
+
+      > **Usar um sublinhado (underline)**: Se um atributo ou método começar com um sublinhado (underline), geralmente significa que é "privado". Não é uma regra rigorosa imposta pelo JavaScript, mas é uma convenção entre os programadores.
+
+      > **Adicionar um prefixo "#private"**: Uma outra forma é adicionar o prefixo "#private" antes do nome do atributo ou método. Isso também é uma convenção.
+
 ## React
 
 ### Web Moderna (Um pouco de história...)
@@ -710,3 +732,11 @@
     ```
     <Route exact path=”/teste” component={ComponenteTeste} />
     ```
+
+### Gerenciamento de Estados e Estilização
+
+  - O que é gerenciamento de Estados?
+    - O gerenciamento de estados é a capacidade de modificar os dados de um componente react, dentro de uma página, à medida que o usuário realiza ações ou interage com certos elementos.
+  - O que são props no React?
+    - Os **props** são atributos que podem ser passados na criação de um componente react.
+    - Eles são utilizados para que seja possível usar dados que serão transmitidos ao componente através da chamada deles em HTML.
