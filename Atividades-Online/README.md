@@ -568,6 +568,76 @@
 
       > **Adicionar um prefixo "#private"**: Uma outra forma é adicionar o prefixo "#private" antes do nome do atributo ou método. Isso também é uma convenção.
 
+#### Reutilização de classes ([Herança](https://www.devmedia.com.br/poo-reusabilidade-e-eficiencia-em-seu-codigo/31463))
+  
+  - O que é herança?
+    - Herança, um dos [pilares da POO](https://www.devmedia.com.br/os-4-pilares-da-programacao-orientada-a-objetos/9264), tem a ideia geral de reutilização de classes para tornar um programa mais eficiente e prático, tomando menos tempo para a sua criação geral.
+    - A herança permite que novas classes sejam geradas a partir de classes já existentes, ou seja, que novas classes herdem características de outras existentes. Semelhante a uma relação de família, na qual o filho herda características da mãe.
+  - Fundamentos para criar uma herança
+    - A classe principal é chamada de **superclasse (classe mãe)** e as que herdam são chamadas de **subclasse (classe filha)**. Ao utilizar heranças em um código, é necessário analisar quais atributos e métodos da classe poderão ser herdados com base nos modificadores de visibilidade.
+    - É fundamental compreender que esses atributos e métodos herdados não serão identificados no código-fonte como classes filhas. Entretanto, estarão presentes e poderão ser acessados normalmente a partir de métodos assessores, modificadores ou construtores.
+  - [Exemplo prático](../codigos-exemplo/javascript/heranca.js)
+
+#### Pacotes de Classes
+
+  - O que são pacotes?
+    - No desenvolvimento de um sistema Orientado a Objetos, existem inúmeras classes que geram funcionalidade no código e os pacotes de classes para organizá-las.
+    - Esses pacotes podem possuir interfaces ou classes concretas e abstratas.
+  - Função dos pacotes
+    - Existem pacotes que são de origem [Application Programming Interface (API)](https://canaltech.com.br/software/o-que-e-api/), que é a linguagem de POO utilizada para a criação de sistemas.
+    - Eles têm a função de promover a reutilização de códigos na realização de atividades repetitivas. Além disso, com eles, é possível utilizar classes criadas por outros usuários sem causar conflito no código.
+  - Pacotes em JavaScript
+    - Em JavaScript, o conceito de pacotes é frequentemente associado à gestão de dependências e à organização de código em módulos reutilizáveis.
+    - Embora JavaScript em si não tenha um sistema de pacotes integrado, a comunidade de desenvolvedores criou ferramentas externas para gerenciar pacotes e módulos de maneira eficaz.
+  - Modularização em JavaScript
+    - Os módulos são utilizados para facilitar o desenvolvimento de grandes sistemas, cujo foco é dividir grandes programas em pequenos módulos. Assim como as fábricas são dividas em setores e o corpo humano dividido em sistemas.
+    - Assim, a técnica de modularização torna o programa mais compreensível, pois partes da programação podem ser organizadas em diferentes módulos. Essa divisão mantém a programação sistematizada e setorizada em funções, facilitando a manutenção do código e o encontro de possíveis erros.
+    - Os módulos possuem **funções**, **variáveis**, **classes** e **objetos definidos**. Ou seja, são artefatos que contêm definições e instruções de código em JavaScript.
+    - Assim, cada módulo é usado durante a programação como forma de **aumentar a capacidade da linguagem e acrescentar novas funções**.
+    - Portanto, a técnica de **módulos** consiste em separar o código principal das funções que o programa pode ou não utilizar. O programa principal pode importar várias funções, desde que elas já tenham sido **programadas em arquivos diferentes**.
+  - Modulos e pacotes em JavaScript
+    - O uso de módulos é de extrema importância quando a programação começa a ficar grande.
+    - Porém, quando temos vários módulos ou grandes programações em um único módulo, temos que passar a usar os pacotes, pois eles são utilizados para organizar os arquivos.
+    - Assim, no ambiente de programação JavaScript, podemos criar diversos pacotes para manter a organização dos arquivos das funções desenvolvidas.
+    - Além disso, a linguagem JavaScript disponibiliza diversos pacotes de funções que os programadores podem importar.
+  - Principais pacotes em JavaScript
+    - Pacotes de funções que podem ser importadas:
+      - Redux
+      - MobX
+      - axios
+      - Iodash
+      - moment
+      - PapaParse
+      - D3.js
+      - Jest
+      - Mocha
+      - ESLink
+    - Todos esses pacotes possuem funções prontas e específicas, que podem otimizar o trabalho dos programadores.
+    - Para instalar o pacote é necessário usar o comando: **npm i _nome-do-pacote_**
+
+#### Coleção de Objetos
+
+  - O que são coleções?
+    - As coleções foram criadas devido à necessidade de organizar e manusear os objetos em sistemas complexos. Elas são estruturas que permitem armazenar múltiplos itens em um único lugar, que funciona como um container.
+    - Smalltalk-80 foi a primeira linguagem de programação que implementou uma biblioteca de classes extremamente interessante e poderosa. Ela possuía uma hierarquia para a manipulação de coleções.
+  - Collection (Coleção) e array
+    - Diferente de um array, as coleções têm **tamanhos variáveis**. Elas podem crescer durante o programa e não é necessário informar o seu tamanho no início dele.
+    - Além disso, existem coleções com informações de tipos diferentes, ou seja, elas podem conter dados inteiros, caracteres ou booleanos.
+    - Porém, para manter uma organização, não é recomendado trabalhar com vários tipos de dados.
+  - Tipos de coleções
+    - Na linguagem JavaScript, existem alguns tipos de coleções principais. Elas armazenam informações em uma estrutura, cujo formato depende do tipo de coleção utilizada na construção do código.
+    - [Set](https://www.geeksforgeeks.org/javascript-set-reference/) - O tipo de coleção **set** tem as seguintes características:
+      - não tem ordem de inserção;
+      - não aceita a adição de dois elementos iguais;
+      - é possível inserir e remover elementos;
+      - pode ser implementado com elementos de tipos iguais e diferentes.
+    - [Queue (Fila)](https://gabrielschade.github.io/2019/07/08/algoritmos-iii.html)
+      - Em JavaScript, uma fila é uma estrutura de dados linear que segue a ordem "primeiro a entrar, primeiro a sair" (FIFO - First-In-First-Out). Ela organiza os elementos de forma que o elemento adicionado primeiro seja o primeiro a ser removido. As filas são usadas para gerenciar tarefas em uma ordem específica, como em sistemas de gerenciamento de tarefas assíncronas ou na execução de processos em sequência.
+    - [Stack (Pilha)](https://www.geeksforgeeks.org/implementation-stack-javascript/)
+      - Uma pilha é uma estrutura de dados onde os elementos são adicionados e removidos do topo. LIFO (Last in/First out), o último a entrar será o primeiro a sair. Por exemplo, em uma pilha de pratos, o último prato colocado será o primeiro a ser retirado.
+    - [Map (Mapa)](https://www.freecodecamp.org/news/how-to-use-javascript-collections-map-and-set/)
+      - Em JavaScript, o tipo de coleção Map é usado para armazenar pares de chave-valor, onde cada chave é única e associada a um valor correspondente. Isso permite que você armazene e recupere valores de forma eficiente, utilizando qualquer tipo de dado como chave.
+
 ## React
 
 ### Web Moderna (Um pouco de história...)
