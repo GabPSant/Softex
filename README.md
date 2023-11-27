@@ -35,7 +35,8 @@
   - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
   - [25º Aula (Extra: GitFlow)](#25º-aula)
   - [26º Aula (React - Adicionando Interatividade)](#26º-aula)
-  - [27º AUla (React - )](#27º-aula)
+  - [27º Aula (React - )](#27º-aula)
+  - [28º Aula (React - Atualizações de estado)](#28º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -132,8 +133,12 @@
 ##### 3. Manipulação de Dados
 
 - Concatenação de Dados [Ex: (variável1 + variável2)] {é possivel fazer com diferentes tipos de dados}
-- para poder usar printf em JavaScript se deve usar duas crases (`) ao inves de aspas ("").  Ex: let macaco = "coisa de macaco"
-console.log(`${macaco} usar crase ao inves de aspas duplas``)
+- para poder usar printf em JavaScript se deve usar duas crases (`) ao inves de aspas (""). 
+
+  > Ex:  
+  > let macaco = "coisa de macaco";  
+  > console.log(`${macaco} usar crase ao inves de aspas duplas``);
+
 - Math.random() - retorna um valor entre 0 e 1 (use multiplos para aumentar a variação)
 - Math.round() - retorna o valor inteiro arredondado de um valor decimal
 
@@ -719,3 +724,16 @@ console.log(`${macaco} usar crase ao inves de aspas duplas``)
     - [Estado: memória de um componente](https://react.dev/learn/state-a-components-memory)
 
 ### 27º Aula
+
+#### Atualizações de estado (Parte 1)
+
+  - Documentação React
+    - [Enfileirando atualizações de estado](https://react.dev/learn/queueing-a-series-of-state-updates)
+    - [Atualizando objetos no estado]()
+
+### 28º Aula
+
+#### Atualizações de estado (Parte 2)
+
+  - Documentação React
+    - [Atualizando arrays no estado](https://react.dev/learn/updating-arrays-in-state)
