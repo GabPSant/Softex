@@ -35,8 +35,10 @@
   - [24º Aula (Extra: Apresentação de projeto React)](#24º-aula)
   - [25º Aula (Extra: GitFlow)](#25º-aula)
   - [26º Aula (React - Adicionando Interatividade)](#26º-aula)
-  - [27º Aula (React - )](#27º-aula)
-  - [28º Aula (React - Atualizações de estado)](#28º-aula)
+  - [27º Aula (React - Atualizações de estado, parte 1)](#27º-aula)
+  - [28º Aula (React - Atualizações de estado, parte 2)](#28º-aula)
+- [4º Matéria (Web services - Client)](#4º-matéria-web-services---client)
+  - [29º Aula (Web services - Introdução)](#29º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -737,3 +739,77 @@
 
   - Documentação React
     - [Atualizando arrays no estado](https://react.dev/learn/updating-arrays-in-state)
+
+## 4º Matéria (Web services - Client)
+
+### 29º Aula
+
+#### Arquitetura da Web
+
+  - Arquitetura Cliente/Servidor
+
+    ![Imagem da arquitetura cliente/servidor](img/arquitetura-web-services.jpg)
+  
+  - Comunicação entre os componentes
+    - Protocolo HTTP:
+      - Define um **conjunto de regras** (métodos, status de resposta, entre outros) que **padroniza a comunicação** entre diferentes componentes.
+    - Uniform Resource Identifier (URI):
+      - É uma sequência compacta de caracteres para **identificar um recurso** na web.
+    - Informações
+      - São **mensagens de texto** trocadas entre o cliente e o servidor nas operações de request e response.
+  - Web services
+    - Web services, ou serviços web, são sistemas de software projetados para permitir a comunicação e interação entre diferentes aplicativos pela internet.
+    - As abordagens mais comuns para a implementação de serviços web:
+      - SOAP (Simple Object Access Protocol).
+      - REST (Representational State Transfer).
+
+        > Ambos são usados para definir a forma como os dados são trocados entre os sistemas.
+
+#### [REST](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos)
+
+  - Estilo arquitetural REST
+    - REST (Representational State Transfer) é um **estilo arquitetural** que impõe uma série de restrições quanto à forma como os componentes da arquitetura web se relacionam (FIELDING, 2000).
+    - Os sistemas em conformidade com REST, muitas vezes conhecidos como aplicações **RESTful**, têm como principal característica a forma como separam as responsabilidades entre o cliente e o servidor.
+  - Restrições REST:
+
+    1. **Cliente-servidor**;
+    2. Sem estado;
+    3. Cache;
+    4. Sistemas em camadas;
+    5. Código sob demanda;
+    6. **Interface uniforme**
+
+  - API REST
+    - Uma API REST é um tipo específico de **web service** que segue os princípios RESTful.
+
+      [![diagrama do REST-API](img/diagrama-rest-api.jpg)](https://www.linkedin.com/feed/update/urn:li:activity:7127648415538122753/)
+
+  - Identificação de recursos
+    - Todo recurso deve ser identificado utilizando o conceito de URI (Uniform Resource Identifier), ou identificador uniforme de recurso.
+    - Sintaxe:
+      - protocolo://hostname:porta/endpoint
+    - Por exemplo:
+      - http://servicorest.com/produtos
+      - http://servicorest.com/clientes
+      - http://servicorest.com/vendas
+
+  - Métodos HTTP
+    - A Tabela sintetiza e exemplifica a utilização dos principais métodos HTTP através de uma aplicação de gerenciamento de usuários.
+
+      | Endpoint | Método | Ação |
+      | -------- | ------ | ---- |
+      | /users | GET | Retorna a lista de usuários |
+      | /users | POST | Insere um novo usuário |
+      | /users/{id} | GET | Retorna o usuário com id = {id} |
+      | /users/{id} | PUT | Substitui os dados do usuário com id = {id} |
+      | /users/{id} | DELETE | Remove o usuário com id = {id} |
+
+#### JSON Server
+
+  - [API REST fake (GitHub)](https://github.com/typicode/json-server)
+
+    ![routes do github](img/routes.jpg)
+
+  - [Fetch API (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+
+    ![uso do fetch com JavaScript](img/fetch-api.jpg)
