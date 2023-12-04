@@ -39,6 +39,7 @@
   - [28º Aula (React - Atualizações de estado, parte 2)](#28º-aula)
 - [4º Matéria (Web services - Client)](#4º-matéria-web-services---client)
   - [29º Aula (Web services - Introdução)](#29º-aula)
+  - [30º Aula (Web services - REST API)](#30º-aula)
 
 ## 1º Matéria (lógica de programação e JavaScript)
 
@@ -765,6 +766,8 @@
 
         > Ambos são usados para definir a forma como os dados são trocados entre os sistemas.
 
+### 30º Aula
+
 #### [REST](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos)
 
   - Estilo arquitetural REST
@@ -810,6 +813,6 @@
 
     ![routes do github](img/routes.jpg)
 
-  - [Fetch API (Mozilla)](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch)
+  - [Fetch API (Mozilla)](https://developer.mozilla.org/pt-BR/docs/Web/API/Fetch_API/Using_Fetch)
 
     ![uso do fetch com JavaScript](img/fetch-api.jpg)
