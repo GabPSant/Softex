@@ -4,6 +4,7 @@
 - [HTML e CSS](#htmlcss)
 - [JavaScript e Orientação a Objetos](#javascript-e-orientação-a-objetos)
 - [React](#react)
+- [Web services - Client](#web-services---client)
 - [Pasta de códigos exemplo](/codigos-exemplo/)
 
 ## Pensamento Computacional
@@ -790,14 +791,14 @@
   - O atributo **path** indica qual vai ser o caminho do URL. Por isso, ele deve ser inserido no navegador para encaminhar o usuário até uma página.
   - Também existe o atributo component, que serve para definir o componente renderizado no URL.
 
-    ```
+    ```html
     <Route path=”/home” component={HomeComponente} />
     ```
 
 - Uso de links dinâmicos
   - O componente link é utilizado para criar links dinâmicos e trocar de rota. Ao clicar em um link, ele aponta para a sua página correspondente. Isso facilita o uso da biblioteca **react-router-dom**, pois o link já vem dentro dela. Para usá-lo:
 
-    ```
+    ```html
     <Link to="/">Home</Link>
     ```
 
@@ -805,7 +806,7 @@
   - Por fim, o atributo exact serve para que o roteamento só seja realizado quando o URL for igual ao que está escrito no path. 
   - Exemplo:
 
-    ```
+    ```html
     <Route exact path=”/teste” component={ComponenteTeste} />
     ```
 
@@ -883,3 +884,311 @@
 - Links de apoio
   - [ROCKETSEAT. Testando aplicações React com Jest & Testing Library - Decode.](https://www.youtube.com/watch?v=edXudaVB0Bg)
   - [SANTOS, Márcio. Testes de componentes React com Jest e Enzyme](https://medium.com/aurum-tech/testes-de-componentes-react-com-jest-e-enzyme-be3921fae8b1)
+
+## Web services - Client
+
+### Conceito de serviços na web e como são disponibilizados
+
+  - Você sabe o que são os [web services](https://www.opensoft.pt/web-service/#:~:text=Um%20Web%20service%20é%20utilizado,de%20programação%20de%20suporte%20Web.)?
+    - Os web services são programas que fornecem funcionalidades para outros programas. Eles estão em servidores da web para que possam ser localizados e chamados por meio de uma rede, geralmente, a internet.
+    - Por exemplo, quando um serviço de back-end é publicado em um servidor web, ele pode ser acessado por outros sistemas. Por isso, esse serviço se torna um web service. Dessa forma, podemos considerar o web service **como uma ponte que liga diferentes sistemas**.
+    - Para facilitar o acesso a esses serviços, utilizamos padrões que definem o mecanismo de interação. Eles estabelecem o formato da informação que será enviada e recebida, o provedor de serviços publica o web service em um servidor e os aplicativos clientes consomem os programas publicados.
+      - Ex: Estamos conectando serviços na web quando realizamos uma pesquisa no Google ou quando enviamos uma mensagem no WhatsApp.
+  - Serviços na web
+    - A conexão com a web pode ser feita através de muitos dispositivos: smartphone, computador, televisões, relógios, entre outros.
+    - Essa comunicação só é possível pois os serviços da web possuem padrões de comunicação, que são definidos por meio dos web services.
+  - Exemplo de utilização
+    - Para acessar um serviço, o cliente usa o URL desse serviço para chamá-lo. Em troca, ele recebe as informações retornadas, que geralmente estão em uma estrutura no formato [Extensible Markup Language](https://pt.wikipedia.org/wiki/XML) (XML) ou [JavaScript Object Notation](https://www.alura.com.br/artigos/o-que-e-json?gclid=CjwKCAjwuYWSBhByEiwAKd_n_giqyWEkuQ_-0Om5oEi0cCS5grQR7r-_0U7zcjkpwx-KTFEUsgdUrBoCncYQAvD_BwE) (JSON).
+    - Assim, é feita uma comunicação universal que independe da linguagem de programação utilizada. Ambos os formatos são usados para representar informações. No início do uso dos web services, o formato XML foi o mais utilizado; atualmente, é o JSON.
+    - Imagine que você está navegando na internet e encontra um site que oferece informações interessantes. Para acessar essas informações, você precisa usar um **endereço específico (URL)** para chegar até o site. Quando você chega lá, as informações que o site oferece são **organizadas** em um formato especial, como se fosse um cardápio de restaurante, que pode ser lido e compreendido pelo seu navegador de internet. **Essa organização das informações é feita em um formato de dados que geralmente é XML ou JSON**.
+
+### Definição de Web Services: Padrão WSDL
+
+  - Introdução
+    - Neste hipertexto, aprenderemos sobre o padrão **Web Services Description Language (WSDL)**, em português Linguagem de Descrição de Serviços Web.
+    - Através do modelo SOAP, esse padrão utiliza o formato XML para descrever todas as características de um determinado serviço da web.
+
+  - O que é [SOAP](https://www.ibm.com/docs/pt-br/integration-bus/10.0?topic=services-what-is-soap)?
+    - O Simple Object Access Protocol (SOAP) é um protocolo para trocar informações estruturadas em uma plataforma **descentralizada** e **distribuída**.
+    - Sua mensagem é baseada em XML e, para transmitir mensagens, ele utiliza o protocolo HTTP.
+
+  - Tipos de Plataforma
+
+    | Plataforma | Definição |
+    | ---------- | --------- |
+    | descentralizada | Qualquer aplicação que possui arquitetura projetada para um funcionamento independente. |
+    | distribuída | Arquitetura de sistema de computação com vários componentes que se comunicam para realizar tarefas em conjunto. Cada componente pode estar em um local diferente, mas trabalham juntos para fornecer uma solução completa. |
+
+  - Formação do SOAP
+    - Geralmente, uma mensagem feita pelo SOAP para um web service é [formada por três elementos](https://www.ibm.com/docs/pt-br/integration-bus/10.0?topic=soap-structure-message). Esses são: 
+      
+      | Elemento | Função |
+      | -------- | ------ |
+      | Envelope (Encapsular) | Encapsula todos os dados em uma mensagem, ou seja, é o elemento raiz da mensagem, que define um documento XML, como uma mensagem SOAP. |
+      | Header (Cabeçario) | É um elemento opcional no XML. Ele deve ser utilizado quando se deseja enviar informações, como dados de segurança. |
+      | Body (Corpo) | É um elemento obrigatório. Ele contém os dados de negócio que o servidor está esperando. Esses dados incluem informações de chamada e resposta. |
+
+  - Funcionamento de um SOAP
+    - Um outro elemento que pode aparecer na mensagem é o [SOAP fault](https://www.w3big.com/pt/soap/soap-fault.html#gsc.tab=0). Ele é utilizado quando ocorrem falhas, retornando uma mensagem padronizada para o consumidor.
+      - Um exemplo é exibir na tela a mensagem de erro, assim facilitando o tratamento das falhas no lado do cliente.
+      - Isso se assemelha às mensagens de erro que recebemos quando estamos usando uma linguagem de programação. A mensagem de erro nos ajuda a resolver o problema que está ocorrendo.
+
+### [API REST](https://www.alura.com.br/artigos/rest-conceito-e-fundamentos?gclid=Cj0KCQjw06OTBhC_ARIsAAU1yOVIFk4AvkXfJC2xW_hOkz8gSEO2nUc9sTbgJfmX01yN4hQd1qhDmj0aAjptEALw_wcB)
+
+#### Conceitos e motivação da criação do modelo REST
+
+  - Desde a criação da internet, usamos diferentes aplicativos e páginas da web para obter dados a partir dos servidores. Assim, vamos compreender como um cliente se comunica com o servidor para extrair informações através da API REST.
+
+  - O que é o Rest?
+    - O termo REST é um acrônimo para **Representational State Transfer**, que significa Transferência de Estado Representacional. Ele define um conjunto de regras para os web services.
+    - Exemplo
+      - Por exemplo, em uma comunicação cliente-servidor, REST sugere criar um objeto [JSON](#json-javascript-object-notation-notação-de-objetos-javascript) dos dados solicitados pelo cliente e enviar seus valores como resposta.
+      - Assim, se o usuário estiver solicitando um filme no cinema do shopping, é possível criar um objeto no lado do servidor e enviar o seu estado com o nome do filme e o local.
+
+  - Principios da REST
+    - Roy Fielding (1965- ), criador da REST, incorporou seis regras em sua composição:
+      - **Stateless (sem estado)**
+
+        > *Sem estado* significa que o servidor deve ter todas as solicitações feitas pelo cliente para as compreender. 
+
+        > Para manter o estado do recurso solicitante, um URL é utilizado para identificar o recurso e o corpo.  
+
+        > Assim, quando o servidor processar a solicitação, uma resposta será enviada ao cliente por meio de corpo, status ou cabeçalhos.
+
+      - **Sistema Cliente-servidor**
+
+        > Esse princípio permite uma interface regular e separa os clientes dos servidores. 
+        
+        > Isso aumenta a portabilidade em várias plataformas.
+
+      - **Interface uniforme**
+
+        > Para obter a regularidade em toda a aplicação, existem quatro restrições de interface que precisam ser atendidas. Elas são:  
+        > 1. identificação dos recursos;
+        > 2. manipulação dos recursos usando representações;
+        > 3. mensagens que se descrevem;
+        > 4. [hipermídia](https://hipermidias.wordpress.com/2007/10/05/hipermidia-o-que-e-isso/) como motor do estado da aplicação.
+
+      - **Armazenamento em [Cache](https://womakerscode.gitbook.io/pwa-workshop/4.-estrategia-de-cache-para-rest-api)**
+
+        > Melhora o desempenho e pode ser feito através de uma rotulação da resposta do servidor de forma implícita ou explícita.
+
+      - **Sistema em camadas**
+
+        > Faz com que a aplicação seja mais estável, limitando o comportamento dos componentes em diversas camadas.
+
+      - **Código sob demanda**
+
+        > Permite que um código do cliente seja baixado e usado dentro do aplicativo. É uma restrição opcional e menos usada.
+
+  - Métodos
+    - Compreendendo esses princípios, é possível utilizar os métodos de API REST.
+    - As aplicações web realizam diversas operações, como o CRUD (Create, Read, Update e Delete), que pode criar, ler, atualizar ou deletar um recurso.
+    - Essas operações podem ser realizadas pelo método HTTP:
+      - para **create** usamos o HTTP **POST**;
+      - para **read** usamos o HTTP **GET**;
+      - para **update** usamos o HTTP **PUT**;
+      - para **delete** usamos o HTTP **DELETE**;
+
+#### Modelo REST
+
+  - Introdução
+    - Neste hipertexto, vamos aprender sobre as implementações das APIs REST e como fazê-las em JavaScript usando a biblioteca [Express](https://developer.mozilla.org/pt-BR/docs/Learn/Server-side/Express_Nodejs/Introduction).
+    - Essas implementações fazem parte da API e, no nosso caso, elas serão o back-end do nosso web service.
+
+  - REST com [CRUD](https://devporai.com.br/o-que-e-crud-e-porque-voce-deveria-aprender-a-criar-um/)
+    - As operações CRUD são muito conhecidas e frequentemente utilizadas. Essa sigla significa **Create**, **Read**, **Update** e **Delete**, o que corresponde aos quatro tipos básicos de funcionalidade que os modelos fornecem quando estamos construindo as APIs. Assim, elas devem ter a capacidade de criar, ler, atualizar e excluir recursos.
+
+  - Express
+    - É uma biblioteca responsável por fazer as rotas de um serviço.
+    - com essa biblioteca, podemos utilizar todos os métodos HTTP. Por exemplo, também é possível retornar um erro 404 caso o valor solicitado não seja encontrado. 
+    - Create
+      - com essa biblioteca, podemos utilizar todos os métodos HTTP. Por exemplo, também é possível retornar um erro 404 caso o valor solicitado não seja encontrado. 
+      - Esse método recebe um projeto, que vem em formato JSON, no corpo da requisição. Por isso, utilizamos a função **post**. 
+      - Se o projeto não for criado no **try**, ele deve retornar o erro **HTTP 404 not found**. Caso seja criado, ele retorna com o [status HTTP 201 created](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/201) e com o próprio projeto.
+
+        ![create](../img/express/express_create.jpg)
+      
+    - Read
+      - O método read possui uma função chamada **get**, que identifica uma requisição do tipo get. O **/{id}** indica que essa função receberá um id como parâmetro.
+      - No exemplo, a requisição deve ser feita da seguinte maneira: */projects/:id*. Por exemplo: **minhaApi.com/projects/10**.
+      - O método read apenas utiliza a rota com o método get. Porém, dentro da função deve ser programada a ação que se deseja. No nosso exemplo, ele vai encontrar o projeto e retornar.
+
+        ![read](../img/express/express_read.jpg)
+
+    - Update
+      - O método update é simples de implementar. No exemplo da imagem, o id é  recebido pelo path e as suas informações pelo body. Assim, conseguimos atualizar os valores usando o **put**.
+      - Se o projeto não existir, o **erro 404 not found** é retornado. Se existir, ele será atualizado e retornará o código [200 OK](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/200).
+
+        ![update](../img/express/express_update.jpg)
+
+    - Delete
+      - O método delete do CRUD também é simples. Nele, o id do projeto é recebido pelo próprio path, ou seja, a rota para esse método, na API, fica em **/projects/:id**.
+      - Dessa forma, o id é coletado e deletado. Em seguida, o código [204 no content](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Status/204) é retornado. Isso significa que o conteúdo não existe mais e o método é finalizado.
+
+        ![delete](../img/express/express_delete.jpg)
+
+#### Modelo RESTful
+
+  - Funcionamento de uma API
+    - Ao desenvolver uma aplicação, uma API é utilizada como um mediador entre a sua aplicação e outras que estão na web.
+    - Diferentes apps podem ter acesso a uma mesma aplicação disponível na web.
+    - Sua aplicação pode ser desenvolvida em qualquer linguagem de programação (É a API que recebe e envia os dados entre o Front-End e Back-End da aplicação, não ocorrendo troca de informação direta entre as linguagens de programação).
+  
+  - REST e RESTful
+    - Agora, já entendemos que a REST é uma base para a construção de APIs. Ela conecta os usuários com apps em um web service, utilizando padrões.
+    - a [RESTful](https://www.hostgator.com.br/blog/api-restful/?gclid=CjwKCAjwgr6TBhAGEiwA3aVuITf0RwmIxBhOwHwz24Wct7PHnsvBaPD17B8XNulgqqpj7vlnZQpOOBoC2BoQAvD_BwE) surge com base na API REST. Enquanto REST é um padrão de arquitetura para criar serviços e disponibilizá-los na web, ou seja, é a parte conceitual, o serviço RESTful é aquele que implementa esse padrão.
+
+  - RESTful
+    - Vale destacar que não há diferenças entre REST e RESTful para as APIs. REST é o conjunto das restrições, as regras, e RESTful é a API que as cumpre.
+    - Isso significa que uma API RESTful continua a fazer o que foi feito com uma API REST, como enviar e receber informações por meio de JSON.
+    - Além disso, uma API RESTful usa uma requisição para criar uma série de pequenos módulos. Estes são chamados de rotas e abordam uma parte da transação.
+    - A [modularidade](https://definirtec.com/modularidade/) da RESTful oferece aos desenvolvedores muita flexibilidade. Porém, vale lembrar que é complexo produzir sua API REST do zero quando o projeto é grande.
+
+    - Operações que precisam ser implementadas
+      - Para uma API se tornar RESTful, ela precisa implementar algumas operações, como: 
+        - usar o protocolo HTTP;
+        - suas comunicações devem acontecer de maneira independente e padronizada, disponibilizando todas as informações necessárias;
+        - utilizar cache;
+        - ter as documentações da parte do cliente e do servidor;
+        - facilitar e priorizar a [escalabilidade](https://inventti.com.br/produtividade-com-a-escalabilidade-de-software/#:~:text=Escalabilidade%20de%20softwares%20significa%20aumentar,significa%20também%20planejar%20seu%20crescimento.), confiabilidade e segurança; 
+        - ser extensível. 
+
+    - Modelos disponibilizados
+      - Atualmente, várias empresas fornecem modelos para os desenvolvedores usarem. Os que são fornecidos pela Amazon S3, pelo Cloud Data Management Interface (CDMI) e pela OpenStack Swift são os mais populares.
+      - Eles ajudam os desenvolvedores a criarem suas APIs fazendo algumas abstrações, como manipulação de cache automática.
+
+### Web Services
+
+#### Introdução a Web Services - O que é XML?
+
+  - O que são web services?
+    - O web service é um serviço que gerencia a comunicação entre vários aplicativos e um servidor. Em vez de cada aplicativo ter que se conectar diretamente ao servidor, o web service faz a mediação entre eles. Assim,  as informações são transmitidas de forma mais eficiente e segura.
+    - O serviço se torna um web service quando ele é **compartilhado por meio do back-end de uma aplicação no servidor web**.
+
+    - Além disso, o web service possui um conjunto de funcionalidades definidas, permitindo que a comunicação entre aplicações seja independente da linguagem de programação e do sistema operacional.
+    - Essa tecnologia fornece uma funcionalidade útil para outros programas e está localizada em um [servidor web](https://www.hostgator.com.br/blog/o-que-e-um-servidor-web-e-como-funciona/), que pode ser acessado pela internet.
+
+    - Para simplificar o acesso aos seus serviços, utilizamos padrões que definem o mecanismo de interação e o formato da informação recebida. Dessa forma, o provedor de serviços publica o web service no servidor, que contém uma base de dados com todas as informações necessárias.
+    - O aplicativo Client consome o web service publicado, que busca a informação solicitada na base de dados e a retorna para o Client. O Client usa o URL para consumir e solicitar os parâmetros necessários do web service. Em seguida, recebe os dados solicitados, na maioria das vezes, em XML ou JSON.
+  
+  - O que é XML?
+    - **Extensible Markup Language (XML)**, ou Linguagem de Marcação Extensível, é um padrão usado para armazenar e transferir dados entre sistemas. 
+    - XML é semelhante à linguagem HTML, pois ambas são linguagens de marcação, apesar de XML não conter tags predefinidas em seu padrão. Por isso, o usuário deve definir quais serão as tags utilizadas de acordo com a sua necessidade.
+
+    - Uma das razões da linguagem XML ser muito utilizada em web services é porque ela é manuseada como um simples arquivo de texto, em formato **(.txt)**, que pode ser lido ou transportado para qualquer plataforma com facilidade.
+      - Na prática, esse padrão é utilizado de forma hierárquica e é estruturado para que os blocos sejam bem definidos.
+    - Exemplo de dados em XML
+      - A seguir, observe um exemplo de como dados de alunos podem ser estruturados em um documento XML. Os dados são:
+        
+        > nome do aluno;  
+        > nomes dos pais do aluno.
+
+          ```XML
+          <alunos>
+            <aluno>
+              <nome>Joaquim da Silva</nome>
+                <pais>
+                  <pai> João da Silva </pai>
+                  <mae> Maria da Silva </mae>
+                </pais>
+            </aluno>
+            <aluno>
+              <nome>Ana Moreira Silva</nome>
+                <pais>
+	                <pai> José Tavares Silva </pai>
+                  <mae> Lucia Moreira </mae>
+                </pais>
+            </aluno>
+          </alunos>
+          ```
+    
+  - Motivos para usar os web services?
+    - **Padronização da informação recebida de cada solicitação de serviços**
+      - a mensagem sempre retorna em um padrão de informação, facilitando o tratamento.
+    - **Integração entre serviços distintos**
+      - podemos efetuar a comunicação entre novas aplicações com outras já existentes e integrar sistemas desenvolvidos em plataformas diferentes.
+
+#### Tipos ou modelos de cliente-servidor
+  - Arquitetura cliente-servidor
+    - A arquitetura cliente-servidor é muito utilizada em tecnologias e pelo web service.
+    - Esse modelo, que é baseado em requisições e respostas, possui o **cliente**, a **rede** e o **servidor** como agentes.
+    - O **cliente** é a aplicação que, através do protocolo HTTP, requisita algo para o **servidor** (web service) que encaminhará uma resposta com o padrão XML ou JSON.
+  - Característivas do cliente-servidor
+    
+    | Servidor | Cliente |
+    | -------- | ------- |
+    |O servidor funciona como um [host](https://pt.wikipedia.org/wiki/Host) ou hospedeiro. Por isso, deve estar em uma máquina mais robusta cuja característica geral seja executar uma ou várias requisições. Dessa forma, as requisições compartilham seus dados para enviar uma resposta para o cliente. | O cliente não compartilha seus recursos, pois ele só solicita dados ou funções para o servidor. Por isso, o cliente não precisa ter máquinas robustas, ele pode solicitar dados por qualquer dispositivo que tenha acesso à internet, como tablet, notebook, smartphone, entre outros. |
+
+  - Padrão JSON
+    - Atualmente, o padrão JSON é o mais utilizado, superando até mesmo o XML, que também é muito utilizado em web services.
+    - Um arquivo em JSON utiliza o padrão (**atributo : valor**), que deve ser iniciado com chaves (**{}**) e separado por vírgulas. 
+    - O atributo é uma **string** entre aspas e o valor poderá ser **string**, **int**, **double**, **boolean** ou **null**. O conjunto das informações é chamado de objeto.
+    - Exemplo:
+
+      ```json
+      {
+         “nome”: ”Bruno”,
+         “sobrenome”: ”Silva”,
+         “idade”: 18,
+         “altura”: 1.80,
+         “empregado”: false,
+         “pais”: [ “Jeferson”, ”Cláudia” ],
+         “filhos”: null
+      }
+      ```
+
+  - Banco de dados em web services
+    - O banco de dados é extremamente importante na arquitetura de web services, pois quanto maior, mais funcionalidades e resultados estarão contidos nele.
+    - Um web service utiliza a Web Service Description Language ([WSDL](https://pt.wikipedia.org/wiki/Web_Services_Description_Language)), ou linguagem de descrição de serviço da web, que funciona como um contrato de serviço. Ela é um arquivo XML que descreve o serviço e quais métodos e operações estão disponíveis.
+    - Todo web service deve conter uma WSDL. Quando utilizada, precisa mostrar um método e solicitar o parâmetro. Ambos esse método e esse parâmetro seguem o padrão da WSDL.
+    - Dessa forma, podemos consultar dados no banco de dados e apresentá-los. O padrão pode ser ID, nome, CEP, CPF, entre outros. Tudo depende do foco do web service.
+
+  - Consumo do web service
+    - Um web service pode ser consumido através de um simples servidor de banco de dados.
+    - Por exemplo:
+      - O consumo do web service do Google, que, através de um endereço, fornece dados de latitude e longitude – medidas utilizadas para a localização de qualquer ponto da superfície terrestre.
+      - Esses dados são enviados através de um JSON, que pode ser tratado dentro de um sistema utilizando [procedures](https://materialdornel.readthedocs.io/pt-br/latest/linguagem-sql/procedures.html), para que essa comunicação seja feita automaticamente. 
+  
+  - Web service em servidor de banco de dados
+    - Inicialmente, para a comunicação funcionar, é necessário declarar as variáveis que serão preenchidas com as informações.
+    - Logo após, devemos declarar as variáveis para mapear o arquivo JSON através dos seus nós e, consequentemente, de cada informação recebida. Depois, é preciso direcionar esses dados para as suas devidas funções.
+
+      ```sql
+       @JSONResult AS VARCHAR (MAX),
+       @JSONResultGeometr AS VARCHAR (MAX),
+       @JSONResultLocaliz AS VARCHAR (MAX),
+       @Latitude FLOAT,
+       @Longitude FLOAT;
+      ```
+
+      - Cada dado é guardado em um determinado local para que as informações fiquem organizadas.
+
+    - Para realizar a comunicação, precisamos incluir o URL do web service e a informação do endereço, que pode ser retirada de uma base de dados do cliente ou inserida manualmente.
+
+      ```sql
+        SET @Endereco = ‘Av Caxangá, 2200 – Cordeiro, Recife – PE’;
+        SET  @URL = ‘(deverá ser inserida a URL do Web Service)’ + @Endereco
+      ```
+    
+    - Através do URL, executamos a busca do endereço dentro do web service. Como resultado, teremos os dados de latitude e longitude conforme solicitado.
+    - Esse consumo pode ser feito de forma mais rebuscada com a utilização de procedures e com o tratamento do arquivo JSON. Assim,  todas as informações que o web service tem para entregar são consumidas.
+
+#### Métodos de requisição (Get, Post, Put e Delete).
+
+  - O que são os metodos de requisição
+    - Os métodos de requisição são diferentes tipos de ações que um cliente pode realizar em um servidor web para obter ou enviar informações.
+    - Nas requisições, são explanados os métodos HTTP, que também podem ser chamados de verbos HTTP.
+    - E as respostas podem ser em um formato específico, como XML e JSON, ou ser uma ação, como remover e adicionar informações do banco de dados. Isso vai depender do que for solicitado.
+    - [Link com explicação detalhada](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods)
+      - [GET](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/GET)
+      - [POST](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/POST)
+      - [PUT](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PUT)
+      - [PATCH](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/PATCH)
+      - [DELETE](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/Methods/DELETE)
+
+#### Tipos de Autenticação
+
+  - O que é a autenticação em web services?
+    - Os web services podem ser totalmente públicos ou conter algum nível de segurança.
+    - No caso dos totalmente públicos, o cliente tem permissão para realizar consultas, adição, ajustes ou remoção  dos dados. Em algumas aplicações, não é recomendado que o cliente tenha esse nível de acesso. Então, nesses casos, serão utilizadas as autenticações.
