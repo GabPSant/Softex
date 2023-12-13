@@ -1,4 +1,4 @@
-# [Softex (site oficial)]([https://softex.br/](https://softexpe.org.br/)
+# [Softex (site oficial)](https://softexpe.org.br/)
 
 - Curso de Aceleração Front-end da Softex (nesse repositório tem todos os códigos, anotações, atividades e projetos feitos por mim durante o curso)
 - [Professor: Augusto Cesar](https://github.com/augustocesarfmo)
